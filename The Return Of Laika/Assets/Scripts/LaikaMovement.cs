@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class LaikaMovement : MonoBehaviour
 {
-    private enum MovementStates {
+    public float speed = 1.5f; //Remove this line
+    private Animator anim;
+    private enum MovementStates
+    {
         UpwardIdle,
         UpwardMoving,
         LeftIdle,
@@ -23,9 +26,11 @@ public class LaikaMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         spriteRenderer = gameObject.transform.Find("Sprite").gameObject.GetComponent<SpriteRenderer>();
 
-        if (sprites.Length < 8) {
+        if (sprites.Length < 8)
+        {
             Debug.LogError("Not enough sprites!");
         }
     }
@@ -35,25 +40,69 @@ public class LaikaMovement : MonoBehaviour
     {
         setCurrentMovementState();
         setSprite();
+        if (!(Input.GetKey(KeyCode.Space)))
+        {
+            anim.SetBool("isGoing", false);
+        }
+    }
+
+    //Remove this function
+    void FixedUpdate()
+    {
+        Vector3 pos = transform.position; //Remove this line
+        switch (currentMovementState)
+        {
+            case MovementStates.UpwardMoving:
+                pos.y += speed * Time.deltaTime;
+                break;
+            case MovementStates.LeftMoving:
+                pos.x += -speed * Time.deltaTime;
+                break;
+            case MovementStates.RightMoving:
+                pos.x += speed * Time.deltaTime;
+                break;
+            case MovementStates.DownwardMoving:
+                pos.y += -speed * Time.deltaTime;
+                break;
+        }
+        transform.position = pos;
     }
 
     private void setCurrentMovementState()
     {
-        if (Input.GetKey(KeyCode.W)) {
+        if (Input.GetKey(KeyCode.W))
+        {
             currentMovementState = getMovingOrIdle(MovementStates.UpwardMoving, MovementStates.UpwardIdle);
-        } else if (Input.GetKey(KeyCode.A)) {
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
             currentMovementState = getMovingOrIdle(MovementStates.LeftMoving, MovementStates.LeftIdle);
-        } else if (Input.GetKey(KeyCode.S)) {
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
             currentMovementState = getMovingOrIdle(MovementStates.DownwardMoving, MovementStates.DownwardIdle);
-        } else if (Input.GetKey(KeyCode.D)) {
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
             currentMovementState = getMovingOrIdle(MovementStates.RightMoving, MovementStates.RightIdle);
-        } else {
+        }
+        else
+        {
             currentMovementState = MovementStates.UpwardIdle;
         }
     }
 
-    private MovementStates getMovingOrIdle(MovementStates moving, MovementStates idle) {
-        return Input.GetKey(KeyCode.Space) ? moving : idle;
+    private MovementStates getMovingOrIdle(MovementStates moving, MovementStates idle)
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("isGoing", true);
+            return moving;
+        }
+        else
+        {
+            return idle;
+        }
     }
 
     private void setSprite()
