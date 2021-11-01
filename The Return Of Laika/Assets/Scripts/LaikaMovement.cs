@@ -48,29 +48,12 @@ public class LaikaMovement : MonoBehaviour
         } else if (Input.GetKey(KeyCode.D)) {
             currentMovementState = getMovingOrIdle(MovementStates.RightMoving, MovementStates.RightIdle);
         } else {
-            currentMovementState = getIdleCurrentMovementState();
+            currentMovementState = MovementStates.UpwardIdle;
         }
     }
 
     private MovementStates getMovingOrIdle(MovementStates moving, MovementStates idle) {
         return Input.GetKey(KeyCode.Space) ? moving : idle;
-    }
-
-    private MovementStates getIdleCurrentMovementState()
-    {
-        switch (currentMovementState)
-        {
-            case MovementStates.UpwardMoving:
-                return MovementStates.UpwardIdle;
-            case MovementStates.LeftMoving:
-                return MovementStates.LeftIdle;
-            case MovementStates.RightMoving:
-                return MovementStates.RightIdle;
-            case MovementStates.DownwardMoving:
-                return MovementStates.DownwardIdle;
-            default:
-                return currentMovementState;
-        }
     }
 
     private void setSprite()
