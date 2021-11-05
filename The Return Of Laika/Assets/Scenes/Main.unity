@@ -1360,6 +1360,7 @@ GameObject:
   - component: {fileID: 797192436}
   - component: {fileID: 797192435}
   - component: {fileID: 797192437}
+  - component: {fileID: 797192438}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1379,8 +1380,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b8a01a3e58125479d7bd66f89ac460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 0.3
+  thrust: 0.27
   sprites:
+  - {fileID: 21300000, guid: 4f6a2c5fc1e18db40b1e23ef83d4e79a, type: 3}
   - {fileID: 21300000, guid: 4f6a2c5fc1e18db40b1e23ef83d4e79a, type: 3}
   - {fileID: 21300000, guid: 758f2594162af1844876bbc9693f0126, type: 3}
   - {fileID: 21300000, guid: f45dcaa917b0c8d47adbe276a937e384, type: 3}
@@ -1423,6 +1426,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &797192438
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797192434}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 1.7
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &876506634
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class LaikaMovement : MonoBehaviour
     private Animator anim;
     private enum MovementStates
     {
+        Steady,
         UpwardIdle,
         UpwardMoving,
         LeftIdle,
@@ -15,10 +16,13 @@ public class LaikaMovement : MonoBehaviour
         RightIdle,
         RightMoving,
         DownwardIdle,
-        DownwardMoving,
+        DownwardMoving
     }
 
-    private MovementStates currentMovementState = MovementStates.UpwardIdle;
+    private MovementStates currentMovementState = MovementStates.Steady;
+
+    private Rigidbody2D rb;
+    public float thrust = 20f;
 
     private SpriteRenderer spriteRenderer;
     public Sprite[] sprites;
@@ -28,6 +32,7 @@ public class LaikaMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         spriteRenderer = gameObject.transform.Find("Sprite").gameObject.GetComponent<SpriteRenderer>();
+        rb = this.gameObject.GetComponent<Rigidbody2D>();
 
         if (sprites.Length < 8)
         {
@@ -49,20 +54,32 @@ public class LaikaMovement : MonoBehaviour
     //Remove this function
     void FixedUpdate()
     {
-        Vector3 pos = transform.position; //Remove this line
+        Vector2 pos = transform.position; //Remove this line
         switch (currentMovementState)
         {
-            case MovementStates.UpwardMoving:
+            case MovementStates.UpwardIdle:
                 pos.y += speed * Time.deltaTime;
                 break;
-            case MovementStates.LeftMoving:
+            case MovementStates.LeftIdle:
                 pos.x += -speed * Time.deltaTime;
                 break;
-            case MovementStates.RightMoving:
+            case MovementStates.RightIdle:
                 pos.x += speed * Time.deltaTime;
                 break;
-            case MovementStates.DownwardMoving:
+            case MovementStates.DownwardIdle:
                 pos.y += -speed * Time.deltaTime;
+                break;
+            case MovementStates.UpwardMoving:
+                rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                break;
+            case MovementStates.LeftMoving:
+                rb.AddForce(transform.right * (-thrust), ForceMode2D.Impulse);
+                break;
+            case MovementStates.RightMoving:
+                rb.AddForce(transform.right * thrust, ForceMode2D.Impulse);
+                break;
+            case MovementStates.DownwardMoving:
+                rb.AddForce(transform.up * (-thrust), ForceMode2D.Impulse);
                 break;
         }
         transform.position = pos;
@@ -88,7 +105,7 @@ public class LaikaMovement : MonoBehaviour
         }
         else
         {
-            currentMovementState = MovementStates.UpwardIdle;
+            currentMovementState = MovementStates.Steady;
         }
     }
 
