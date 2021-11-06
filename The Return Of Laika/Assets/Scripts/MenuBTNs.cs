@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuBTNs : MonoBehaviour
 {
-    public void PlayGame() 
+    public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("Main");
     }
 
-    public void QuitGame() 
+    public void QuitGame()
     {
         Application.Quit();
     }
