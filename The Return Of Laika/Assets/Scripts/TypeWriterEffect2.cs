@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class TypeWriterEffect : MonoBehaviour
+public class TypeWriterEffect2 : MonoBehaviour
 {
 
     [TextArea(3, 10)]
@@ -27,7 +27,7 @@ public class TypeWriterEffect : MonoBehaviour
             index++;
             yield return new WaitForSeconds(0.045f);
         }
-        Invoke("laterDelete", 2.2f);
+        Invoke("laterDelete", 1.5f);
     }
 
     public void laterDelete()
