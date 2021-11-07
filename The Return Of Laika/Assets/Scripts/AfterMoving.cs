@@ -25,7 +25,10 @@ public class AfterMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.anyKey)
+        {
+            closeCutscene();
+        }
     }
 
     public void rumbleActions()
@@ -48,7 +51,7 @@ public class AfterMoving : MonoBehaviour
     {
         explosion.SetActive(true);
         laikaFlyOut();
-        Invoke("beginTypingAgain", 5f);
+        Invoke("beginTypingAgain", 3f);
     }
 
     public void laikaFlyOut()
@@ -59,13 +62,13 @@ public class AfterMoving : MonoBehaviour
     public void beginTypingAgain()
     {
         textBox2.SetActive(true);
-        Invoke("closeCutscene", 12f);
+        Invoke("closeCutscene", 11f);
     }
 
     public void closeCutscene()
     {
         GameObject.FindGameObjectWithTag("cosingPanel").gameObject.GetComponent<Animator>().Play("closeCutscene1");
-        Invoke("changeToMain", 3.4f);
+        Invoke("changeToMain", 4.0f);
     }
 
     public void changeToMain()

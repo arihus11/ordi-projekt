@@ -6,10 +6,12 @@ public class DialogueBoxScript2 : MonoBehaviour
 {
 
     public GameObject[] textss;
+    private int i;
 
     // Start is called before the first frame update
     void Start()
     {
+        i = 0;
         textss[0].SetActive(true);
         textss[1].SetActive(false);
         textss[2].SetActive(false);
@@ -18,14 +20,28 @@ public class DialogueBoxScript2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((!(textss[0].activeInHierarchy)) && !(textss[2].activeInHierarchy))
+        if (i < 3)
         {
-            textss[1].SetActive(true);
+            if (i == 0)
+            {
+                Invoke("enableSecondttText", 3f);
+            }
+            else
+            {
+                if (!(textss[i - 1].activeInHierarchy))
+                {
+                    textss[i].SetActive(true);
+                    i++;
+                }
+            }
         }
-        else if ((!(textss[1].activeInHierarchy)) && !(textss[0].activeInHierarchy))
-        {
-            textss[2].SetActive(true);
-        }
+
+    }
+
+    public void enableSecondttText()
+    {
+        textss[1].SetActive(true);
+        i = 1;
     }
 
 
