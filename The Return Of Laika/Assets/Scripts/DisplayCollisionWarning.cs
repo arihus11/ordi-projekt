@@ -6,7 +6,7 @@ public class DisplayCollisionWarning : MonoBehaviour
 {
     public GameObject warningMessageObject;
     public string warningTag = "boundary";
-    
+
     private Animator warningAnimator;
 
     void Start()
