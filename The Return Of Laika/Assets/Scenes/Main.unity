@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BottomBoundary
       objectReference: {fileID: 0}
+    - target: {fileID: 6412820732222414384, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8675869978068933357, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1292,6 +1296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightBoundary
       objectReference: {fileID: 0}
+    - target: {fileID: 6412820732222414384, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8675869978068933357, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2357,6 +2365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftBoundary
       objectReference: {fileID: 0}
+    - target: {fileID: 6412820732222414384, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8675869978068933357, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2750,6 +2762,10 @@ PrefabInstance:
     - target: {fileID: 6412820732222414384, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
       propertyPath: m_Name
       value: TopBoundary
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412820732222414384, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8675869978068933357, guid: 46c291b1f8c27ac45b45c9f27e284504, type: 3}
       propertyPath: m_RootOrder
