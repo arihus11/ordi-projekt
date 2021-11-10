@@ -21,7 +21,7 @@ public class DialogueBoxScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (i < 18)
+        if (i < 19)
         {
             if (activatedFirst == true)
             {
