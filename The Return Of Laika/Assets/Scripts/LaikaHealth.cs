@@ -7,24 +7,22 @@ using UnityEngine.SceneManagement;
 public class LaikaHealth : MonoBehaviour
 {
     public int health = 5;
-    public bool isWaiting = false;
+    private bool isWaiting = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(health.ToString());
-        //public int healthAmount = 5;
     }
 
     // Update is called once per frame
     void Update()
     {
-             
+
     }
 
-    void OnTriggerStay2D(Collider2D col) 
-    {        
-        if (col.gameObject.tag == "Glow") 
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Glow")
         {
             if (isWaiting == false)
             {
@@ -36,7 +34,7 @@ public class LaikaHealth : MonoBehaviour
     }
 
     IEnumerator DamageForTwoSeconds()
-    { 
+    {
         isWaiting = true;
         yield return new WaitForSecondsRealtime(2);
         isWaiting = false;
