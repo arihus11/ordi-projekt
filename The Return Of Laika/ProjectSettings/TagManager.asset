@@ -9,6 +9,7 @@ TagManager:
   - boundary
   - Glow
   - ship
+  - grabbable
   layers:
   - Default
   - TransparentFX
