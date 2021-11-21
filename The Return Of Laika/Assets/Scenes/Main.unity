@@ -1646,6 +1646,7 @@ GameObject:
   - component: {fileID: 797192442}
   - component: {fileID: 797192439}
   - component: {fileID: 797192440}
+  - component: {fileID: 797192443}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1797,6 +1798,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+--- !u!114 &797192443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797192434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed41a2167759c14a8b44eb792e1106b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &867187760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2385,9 +2398,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1308854842}
   - component: {fileID: 1308854841}
+  - component: {fileID: 1308854843}
   m_Layer: 0
   m_Name: TestGrabbable
-  m_TagString: grabbable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2423,6 +2437,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308854843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308854840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885c8a7310304bd449b87e7f0e68ede3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipPartID: 1
 --- !u!1 &1339051026
 GameObject:
   m_ObjectHideFlags: 0
