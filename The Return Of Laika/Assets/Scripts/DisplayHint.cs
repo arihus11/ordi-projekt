@@ -21,7 +21,7 @@ public class DisplayHint : MonoBehaviour
     private bool hasAnimationDisplay;
     private bool hasAnimationHide;
 
-    public CollisionMessageObjectTag collisionTagEnum;
+    public CollisionMessageObjectTag[] collisionTagEnums;
 
     void Start()
     {
@@ -59,7 +59,14 @@ public class DisplayHint : MonoBehaviour
 
     private bool isCollisionTag(string gameObjectTag)
     {
-        return gameObjectTag == collisionTagEnum.ToString();
+        foreach (var colTag in collisionTagEnums)
+        {
+            if (gameObjectTag == colTag.ToString())
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void playAnimation(AnimationType type)
