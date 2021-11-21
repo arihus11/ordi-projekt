@@ -1750,7 +1750,7 @@ MonoBehaviour:
   baseLayerName: Base Layer
   displayAnimationName: Display
   hideAnimationName: Hide
-  collisionTagEnum: 0
+  collisionTagEnums: 00000000
 --- !u!114 &797192440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   baseLayerName: Base Layer
   displayAnimationName: Display
   hideAnimationName: Hide
-  collisionTagEnum: 1
+  collisionTagEnums: 0100000002000000
 --- !u!70 &797192441
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1810,6 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed41a2167759c14a8b44eb792e1106b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipPartGrabbed: {fileID: 0}
 --- !u!1001 &867187760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2401,7 +2402,7 @@ GameObject:
   - component: {fileID: 1308854843}
   m_Layer: 0
   m_Name: TestGrabbable
-  m_TagString: Untagged
+  m_TagString: grabbableShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
