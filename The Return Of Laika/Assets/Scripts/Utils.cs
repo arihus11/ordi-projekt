@@ -20,6 +20,7 @@ namespace Laika.Utils
         boundary,
         grabbableItem,
         grabbableShip,
+        ship,
     }
 
     public enum ShipPartEnum
@@ -51,6 +52,11 @@ namespace Laika.Utils
         public static bool isBoundary(string tag)
         {
             return tag == CollisionMessageObjectTag.boundary.ToString();
+        }
+
+        public static bool isShip(string tag)
+        {
+            return tag == CollisionMessageObjectTag.ship.ToString();
         }
 
         public static ShipPartEnum getShipPartID(GameObject shipPart)
