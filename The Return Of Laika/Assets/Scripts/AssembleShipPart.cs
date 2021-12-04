@@ -5,7 +5,6 @@ using Laika.Utils;
 
 public class AssembleShipPart : MonoBehaviour
 {
-    private bool isInAssemblyRange = false;
     private Transform playerTransform;
     private Transform playerParentTransform;
     private GrabShipPart shipPartIDScript;
