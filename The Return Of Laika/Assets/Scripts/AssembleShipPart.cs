@@ -10,6 +10,8 @@ public class AssembleShipPart : MonoBehaviour
     private Transform playerParentTransform;
     private GrabShipPart shipPartIDScript;
 
+    private GameObject collidedShipObject = null;
+
     void Start()
     {
         playerTransform = this.gameObject.transform;
@@ -19,7 +21,7 @@ public class AssembleShipPart : MonoBehaviour
 
     void Update()
     {
-        if (shipPartIDScript.shipPartGrabbed != null && isInAssemblyRange && Input.GetKeyDown(KeyCode.X))
+        if (shipPartIDScript.shipPartGrabbed != null && collidedShipObject != null && Input.GetKeyDown(KeyCode.X))
         {
             handleAssembly();
         }
@@ -29,7 +31,7 @@ public class AssembleShipPart : MonoBehaviour
     {
         if (Methods.isShip(other.gameObject.tag))
         {
-            isInAssemblyRange = true;
+            collidedShipObject = other.gameObject;
         }
     }
 
@@ -37,7 +39,7 @@ public class AssembleShipPart : MonoBehaviour
     {
         if (Methods.isShip(other.gameObject.tag))
         {
-            isInAssemblyRange = false;
+            collidedShipObject = null;
         }
     }
 
