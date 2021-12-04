@@ -8,22 +8,24 @@ public class AssembleShipPart : MonoBehaviour
     private bool isInAssemblyRange = false;
     private Transform playerTransform;
     private Transform playerParentTransform;
+    private GrabShipPart shipPartIDScript;
 
     void Start()
     {
         playerTransform = this.gameObject.transform;
         playerParentTransform = playerTransform.root.transform;
+        shipPartIDScript = this.gameObject.GetComponent<GrabShipPart>();
     }
 
     void Update()
     {
-        if (isInAssemblyRange && Input.GetKeyDown(KeyCode.X))
+        if (shipPartIDScript.shipPartGrabbed != null && isInAssemblyRange && Input.GetKeyDown(KeyCode.X))
         {
             handleAssembly();
         }
     }
 
-        private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (Methods.isShip(other.gameObject.tag))
         {
@@ -41,6 +43,6 @@ public class AssembleShipPart : MonoBehaviour
 
     private void handleAssembly()
     {
-
+        Debug.LogError("handleAssembly unimplemented!");
     }
 }
