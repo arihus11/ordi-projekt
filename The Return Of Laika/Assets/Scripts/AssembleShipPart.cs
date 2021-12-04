@@ -44,6 +44,18 @@ public class AssembleShipPart : MonoBehaviour
 
     private void handleAssembly()
     {
-        Debug.LogError("handleAssembly unimplemented!");
+        foreach (Transform part in collidedShipObject.transform.Find("Parts").transform)
+        {
+            if (getID(part.gameObject) == getID(shipPartIDScript.shipPartGrabbed))
+            {
+                part.gameObject.SetActive(true);
+                GameObject.Destroy(shipPartIDScript.shipPartGrabbed);
+            }
+        }
+    }
+
+    private ShipPartEnum getID(GameObject part)
+    {
+        return part.GetComponent<ShipPartID>().shipPartID;
     }
 }
