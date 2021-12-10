@@ -11,6 +11,9 @@ TagManager:
   - ship
   - grabbableItem
   - grabbableShip
+  - powerUp
+  - Laika
+  - basicPlanet
   layers:
   - Default
   - TransparentFX
