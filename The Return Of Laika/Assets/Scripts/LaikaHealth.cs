@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LaikaHealth : MonoBehaviour
 {
-    public int health = 5;
+    public static int health = 5;
     private bool isWaiting = false;
 
     // Start is called before the first frame update

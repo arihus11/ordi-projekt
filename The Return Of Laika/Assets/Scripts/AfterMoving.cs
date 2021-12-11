@@ -36,8 +36,9 @@ public class AfterMoving : MonoBehaviour
         dialogueBox2.SetActive(true);
         dialogueBox.SetActive(false);
         this.gameObject.GetComponent<CameraFollowPlayerScript>().enabled = false;
-        this.gameObject.GetComponent<Animator>().enabled = true;
-        this.gameObject.GetComponent<Animator>().Play("ShipShaking");
+        // this.gameObject.GetComponent<Animator>().enabled = true;
+        // this.gameObject.GetComponent<Animator>().Play("ShipShaking");
+        spaceship.GetComponent<Animator>().Play("ShipShake");
 
     }
 

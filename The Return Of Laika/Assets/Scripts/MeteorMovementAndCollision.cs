@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MeteorMovementAndCollision : MonoBehaviour
+{
+    public float speed = 3f;
+    private float extraSpeed = 0.8f;
+    private int randomSpeed;
+    // Start is called before the first frame update
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector2 pos = transform.position;
+        pos.x += -speed / extraSpeed * Time.deltaTime;
+        pos.y += -speed / extraSpeed * Time.deltaTime;
+        transform.position = pos;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Laika")
+        {
+            Destroy(this.gameObject);
+            GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+            LaikaHealth.health--;
+            Debug.Log("LAIKA HEALTH: " + LaikaHealth.health.ToString());
+            //   Debug.Log("HIT LAIKA");
+        }
+    }
+}
