@@ -16,6 +16,10 @@ TagManager:
   - basicPlanet
   - meteor
   - blood
+  - pushDown
+  - pushUp
+  - pushRight
+  - pushLeft
   layers:
   - Default
   - TransparentFX

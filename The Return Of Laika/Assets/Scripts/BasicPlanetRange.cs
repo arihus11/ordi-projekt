@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicPlanet : MonoBehaviour
+public class BasicPlanetRange : MonoBehaviour
 {
     public static bool insidePlanetRange;
     // Start is called before the first frame update
