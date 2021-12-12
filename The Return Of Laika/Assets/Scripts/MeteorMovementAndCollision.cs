@@ -26,10 +26,27 @@ public class MeteorMovementAndCollision : MonoBehaviour
         if (col.gameObject.tag == "Laika")
         {
             Destroy(this.gameObject);
+            showWhenHurt();
             GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
             LaikaHealth.health--;
             Debug.Log("LAIKA HEALTH: " + LaikaHealth.health.ToString());
             //   Debug.Log("HIT LAIKA");
+        }
+    }
+
+    public void showWhenHurt()
+    {
+        GameObject.FindGameObjectWithTag("blood").gameObject.GetComponent<Animator>().Play("BloodAnim", -1, 0f);
+        if (RandomAnimGenerator.randomNumber == 1)
+        {
+
+            GameObject.Find("HurtMessageContainer").gameObject.GetComponent<Animator>().Play("OuchDisplay", -1, 0f);
+            RandomAnimGenerator.calculateRandomNumber();
+        }
+        else
+        {
+            GameObject.Find("HurtMessageContainer").gameObject.GetComponent<Animator>().Play("ThatHurtsDisplay", -1, 0f);
+            RandomAnimGenerator.calculateRandomNumber();
         }
     }
 }

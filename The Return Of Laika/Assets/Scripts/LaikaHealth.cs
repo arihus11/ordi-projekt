@@ -27,6 +27,7 @@ public class LaikaHealth : MonoBehaviour
             if (isWaiting == false)
             {
                 health--;
+                showWhenHurt();
                 Debug.Log("LAIKA HEALTH: " + health.ToString());
                 StartCoroutine(DamageForTwoSeconds());
             }
@@ -56,6 +57,22 @@ public class LaikaHealth : MonoBehaviour
         isWaiting = true;
         yield return new WaitForSecondsRealtime(2);
         isWaiting = false;
+    }
+
+    public void showWhenHurt()
+    {
+        GameObject.FindGameObjectWithTag("blood").gameObject.GetComponent<Animator>().Play("BloodAnim", -1, 0f);
+        if (RandomAnimGenerator.randomNumber == 1)
+        {
+
+            GameObject.Find("HurtMessageContainer").gameObject.GetComponent<Animator>().Play("OuchDisplay", -1, 0f);
+            RandomAnimGenerator.calculateRandomNumber();
+        }
+        else
+        {
+            GameObject.Find("HurtMessageContainer").gameObject.GetComponent<Animator>().Play("ThatHurtsDisplay", -1, 0f);
+            RandomAnimGenerator.calculateRandomNumber();
+        }
     }
 
 }

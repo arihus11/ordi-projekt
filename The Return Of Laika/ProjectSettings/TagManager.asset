@@ -15,6 +15,7 @@ TagManager:
   - Laika
   - basicPlanet
   - meteor
+  - blood
   layers:
   - Default
   - TransparentFX
