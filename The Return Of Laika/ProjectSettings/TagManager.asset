@@ -20,6 +20,7 @@ TagManager:
   - pushUp
   - pushRight
   - pushLeft
+  - blackHole
   layers:
   - Default
   - TransparentFX
