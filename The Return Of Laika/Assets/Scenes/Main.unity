@@ -10630,7 +10630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2673c9c52fd144bbb33eb0c0bec50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeForce: 50
+  holeForce: 5
 --- !u!1 &800666521
 GameObject:
   m_ObjectHideFlags: 0
