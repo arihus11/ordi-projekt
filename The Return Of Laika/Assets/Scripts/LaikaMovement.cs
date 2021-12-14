@@ -43,54 +43,64 @@ public class LaikaMovement : MonoBehaviour
     //Remove this function
     void FixedUpdate()
     {
-        Vector2 pos = transform.position; //Remove this line
-        switch (currentMovementState)
+        if (LaikaHealth.gameOver == false)
         {
-            case MovementState.UpwardIdle:
-                pos.y += speed * Time.deltaTime;
-                break;
-            case MovementState.LeftIdle:
-                pos.x += -speed * Time.deltaTime;
-                break;
-            case MovementState.RightIdle:
-                pos.x += speed * Time.deltaTime;
-                break;
-            case MovementState.DownwardIdle:
-                pos.y += -speed * Time.deltaTime;
-                break;
-            case MovementState.UpwardMoving:
-                rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
-                break;
-            case MovementState.LeftMoving:
-                rb.AddForce(transform.right * (-thrust), ForceMode2D.Impulse);
-                break;
-            case MovementState.RightMoving:
-                rb.AddForce(transform.right * thrust, ForceMode2D.Impulse);
-                break;
-            case MovementState.DownwardMoving:
-                rb.AddForce(transform.up * (-thrust), ForceMode2D.Impulse);
-                break;
+            Vector2 pos = transform.position; //Remove this line
+            switch (currentMovementState)
+            {
+                case MovementState.UpwardIdle:
+                    pos.y += speed * Time.deltaTime;
+                    break;
+                case MovementState.LeftIdle:
+                    pos.x += -speed * Time.deltaTime;
+                    break;
+                case MovementState.RightIdle:
+                    pos.x += speed * Time.deltaTime;
+                    break;
+                case MovementState.DownwardIdle:
+                    pos.y += -speed * Time.deltaTime;
+                    break;
+                case MovementState.UpwardMoving:
+                    rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                    break;
+                case MovementState.LeftMoving:
+                    rb.AddForce(transform.right * (-thrust), ForceMode2D.Impulse);
+                    break;
+                case MovementState.RightMoving:
+                    rb.AddForce(transform.right * thrust, ForceMode2D.Impulse);
+                    break;
+                case MovementState.DownwardMoving:
+                    rb.AddForce(transform.up * (-thrust), ForceMode2D.Impulse);
+                    break;
+            }
+            transform.position = pos;
         }
-        transform.position = pos;
     }
 
     private void setCurrentMovementState()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (LaikaHealth.gameOver == false)
         {
-            currentMovementState = getMovingOrIdle(MovementState.UpwardMoving, MovementState.UpwardIdle);
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            currentMovementState = getMovingOrIdle(MovementState.LeftMoving, MovementState.LeftIdle);
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            currentMovementState = getMovingOrIdle(MovementState.DownwardMoving, MovementState.DownwardIdle);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            currentMovementState = getMovingOrIdle(MovementState.RightMoving, MovementState.RightIdle);
+            if (Input.GetKey(KeyCode.W))
+            {
+                currentMovementState = getMovingOrIdle(MovementState.UpwardMoving, MovementState.UpwardIdle);
+            }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                currentMovementState = getMovingOrIdle(MovementState.LeftMoving, MovementState.LeftIdle);
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                currentMovementState = getMovingOrIdle(MovementState.DownwardMoving, MovementState.DownwardIdle);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                currentMovementState = getMovingOrIdle(MovementState.RightMoving, MovementState.RightIdle);
+            }
+            else
+            {
+                currentMovementState = MovementState.Steady;
+            }
         }
         else
         {

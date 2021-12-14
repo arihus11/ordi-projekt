@@ -25,12 +25,15 @@ public class MeteorMovementAndCollision : MonoBehaviour
     {
         if (col.gameObject.tag == "Laika")
         {
-            Destroy(this.gameObject);
-            showWhenHurt();
-            GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
-            LaikaHealth.health--;
-            Debug.Log("LAIKA HEALTH: " + LaikaHealth.health.ToString());
-            //   Debug.Log("HIT LAIKA");
+            if (LaikaHealth.gameOver == false)
+            {
+                Destroy(this.gameObject);
+                showWhenHurt();
+                GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                LaikaHealth.health--;
+                Debug.Log("LAIKA HEALTH: " + LaikaHealth.health.ToString());
+                //   Debug.Log("HIT LAIKA");
+            }
         }
     }
 

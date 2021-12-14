@@ -8,28 +8,44 @@ public class LaikaHealth : MonoBehaviour
 {
     public static int health = 5;
     private bool isWaiting = false;
+    public static bool gameOver;
+    private Rigidbody2D rb;
+    Vector2 startDirection;
+    float timeStamp;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("LAIKA HEALTH: " + health.ToString());
+        rb = this.gameObject.GetComponent<Rigidbody2D>();
+        gameOver = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (health == 0)
+        {
+            gameOver = true;
+            this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+            GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1");
+            Invoke("reverseDisplayGameOver", 3f);
+        }
     }
 
     void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.tag == "Glow")
         {
-            if (isWaiting == false)
+            if (gameOver == false)
             {
-                health--;
-                showWhenHurt();
-                Debug.Log("LAIKA HEALTH: " + health.ToString());
-                StartCoroutine(DamageForTwoSeconds());
+                if (isWaiting == false)
+                {
+                    health--;
+                    showWhenHurt();
+                    Debug.Log("LAIKA HEALTH: " + health.ToString());
+                    StartCoroutine(DamageForTwoSeconds());
+                }
             }
         }
     }
@@ -38,16 +54,19 @@ public class LaikaHealth : MonoBehaviour
     {
         if (col.gameObject.tag == "powerUp")
         {
-            if (health == 5)
+            if (gameOver == false)
             {
-                GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpNotSick", -1, 0f);
-            }
-            else if (health < 5)
-            {
-                GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpSick", -1, 0f);
-                health++;
-                Debug.Log("LAIKA HEALTH: " + health.ToString());
-                Destroy(col.gameObject);
+                if (health == 5)
+                {
+                    GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpNotSick", -1, 0f);
+                }
+                else if (health < 5)
+                {
+                    GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpSick", -1, 0f);
+                    health++;
+                    Debug.Log("LAIKA HEALTH: " + health.ToString());
+                    Destroy(col.gameObject);
+                }
             }
         }
     }
@@ -73,6 +92,34 @@ public class LaikaHealth : MonoBehaviour
             GameObject.Find("HurtMessageContainer").gameObject.GetComponent<Animator>().Play("ThatHurtsDisplay", -1, 0f);
             RandomAnimGenerator.calculateRandomNumber();
         }
+    }
+
+    public void reverseDisplayGameOver()
+    {
+        GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1Reverse");
+        health = 5;
+        Invoke("laikaDisapear", 1.3f);
+        Invoke("moveLaikaBackInTime", 2f);
+
+    }
+
+    public void moveLaikaBackInTime()
+    {
+
+        this.gameObject.transform.position = GameObject.FindGameObjectWithTag("startPosition").gameObject.transform.position;
+        Invoke("makeEverythingNormal", 1.2f);
+    }
+
+    public void laikaDisapear()
+    {
+        this.gameObject.GetComponent<Animator>().Play("LaikaDisapear");
+    }
+
+    public void makeEverythingNormal()
+    {
+        gameOver = false;
+        this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
+        this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
     }
 
 }

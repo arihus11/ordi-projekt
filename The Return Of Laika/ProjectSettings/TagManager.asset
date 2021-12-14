@@ -21,6 +21,8 @@ TagManager:
   - pushRight
   - pushLeft
   - blackHole
+  - gameOverCanvas
+  - startPosition
   layers:
   - Default
   - TransparentFX
