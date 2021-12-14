@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BlackHoleMagnet : MonoBehaviour
 {
@@ -37,7 +38,16 @@ public class BlackHoleMagnet : MonoBehaviour
             hole = col.gameObject.transform.position;
             timeStamp = Time.time;
             flyToHole = true;
+
         }
+        if (col.gameObject.tag == "middleOfBlackHole")
+        {
+            this.gameObject.GetComponent<Animator>().Play("LaikaShrink");
+            this.gameObject.GetComponent<LaikaMovement>().enabled = false;
+            Invoke("gameOverPanel", 1.5f);
+
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -46,6 +56,17 @@ public class BlackHoleMagnet : MonoBehaviour
         {
             flyToHole = false;
         }
+    }
+
+    public void gameOverPanel()
+    {
+        GameObject.FindGameObjectWithTag("gameOverCanvas2").GetComponent<Animator>().Play("LaikaBlackHole");
+        Invoke("loadNextScene", 2.5f);
+    }
+
+    public void loadNextScene()
+    {
+        SceneManager.LoadScene("Main");
     }
 
 }

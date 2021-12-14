@@ -23,6 +23,8 @@ TagManager:
   - blackHole
   - gameOverCanvas
   - startPosition
+  - middleOfBlackHole
+  - gameOverCanvas2
   layers:
   - Default
   - TransparentFX
