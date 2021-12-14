@@ -12,11 +12,14 @@ public class LaikaHealth : MonoBehaviour
     private Rigidbody2D rb;
     Vector2 startDirection;
     float timeStamp;
+    private bool doOnce, doOnce2;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        doOnce = false;
+        doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gameOver = false;
     }
@@ -29,7 +32,7 @@ public class LaikaHealth : MonoBehaviour
             gameOver = true;
             this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1");
-            Invoke("reverseDisplayGameOver", 3f);
+            Invoke("reverseDisplayGameOver", 4.5f);
         }
     }
 
@@ -105,14 +108,21 @@ public class LaikaHealth : MonoBehaviour
 
     public void moveLaikaBackInTime()
     {
-
-        this.gameObject.transform.position = GameObject.FindGameObjectWithTag("startPosition").gameObject.transform.position;
-        Invoke("makeEverythingNormal", 1.2f);
+        if (doOnce2 == false)
+        {
+            this.gameObject.transform.position = GameObject.FindGameObjectWithTag("startPosition").gameObject.transform.position;
+            Invoke("makeEverythingNormal", 2f);
+            doOnce2 = true;
+        }
     }
 
     public void laikaDisapear()
     {
-        this.gameObject.GetComponent<Animator>().Play("LaikaDisapear");
+        if (doOnce == false)
+        {
+            this.gameObject.GetComponent<Animator>().Play("LaikaDisapear");
+            doOnce = true;
+        }
     }
 
     public void makeEverythingNormal()
@@ -120,6 +130,13 @@ public class LaikaHealth : MonoBehaviour
         gameOver = false;
         this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
+        Invoke("changeSwitches", 4f);
+    }
+
+    public void changeSwitches()
+    {
+        doOnce = false;
+        doOnce2 = false;
     }
 
 }

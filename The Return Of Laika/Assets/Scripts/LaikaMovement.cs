@@ -36,7 +36,10 @@ public class LaikaMovement : MonoBehaviour
         setSprite();
         if (!(Input.GetKey(KeyCode.Space)))
         {
-            anim.SetBool("isGoing", false);
+            if (LaikaHealth.gameOver == false)
+            {
+                anim.SetBool("isGoing", false);
+            }
         }
     }
 
