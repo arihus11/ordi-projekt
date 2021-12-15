@@ -13,6 +13,7 @@ public class LaikaHealth : MonoBehaviour
     Vector2 startDirection;
     float timeStamp;
     private bool doOnce, doOnce2;
+    private AudioSource damageSound;
 
 
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class LaikaHealth : MonoBehaviour
         doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gameOver = false;
+        damageSound = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class LaikaHealth : MonoBehaviour
             {
                 if (isWaiting == false)
                 {
+                    damageSound.Play();
                     health--;
                     showWhenHurt();
                     Debug.Log("LAIKA HEALTH: " + health.ToString());
