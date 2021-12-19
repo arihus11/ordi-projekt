@@ -51,9 +51,9 @@ public class AssembleShipPart : MonoBehaviour
         assembledShipPartListScript.AddPart(Methods.getShipPartID(shipPartIDScript.shipPartGrabbed));
 
         Debug.Log("SHIP ASSEMBLY PROGRESS: "
-            + assembledShipPartListScript.HasAssembledFullShip()
+            + (assembledShipPartListScript.HasAssembledFullShip()
             ? "Ship fully assembled."
-            : $"{assembledShipPartListScript.remainingPartCount()}/5 parts collected.");
+            : $"{assembledShipPartListScript.remainingPartCount()}/5 parts collected."));
 
         collidedShipObject.transform.Find("Sprite").GetComponent<SpriteRenderer>().color += new Color(0f, 0f, 0f, 1f);
 
