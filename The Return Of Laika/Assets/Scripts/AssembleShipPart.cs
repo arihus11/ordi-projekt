@@ -22,7 +22,9 @@ public class AssembleShipPart : MonoBehaviour
 
     void Update()
     {
-        if (shipPartIDScript.shipPartGrabbed != null && collidedShipObject != null && Input.GetKeyDown(KeyCode.X))
+        if (shipPartIDScript.shipPartGrabbed != null && collidedShipObject != null
+            && Methods.getShipPartID(shipPartIDScript.shipPartGrabbed) == Methods.getShipPartID(collidedShipObject)
+            && Input.GetKeyDown(KeyCode.X))
         {
             handleAssembly();
         }
@@ -45,18 +47,11 @@ public class AssembleShipPart : MonoBehaviour
     }
 
     private void handleAssembly()
-    { 
-        ShipPartEnum currentPartID = Methods.getShipPartID(shipPartIDScript.shipPartGrabbed);
-        foreach (Transform part in collidedShipObject.transform.Find("ShipParts").transform)
-        {
-            if (Methods.getShipPartID(part.gameObject) == currentPartID)
-            {
-                assembledShipPartListScript.AddPart(currentPartID);
+    {
+        assembledShipPartListScript.AddPart(Methods.getShipPartID(shipPartIDScript.shipPartGrabbed));
 
-                part.transform.Find("Sprite").GetComponent<SpriteRenderer>().color += new Color(0f, 0f, 0f, 1f);
+        collidedShipObject.transform.Find("Sprite").GetComponent<SpriteRenderer>().color += new Color(0f, 0f, 0f, 1f);
 
-                GameObject.Destroy(shipPartIDScript.shipPartGrabbed);
-            }
-        }
+        GameObject.Destroy(shipPartIDScript.shipPartGrabbed);
     }
 }
