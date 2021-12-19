@@ -5,7 +5,7 @@ using Laika.Utils;
 
 public class DisplayHint : MonoBehaviour
 {
-    private enum AnimationType
+    protected enum AnimationType
     {
         display,
         hide
@@ -13,13 +13,13 @@ public class DisplayHint : MonoBehaviour
 
     public GameObject messageContainer;
 
-    private Animator animator;
+    protected Animator animator;
     public int baseLayerIndex = 0;
     public string baseLayerName = "Base Layer";
     public string displayAnimationName = "Display";
     public string hideAnimationName = "Hide";
-    private bool hasAnimationDisplay;
-    private bool hasAnimationHide;
+    protected bool hasAnimationDisplay;
+    protected bool hasAnimationHide;
 
     public CollisionMessageObjectTag[] collisionTagEnums;
 
@@ -32,32 +32,32 @@ public class DisplayHint : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        onEvent(other.gameObject.tag, AnimationType.display);
+        onEvent(other.gameObject, AnimationType.display);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onEvent(other.gameObject.tag, AnimationType.display);
+        onEvent(other.gameObject, AnimationType.display);
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        onEvent(other.gameObject.tag, AnimationType.hide);
+        onEvent(other.gameObject, AnimationType.hide);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        onEvent(other.gameObject.tag, AnimationType.hide);
+        onEvent(other.gameObject, AnimationType.hide);
     }
 
-    private void onEvent(string gameObjectTag, AnimationType type)
+    protected virtual void onEvent(GameObject other, AnimationType type)
     {
-        if (!isCollisionTag(gameObjectTag)) return;
+        if (!isCollisionTag(other.tag)) return;
 
         playAnimation(type);
     }
 
-    private bool isCollisionTag(string gameObjectTag)
+    protected bool isCollisionTag(string gameObjectTag)
     {
         foreach (var colTag in collisionTagEnums)
         {
@@ -69,7 +69,7 @@ public class DisplayHint : MonoBehaviour
         return false;
     }
 
-    private void playAnimation(AnimationType type)
+    protected void playAnimation(AnimationType type)
     {
         switch (type)
         {
