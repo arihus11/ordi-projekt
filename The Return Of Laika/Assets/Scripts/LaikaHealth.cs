@@ -15,6 +15,9 @@ public class LaikaHealth : MonoBehaviour
     private bool doOnce, doOnce2;
     private AudioSource damageSound;
 
+    public GameObject healthSystemCanvas;
+    private Transform healthSystem;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +26,9 @@ public class LaikaHealth : MonoBehaviour
         doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gameOver = false;
-        damageSound = GetComponent<AudioSource> ();
+        damageSound = GetComponent<AudioSource>();
+
+        healthSystem = healthSystemCanvas.transform;
     }
 
     // Update is called once per frame
@@ -47,7 +52,7 @@ public class LaikaHealth : MonoBehaviour
                 if (isWaiting == false)
                 {
                     damageSound.Play();
-                    health--;
+                    setHealth(health - 1);
                     showWhenHurt();
                     Debug.Log("LAIKA HEALTH: " + health.ToString());
                     StartCoroutine(DamageForTwoSeconds());
@@ -69,7 +74,7 @@ public class LaikaHealth : MonoBehaviour
                 else if (health < 5)
                 {
                     GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpSick", -1, 0f);
-                    health++;
+                    setHealth(health + 1);
                     Debug.Log("LAIKA HEALTH: " + health.ToString());
                     Destroy(col.gameObject);
                 }
@@ -103,7 +108,7 @@ public class LaikaHealth : MonoBehaviour
     public void reverseDisplayGameOver()
     {
         GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1Reverse");
-        health = 5;
+        setHealth(5);
         Invoke("laikaDisapear", 1.3f);
         Invoke("moveLaikaBackInTime", 2f);
 
@@ -142,4 +147,19 @@ public class LaikaHealth : MonoBehaviour
         doOnce2 = false;
     }
 
+    private void setHealth(int newHealth)
+    {
+        health = newHealth;
+
+        updateHealthDisplay();
+    }
+
+    public void updateHealthDisplay()
+    {
+        for (int i = 1; i <= healthSystem.childCount; i++)
+        {
+            healthSystem.GetChild(i - 1).Find("Full").gameObject.SetActive(i <= health);
+            healthSystem.GetChild(i - 1).Find("Empty").gameObject.SetActive(i > health);
+        }
+    }
 }
