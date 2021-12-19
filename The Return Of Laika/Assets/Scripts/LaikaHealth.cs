@@ -15,7 +15,10 @@ public class LaikaHealth : MonoBehaviour
     private bool doOnce, doOnce2;
     private AudioSource damageSound;
 
+    [Header("Health Display")]
     public GameObject healthSystemCanvas;
+    public Sprite fullHealthPointSprite;
+    public Sprite emptyHealthPointSprite;
     private Transform healthSystem;
 
 
@@ -158,8 +161,11 @@ public class LaikaHealth : MonoBehaviour
     {
         for (int i = 1; i <= healthSystem.childCount; i++)
         {
-            healthSystem.GetChild(i - 1).Find("Full").gameObject.SetActive(i <= health);
-            healthSystem.GetChild(i - 1).Find("Empty").gameObject.SetActive(i > health);
+            healthSystem
+                .GetChild(i - 1)
+                .Find("Sprite")
+                .GetComponent<SpriteRenderer>()
+                .sprite = i <= health ? fullHealthPointSprite : emptyHealthPointSprite;
         }
     }
 }
