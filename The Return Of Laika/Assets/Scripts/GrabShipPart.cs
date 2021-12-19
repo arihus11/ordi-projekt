@@ -17,6 +17,8 @@ public class GrabShipPart : MonoBehaviour
     {
         playerTransform = this.gameObject.transform;
         playerParentTransform = playerTransform.parent;
+
+        shipPartGrabbed = null;
     }
 
     // Update is called once per frame
