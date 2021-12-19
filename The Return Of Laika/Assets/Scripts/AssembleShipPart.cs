@@ -8,6 +8,7 @@ public class AssembleShipPart : MonoBehaviour
     private Transform playerTransform;
     private Transform playerParentTransform;
     private GrabShipPart shipPartIDScript;
+    private AssembledShipPartList assembledShipPartListScript;
 
     private GameObject collidedShipObject = null;
 
@@ -16,6 +17,7 @@ public class AssembleShipPart : MonoBehaviour
         playerTransform = this.gameObject.transform;
         playerParentTransform = playerTransform.root.transform;
         shipPartIDScript = this.gameObject.GetComponent<GrabShipPart>();
+        assembledShipPartListScript = this.gameObject.GetComponent<AssembledShipPartList>();
     }
 
     void Update()
@@ -43,19 +45,18 @@ public class AssembleShipPart : MonoBehaviour
     }
 
     private void handleAssembly()
-    {
-        foreach (Transform part in collidedShipObject.transform.Find("Parts").transform)
+    { 
+        ShipPartEnum currentPartID = Methods.getShipPartID(shipPartIDScript.shipPartGrabbed);
+        foreach (Transform part in collidedShipObject.transform.Find("ShipParts").transform)
         {
-            if (getID(part.gameObject) == getID(shipPartIDScript.shipPartGrabbed))
+            if (Methods.getShipPartID(part.gameObject) == currentPartID)
             {
-                part.gameObject.SetActive(true);
+                assembledShipPartListScript.AddPart(currentPartID);
+
+                part.transform.Find("Sprite").GetComponent<SpriteRenderer>().color += new Color(0f, 0f, 0f, 1f);
+
                 GameObject.Destroy(shipPartIDScript.shipPartGrabbed);
             }
         }
-    }
-
-    private ShipPartEnum getID(GameObject part)
-    {
-        return part.GetComponent<ShipPartID>().shipPartID;
     }
 }
