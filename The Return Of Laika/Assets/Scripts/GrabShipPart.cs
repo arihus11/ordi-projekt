@@ -16,7 +16,7 @@ public class GrabShipPart : MonoBehaviour
     void Start()
     {
         playerTransform = this.gameObject.transform;
-        playerParentTransform = playerTransform.root.transform;
+        playerParentTransform = playerTransform.parent;
     }
 
     // Update is called once per frame
@@ -68,6 +68,7 @@ public class GrabShipPart : MonoBehaviour
         if (shipPartGrabbed != null && shipPartGrabbed != shipPartInRange)
         {
             shipPartGrabbed.transform.SetParent(playerParentTransform);
+            shipPartGrabbed = null;
         }
     }
 
