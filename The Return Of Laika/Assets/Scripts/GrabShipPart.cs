@@ -22,9 +22,16 @@ public class GrabShipPart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInGrabRange && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            handleGrab();
+            if (isInGrabRange)
+            {
+                handleGrab();
+            }
+            else
+            {
+                handleRelease();
+            }
         }
     }
 
