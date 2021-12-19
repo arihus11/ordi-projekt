@@ -8,10 +8,12 @@ public class AssembledShipPartList : MonoBehaviour
 {
 
     private bool[] isAssembled = { false, false, false, false, false };
+    private int assembledCount = 0;
 
     public void AddPart(ShipPartEnum shipPartID)
     {
         isAssembled[((int)shipPartID) - 1] = true;
+        assembledCount++;
     }
 
     public bool HasPart(ShipPartEnum shipPartID)
@@ -22,5 +24,10 @@ public class AssembledShipPartList : MonoBehaviour
     public bool HasAssembledFullShip()
     {
         return !Array.Exists(isAssembled, e => !e);
+    }
+
+    public int remainingPartCount()
+    {
+        return assembledCount;
     }
 }
