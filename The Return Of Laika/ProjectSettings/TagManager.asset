@@ -25,6 +25,10 @@ TagManager:
   - startPosition
   - middleOfBlackHole
   - gameOverCanvas2
+  - laikaSprite
+  - weapon
+  - enterShip
+  - endingShip
   layers:
   - Default
   - TransparentFX

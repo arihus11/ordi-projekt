@@ -6,6 +6,7 @@ public class EndingCutscene : MonoBehaviour
 {
 
     Rigidbody2D rb;
+    public Sprite movingSprite, stayingSprite;
     Vector2 placeToStandDirection;
     public float placeToStandForce;
     public GameObject standingPlace;
@@ -62,7 +63,7 @@ public class EndingCutscene : MonoBehaviour
     {
         if (GameObject.Find("CanvasEndingScene").gameObject.transform.childCount > 0)
         {
-            GameObject.Find("CanvasEndingScene").gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            GameObject.Find("CanvasEndingScene").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
 
     }
@@ -72,6 +73,7 @@ public class EndingCutscene : MonoBehaviour
         Invoke("executeShipPartsRotation", 2.1f);
         if (flying == false)
         {
+            GameObject.FindGameObjectWithTag("laikaSprite").gameObject.GetComponent<SpriteRenderer>().sprite = movingSprite;
             disableFlying();
             timeStamp = Time.time;
             placeToStandDirection = -(GameObject.Find("Player").gameObject.transform.position - (GameObject.Find("PlaceForLaikaToStand").gameObject.transform.position)).normalized;
@@ -92,6 +94,7 @@ public class EndingCutscene : MonoBehaviour
         if (Vector2.Distance(GameObject.Find("Player").gameObject.transform.position, GameObject.Find("PlaceForLaikaToStand").gameObject.transform.position) < 4)
         {
             flying = true;
+            GameObject.FindGameObjectWithTag("laikaSprite").gameObject.GetComponent<SpriteRenderer>().sprite = stayingSprite;
         }
 
     }
@@ -105,6 +108,15 @@ public class EndingCutscene : MonoBehaviour
     public void revealWeapon()
     {
         this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
-        Invoke("displayTextBox2", 1f);
+        Invoke("displayTextBox2", 2.6f);
+        Invoke("enablePlayerControllls", 8.4f);
+    }
+
+    public void enablePlayerControllls()
+    {
+        GameObject.Find("Player").gameObject.GetComponent<LaikaHealth>().enabled = true;
+        GameObject.Find("Player").gameObject.GetComponent<DisplayHint>().enabled = true;
+        GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
+        this.gameObject.GetComponent<EndingCutscene>().enabled = false;
     }
 }
