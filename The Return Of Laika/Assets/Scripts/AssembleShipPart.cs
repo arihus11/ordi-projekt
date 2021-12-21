@@ -9,11 +9,12 @@ public class AssembleShipPart : MonoBehaviour
     private Transform playerParentTransform;
     private GrabShipPart shipPartIDScript;
     private AssembledShipPartList assembledShipPartListScript;
-
+    public static int numberOfPartsAssambled;
     private GameObject collidedShipObject = null;
 
     void Start()
     {
+        numberOfPartsAssambled = 0;
         playerTransform = this.gameObject.transform;
         playerParentTransform = playerTransform.root.transform;
         shipPartIDScript = this.gameObject.GetComponent<GrabShipPart>();
@@ -48,8 +49,9 @@ public class AssembleShipPart : MonoBehaviour
 
     private void handleAssembly()
     {
-        assembledShipPartListScript.AddPart(Methods.getShipPartID(shipPartIDScript.shipPartGrabbed));
 
+        assembledShipPartListScript.AddPart(Methods.getShipPartID(shipPartIDScript.shipPartGrabbed));
+        numberOfPartsAssambled++;
         Debug.Log("SHIP ASSEMBLY PROGRESS: "
             + (assembledShipPartListScript.HasAssembledFullShip()
             ? "Ship fully assembled."
