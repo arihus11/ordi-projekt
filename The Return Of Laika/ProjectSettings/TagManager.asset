@@ -29,6 +29,7 @@ TagManager:
   - weapon
   - enterShip
   - endingShip
+  - shield
   layers:
   - Default
   - TransparentFX

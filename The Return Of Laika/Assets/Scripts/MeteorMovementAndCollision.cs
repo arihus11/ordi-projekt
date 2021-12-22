@@ -6,6 +6,7 @@ public class MeteorMovementAndCollision : MonoBehaviour
 {
     public float speed = 3f;
     private float extraSpeed = 0.8f;
+    public int movementDirection;
     private int randomSpeed;
     // Start is called before the first frame update
     void Start()
@@ -16,14 +17,22 @@ public class MeteorMovementAndCollision : MonoBehaviour
     void Update()
     {
         Vector2 pos = transform.position;
-        pos.x += -speed / extraSpeed * Time.deltaTime;
-        pos.y += -speed / extraSpeed * Time.deltaTime;
+        if (movementDirection == 1)
+        {
+            pos.x += -speed / extraSpeed * Time.deltaTime;
+            pos.y += -speed / extraSpeed * Time.deltaTime;
+        }
+        else if (movementDirection == 0)
+        {
+            pos.x += speed / extraSpeed * Time.deltaTime;
+            pos.y += -speed / extraSpeed * Time.deltaTime;
+        }
         transform.position = pos;
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Laika")
+        if (col.gameObject.tag == "Laika" && ShieldCollide.collidedOnChild == false)
         {
             if (LaikaHealth.gameOver == false)
             {
