@@ -32,7 +32,12 @@ TagManager:
   - shield
   - rightShield
   - leftShield
+<<<<<<< Updated upstream
   - shipPart
+=======
+  - shower1
+  - shower2
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

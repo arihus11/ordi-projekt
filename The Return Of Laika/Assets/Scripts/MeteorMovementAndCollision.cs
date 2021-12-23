@@ -6,7 +6,7 @@ public class MeteorMovementAndCollision : MonoBehaviour
 {
     public float speed = 3f;
     private float extraSpeed = 0.8f;
-    public static int movementDirection;
+    public int movementDirection;
     private int randomSpeed;
     // Start is called before the first frame update
     void Start()
@@ -17,12 +17,12 @@ public class MeteorMovementAndCollision : MonoBehaviour
     void Update()
     {
         Vector2 pos = transform.position;
-        if (movementDirection == 1)
+        if (movementDirection == 0)
         {
             pos.x += -speed / extraSpeed * Time.deltaTime;
             pos.y += -speed / extraSpeed * Time.deltaTime;
         }
-        else if (movementDirection == 0)
+        else if (movementDirection == 1)
         {
             pos.x += speed / extraSpeed * Time.deltaTime;
             pos.y += -speed / extraSpeed * Time.deltaTime;
