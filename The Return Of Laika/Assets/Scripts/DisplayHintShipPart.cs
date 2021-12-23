@@ -16,4 +16,13 @@ public class DisplayHintShipPart : DisplayHint
 
         playAnimation(type);
     }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (isCollisionTag(other.gameObject.tag)
+            && this.gameObject.GetComponent<GrabShipPart>().shipPartGrabbed == null)
+        {
+            playAnimation(AnimationType.hide);
+        }
+    }
 }
