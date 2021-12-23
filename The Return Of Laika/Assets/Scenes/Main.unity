@@ -21500,7 +21500,7 @@ GameObject:
   - component: {fileID: 784898849}
   m_Layer: 0
   m_Name: Part2
-  m_TagString: ship
+  m_TagString: shipPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39681,7 +39681,7 @@ GameObject:
   - component: {fileID: 1489874118}
   m_Layer: 0
   m_Name: Part1
-  m_TagString: ship
+  m_TagString: shipPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47133,7 +47133,7 @@ GameObject:
   - component: {fileID: 1750342152}
   m_Layer: 0
   m_Name: Part4
-  m_TagString: ship
+  m_TagString: shipPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54370,7 +54370,7 @@ GameObject:
   - component: {fileID: 2049424869}
   m_Layer: 0
   m_Name: Part5
-  m_TagString: ship
+  m_TagString: shipPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54545,7 +54545,7 @@ GameObject:
   - component: {fileID: 2053561947}
   m_Layer: 0
   m_Name: Part3
-  m_TagString: ship
+  m_TagString: shipPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
