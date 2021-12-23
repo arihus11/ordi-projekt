@@ -23,8 +23,15 @@ public class ShieldCollide : MonoBehaviour
         {
             if (LaikaHealth.gameOver == false)
             {
-                collidedOnChild = true;
-                GameObject.Find("MeteorExplosionShield").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                //   collidedOnChild = true;
+                if (col.contacts[0].otherCollider.tag == "rightShield")
+                {
+                    GameObject.Find("MeteorExplosionShield").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                }
+                else if (col.contacts[0].otherCollider.tag == "leftShield")
+                {
+                    GameObject.Find("MeteorExplosionShield2").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                }
                 Invoke("changeState", 0.5f);
                 Destroy(col.gameObject);
 

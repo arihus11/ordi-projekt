@@ -6,7 +6,7 @@ public class MeteorMovementAndCollision : MonoBehaviour
 {
     public float speed = 3f;
     private float extraSpeed = 0.8f;
-    public int movementDirection;
+    public static int movementDirection;
     private int randomSpeed;
     // Start is called before the first frame update
     void Start()
@@ -32,16 +32,19 @@ public class MeteorMovementAndCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Laika" && ShieldCollide.collidedOnChild == false)
+        if (col.gameObject.tag == "Laika")
         {
             if (LaikaHealth.gameOver == false)
             {
-                Destroy(this.gameObject);
-                showWhenHurt();
-                GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
-                LaikaHealth.health--;
-                Debug.Log("LAIKA HEALTH: " + LaikaHealth.health.ToString());
-                //   Debug.Log("HIT LAIKA");
+                if (col.contacts[0].collider.tag == "Laika")
+                {
+                    Destroy(this.gameObject);
+                    showWhenHurt();
+                    GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                    LaikaHealth.health--;
+                    Debug.Log("LAIKA HEALTH: " + LaikaHealth.health.ToString());
+                    //   Debug.Log("HIT LAIKA");
+                }
             }
         }
     }

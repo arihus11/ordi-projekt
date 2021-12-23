@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &8928049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -387,7 +386,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &15512550
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -501,7 +499,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &16589080
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -615,7 +612,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &16679855
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -729,7 +725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &26439594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -869,7 +864,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &31161061
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -983,7 +977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &38384950
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1196,7 +1189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &42575590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1310,7 +1302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &49360769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1424,7 +1415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &51795456
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1682,7 +1672,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &61617809
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1796,7 +1785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &78799002
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1910,7 +1898,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &80172995
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2024,7 +2011,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &83643625
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2138,7 +2124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &84735874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2292,7 +2277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &90528279
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2506,7 +2490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &104058452
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2702,7 +2685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &106380228
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2895,7 +2877,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &109595648
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3009,7 +2990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &118245616
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3241,7 +3221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &132770237
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3422,7 +3401,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!1 &137828429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,7 +3447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &137828432
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3583,7 +3560,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &143415023
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3697,7 +3673,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &148765909
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3811,7 +3786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &156285302
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3925,7 +3899,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &178562435
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4039,7 +4012,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &178627280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4199,7 +4171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &181176339
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4313,7 +4284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &182782999
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4509,7 +4479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 0
 --- !u!58 &190859002
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4623,7 +4592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &191477157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4737,7 +4705,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &191543721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4933,7 +4900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &201986772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5178,7 +5144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &211699842
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5292,7 +5257,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &219163712
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5406,7 +5370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &221899848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5520,7 +5483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &222899209
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5634,7 +5596,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &224144017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5815,7 +5776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 1
 --- !u!1 &227093457
 GameObject:
   m_ObjectHideFlags: 0
@@ -5862,7 +5822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &227093460
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5976,7 +5935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &228772307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6090,7 +6048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &236011988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6204,7 +6161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &239819984
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6385,7 +6341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!1 &240001183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,7 +6454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!1 &245125702
 GameObject:
   m_ObjectHideFlags: 0
@@ -6546,7 +6500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &245125705
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6660,7 +6613,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &245838786
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6955,7 +6907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &255158069
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7069,7 +7020,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &256266830
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7302,7 +7252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &261871494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7416,7 +7365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &269000471
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7530,7 +7478,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &269214794
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8028,7 +7975,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &292228085
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8142,7 +8088,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &299659625
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8256,7 +8201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &303974355
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8370,7 +8314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &305549895
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8484,7 +8427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &306243649
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8598,7 +8540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &308289362
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8712,7 +8653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &312028900
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8826,7 +8766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &312707764
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8940,7 +8879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &315684603
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9054,7 +8992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &315959685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9168,7 +9105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &317701460
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9282,7 +9218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &318760068
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9453,7 +9388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &321686594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9603,7 +9537,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 0
 --- !u!58 &324437465
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9717,7 +9650,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &324592980
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9831,7 +9763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &337904629
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10025,7 +9956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &339168822
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10139,7 +10069,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &341223697
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10289,7 +10218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &344686512
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10403,7 +10331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &354900021
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10517,7 +10444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &358936766
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10688,7 +10614,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &362657904
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10802,7 +10727,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &371479067
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10983,7 +10907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!1 &376118914
 GameObject:
   m_ObjectHideFlags: 0
@@ -11030,7 +10953,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &376118917
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11211,7 +11133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!1 &386381764
 GameObject:
   m_ObjectHideFlags: 0
@@ -11337,7 +11258,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &387235225
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11483,7 +11403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &390026065
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11824,7 +11743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &397741953
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11938,7 +11856,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &399919159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12127,7 +12044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &402647737
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12241,7 +12157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &404434327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12355,7 +12270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &406098185
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12469,7 +12383,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &416759775
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12613,7 +12526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &427527934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12763,7 +12675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &441465352
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12877,7 +12788,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &447530183
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12991,7 +12901,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &448574653
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13222,7 +13131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &464116174
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13336,7 +13244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &476108028
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13532,7 +13439,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &481379153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13646,7 +13552,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &481768742
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13760,7 +13665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 1
 --- !u!58 &483604473
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14038,7 +13942,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &491730260
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14152,7 +14055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &494933916
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14266,7 +14168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 1
 --- !u!58 &505584349
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14530,7 +14431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &518320146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14644,7 +14544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &519790679
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14809,7 +14708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &529028767
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14974,7 +14872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &534454588
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15088,7 +14985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &534903934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15202,7 +15098,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &551869177
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15316,7 +15211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &554110333
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15515,7 +15409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &555690327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15629,7 +15522,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 0
 --- !u!58 &557472839
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15743,7 +15635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &559003735
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16041,7 +15932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &570196390
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16230,7 +16120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &581871601
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16344,7 +16233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &581927010
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16458,7 +16346,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &582634256
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16572,7 +16459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &584307106
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16844,7 +16730,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &589185884
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17037,7 +16922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 1
 --- !u!58 &593065386
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17151,7 +17035,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &593337287
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17265,7 +17148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &594136157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17379,7 +17261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &595654255
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17687,7 +17568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 0
 --- !u!58 &598947663
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17801,7 +17681,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &602379357
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17915,7 +17794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &614084752
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18029,7 +17907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &628486707
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18143,7 +18020,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &632251838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18257,7 +18133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &632690198
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18371,7 +18246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &639406953
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18485,7 +18359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &640669390
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18666,7 +18539,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!1 &646400158
 GameObject:
   m_ObjectHideFlags: 0
@@ -19000,7 +18872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &674402546
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19114,7 +18985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &680883065
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19302,7 +19172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &692836453
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19416,7 +19285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &699375326
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19663,7 +19531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &711545844
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19777,7 +19644,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &715141343
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19891,7 +19757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &718475652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20087,7 +19952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &721394626
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20494,7 +20358,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &739583019
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20608,7 +20471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &744680052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20722,7 +20584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &746478605
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20887,7 +20748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 0
 --- !u!58 &763575237
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21080,7 +20940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &766583626
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21194,7 +21053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &769146725
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21449,7 +21307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &776833394
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21630,7 +21487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 1
 --- !u!1 &784898846
 GameObject:
   m_ObjectHideFlags: 0
@@ -21939,6 +21795,7 @@ Transform:
   - {fileID: 1576179598}
   - {fileID: 1358593352}
   - {fileID: 1854641607}
+  - {fileID: 1980317842}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22332,7 +22189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &800666524
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22446,7 +22302,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &804051800
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22627,7 +22482,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!1 &812299456
 GameObject:
   m_ObjectHideFlags: 0
@@ -22674,7 +22528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &812299459
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22823,7 +22676,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &817369862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22937,7 +22789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &824191338
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23051,7 +22902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &825803524
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23165,7 +23015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &832934392
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23279,7 +23128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &845518827
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23393,7 +23241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &846274409
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23679,7 +23526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &868193268
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23793,7 +23639,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &872344273
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23989,7 +23834,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &878560092
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24185,7 +24029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &882057508
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24299,7 +24142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &889209292
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24542,7 +24384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 1
 --- !u!1 &907383882
 GameObject:
   m_ObjectHideFlags: 0
@@ -24589,7 +24430,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &907383885
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24703,7 +24543,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &910504597
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24817,7 +24656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &915120347
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24957,7 +24795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &921690153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25071,7 +24908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 0
 --- !u!58 &926742989
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25185,7 +25021,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &928299831
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25374,7 +25209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &930105789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25545,7 +25379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &943785550
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25659,7 +25492,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &957540175
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25773,7 +25605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 0
 --- !u!58 &958277583
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25887,7 +25718,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &961844537
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26053,7 +25883,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &968812960
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26167,7 +25996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &969750976
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26281,7 +26109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &974924178
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26395,7 +26222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &975303109
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26509,7 +26335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &979307213
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26883,7 +26708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &984022874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26997,7 +26821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &992521569
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27111,7 +26934,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &996995817
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27225,7 +27047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &998729084
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27533,7 +27354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1006014686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27797,7 +27617,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &1014848490
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27911,7 +27730,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1017604637
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28025,7 +27843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1020976565
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28139,7 +27956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1024763458
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28253,7 +28069,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &1026322487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28449,7 +28264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1044531911
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28563,7 +28377,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &1051951874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28677,7 +28490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1052056253
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28791,7 +28603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &1058900202
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28984,7 +28795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 0
 --- !u!58 &1075081813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29289,7 +29099,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &1088330931
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29403,7 +29212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1089217853
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29596,7 +29404,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &1097414691
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29710,7 +29517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &1105932590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30021,7 +29827,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &1110243732
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30135,7 +29940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &1111761632
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30316,7 +30120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!1 &1117918426
 GameObject:
   m_ObjectHideFlags: 0
@@ -30363,7 +30166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1117918429
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30477,7 +30279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &1122290306
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30591,7 +30392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &1122924755
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30705,7 +30505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1124776432
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30849,7 +30648,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1125660162
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30963,7 +30761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 1
 --- !u!58 &1127192843
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31077,7 +30874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &1128387642
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31191,7 +30987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &1128970267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31305,7 +31100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1139668780
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31550,7 +31344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1152415174
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31664,7 +31457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1153288263
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31778,7 +31570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1158397433
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31892,7 +31683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1160948799
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32006,7 +31796,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &1171045959
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32120,7 +31909,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &1179328677
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32410,7 +32198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1192500754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32524,7 +32311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1192621298
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32638,7 +32424,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1201495930
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32809,7 +32594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1214678910
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32923,7 +32707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1223875821
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33037,7 +32820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 1
 --- !u!58 &1225960742
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33151,7 +32933,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1240275513
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33367,7 +33148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &1245491702
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33543,7 +33323,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &1252991369
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33657,7 +33436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &1254292737
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33934,7 +33712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &1258210833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34139,7 +33916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1289020857
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34253,7 +34029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1294817313
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34367,7 +34142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1297677657
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34563,7 +34337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &1310860062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34677,7 +34450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &1312555840
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34944,7 +34716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1327000632
 Transform:
   m_ObjectHideFlags: 0
@@ -35007,7 +34779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1329699106
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35121,7 +34892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1329734903
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35235,7 +35005,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1336424811
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35464,7 +35233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1340494899
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35645,7 +35413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!1 &1345158834
 GameObject:
   m_ObjectHideFlags: 0
@@ -35774,7 +35541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 1
 --- !u!58 &1345278821
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35888,7 +35654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 0
 --- !u!58 &1349442988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36059,7 +35824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1353631665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36455,7 +36219,7 @@ GameObject:
   - component: {fileID: 1358593353}
   m_Layer: 0
   m_Name: ShieldPlaceRight
-  m_TagString: shield
+  m_TagString: rightShield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36873,7 +36637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!1 &1368642629
 GameObject:
   m_ObjectHideFlags: 0
@@ -36920,7 +36683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1368642632
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37034,7 +36796,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1375689981
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37205,7 +36966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1379234875
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37406,7 +37166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1392405504
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37546,7 +37305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &1397860038
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37660,7 +37418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1406268747
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37774,7 +37531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &1408019196
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37987,7 +37743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &1412139088
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38166,7 +37921,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1423992180
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38280,7 +38034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &1438909024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38697,7 +38450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &1451885972
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38811,7 +38563,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &1454210487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39044,7 +38795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!58 &1460544300
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39243,7 +38993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &1463010670
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39357,7 +39106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &1465240282
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39471,7 +39219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1467109904
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39684,7 +39431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &1481927918
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39855,7 +39601,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1487664661
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40083,7 +39828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1506605327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40364,7 +40108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &1513143508
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40478,7 +40221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &1514872150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40674,7 +40416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1519298177
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40788,7 +40529,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1519672513
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40902,7 +40642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1520045368
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41016,7 +40755,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &1520535028
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41130,7 +40868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &1520925574
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41244,7 +40981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &1522471339
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41466,7 +41202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1530927233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41580,7 +41315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &1534538620
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41694,7 +41428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 0
 --- !u!58 &1536281043
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41808,7 +41541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1547476027
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41922,7 +41654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 1
 --- !u!58 &1549261198
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42036,7 +41767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &1549424604
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42150,7 +41880,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1558172401
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42352,7 +42081,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 0
 --- !u!58 &1561046910
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42466,7 +42194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1569240556
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42580,7 +42307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1573617980
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42662,7 +42388,7 @@ GameObject:
   - component: {fileID: 1576179600}
   m_Layer: 0
   m_Name: ShieldPlaceLeft
-  m_TagString: shield
+  m_TagString: leftShield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42935,7 +42661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 0
 --- !u!58 &1580239196
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43049,7 +42774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 0
 --- !u!58 &1581866226
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43220,7 +42944,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 1
 --- !u!58 &1588202727
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43509,7 +43232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1600366443
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43623,7 +43345,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1601880213
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43813,7 +43534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1618640370
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43927,7 +43647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1621154531
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44041,7 +43760,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1622623642
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44155,7 +43873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1627576868
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44269,7 +43986,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1631904335
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44482,7 +44198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1636122570
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44596,7 +44311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1638527430
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44710,7 +44424,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1643315470
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44898,7 +44611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &1654572307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45079,7 +44791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!1 &1661141906
 GameObject:
   m_ObjectHideFlags: 0
@@ -45178,7 +44889,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.4
-  movementDirection: 1
 --- !u!58 &1661901985
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45292,7 +45002,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1662356579
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45406,7 +45115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1671197035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45755,7 +45463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1685301240
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45968,7 +45675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1688820750
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46281,7 +45987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1696832379
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46494,7 +46199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1720565411
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46608,7 +46312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1725186912
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46722,7 +46425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1734563054
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46910,7 +46612,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &1736371370
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47024,7 +46725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &1741047788
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47240,7 +46940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movementDirection: 0
 --- !u!58 &1743638003
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47354,7 +47053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &1743977567
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47530,7 +47228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 1
 --- !u!58 &1755556999
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47780,7 +47477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &1760187968
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47951,7 +47647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1765976938
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48065,7 +47760,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1768575497
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48179,7 +47873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1772394079
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48293,7 +47986,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1778073528
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48659,7 +48351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1795126598
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48773,7 +48464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &1799196072
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48887,7 +48577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1800187982
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49001,7 +48690,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1815900990
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49115,7 +48803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &1826462487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49229,7 +48916,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &1827295276
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49343,7 +49029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1833186904
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49457,7 +49142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1848162264
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49571,7 +49255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1853525432
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49685,7 +49368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1854277932
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49766,7 +49448,7 @@ GameObject:
   - component: {fileID: 1854641608}
   m_Layer: 0
   m_Name: MeteorExplosionShield
-  m_TagString: Untagged
+  m_TagString: rightShield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49779,7 +49461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854641606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.16, y: 1.6, z: 0}
+  m_LocalPosition: {x: 1.23, y: 1.9, z: 0}
   m_LocalScale: {x: 3.0524428, y: 3.0524428, z: 3.0524428}
   m_Children: []
   m_Father: {fileID: 797192436}
@@ -49901,7 +49583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &1857787993
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50015,7 +49696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1859924962
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50129,7 +49809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1865763674
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50433,7 +50112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.7
-  movementDirection: 1
 --- !u!58 &1880364921
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50547,7 +50225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &1882104350
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50661,7 +50338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1885901584
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50809,7 +50485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 0
 --- !u!58 &1887482193
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51047,7 +50722,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 1
 --- !u!1 &1896113213
 GameObject:
   m_ObjectHideFlags: 0
@@ -51335,7 +51009,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
-  movementDirection: 0
 --- !u!58 &1916049958
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51449,7 +51122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1925037999
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51563,7 +51235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!58 &1933872114
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51677,7 +51348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 1
 --- !u!58 &1934045372
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51791,7 +51461,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &1934847948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51988,7 +51657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1959492994
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52153,7 +51821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 0
 --- !u!58 &1966601461
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52334,7 +52001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!1 &1970070695
 GameObject:
   m_ObjectHideFlags: 0
@@ -52381,7 +52047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1970070698
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52495,7 +52160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.1
-  movementDirection: 1
 --- !u!58 &1978125686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52609,7 +52273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  movementDirection: 0
 --- !u!58 &1978361288
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52723,7 +52386,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &1980097035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52786,6 +52448,108 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4, y: 4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1980317841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980317842}
+  - component: {fileID: 1980317844}
+  - component: {fileID: 1980317843}
+  m_Layer: 0
+  m_Name: MeteorExplosionShield2
+  m_TagString: leftShield
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1980317842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980317841}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.04, y: 1.97, z: 0}
+  m_LocalScale: {x: 3.0524428, y: 3.0524428, z: 3.0524428}
+  m_Children: []
+  m_Father: {fileID: 797192436}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1980317843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980317841}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c409f78f8baf9414da94c1d1ff483a5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1980317844
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980317841}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 16
+  m_Sprite: {fileID: 21300000, guid: 5ab62fb07ae3b9140be86d6bfc87001c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -53010,7 +52774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 1
 --- !u!58 &1995302407
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53124,7 +52887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.8
-  movementDirection: 0
 --- !u!58 &1999834541
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53238,7 +53000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &2003482244
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53533,7 +53294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 0
 --- !u!58 &2012208998
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53647,7 +53407,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &2016573231
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53881,7 +53640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &2017904624
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53995,7 +53753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 0
 --- !u!58 &2019240275
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54109,7 +53866,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.8
-  movementDirection: 0
 --- !u!58 &2021847225
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54223,7 +53979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &2029983031
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54337,7 +54092,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &2035823848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54536,7 +54290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &2043395085
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54712,7 +54465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 0
 --- !u!58 &2050997624
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54888,7 +54640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.9
-  movementDirection: 1
 --- !u!58 &2059120409
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55069,7 +54820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.9
-  movementDirection: 1
 --- !u!1 &2064266489
 GameObject:
   m_ObjectHideFlags: 0
@@ -55116,7 +54866,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &2064266492
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55312,7 +55061,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.5
-  movementDirection: 0
 --- !u!58 &2073758971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55553,7 +55301,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.6
-  movementDirection: 1
 --- !u!58 &2085389399
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56119,7 +55866,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &2114783996
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56485,7 +56231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5.2
-  movementDirection: 1
 --- !u!58 &2127909118
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56599,7 +56344,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.1
-  movementDirection: 1
 --- !u!58 &2135530464
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57007,7 +56751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4.3
-  movementDirection: 1
 --- !u!58 &2144464529
 CircleCollider2D:
   m_ObjectHideFlags: 0

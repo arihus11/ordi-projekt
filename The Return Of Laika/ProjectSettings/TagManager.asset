@@ -30,6 +30,8 @@ TagManager:
   - enterShip
   - endingShip
   - shield
+  - rightShield
+  - leftShield
   layers:
   - Default
   - TransparentFX
