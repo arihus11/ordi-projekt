@@ -60,6 +60,7 @@ public class GrabShipPart : MonoBehaviour
         handleRelease();
 
         shipPartGrabbed = shipPartInRange;
+        shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         shipPartInRange = null;
 
         attachShipPart();
@@ -70,6 +71,7 @@ public class GrabShipPart : MonoBehaviour
         if (shipPartGrabbed != null && shipPartGrabbed != shipPartInRange)
         {
             shipPartGrabbed.transform.SetParent(playerParentTransform);
+            shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = true;
             shipPartGrabbed = null;
         }
     }
