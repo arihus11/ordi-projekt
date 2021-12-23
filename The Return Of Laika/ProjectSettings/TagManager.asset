@@ -32,6 +32,7 @@ TagManager:
   - shield
   - rightShield
   - leftShield
+  - shipPart
   layers:
   - Default
   - TransparentFX

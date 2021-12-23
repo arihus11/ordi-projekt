@@ -33,7 +33,7 @@ public class AssembleShipPart : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Methods.isShip(other.gameObject.tag))
+        if (Methods.isShipPart(other.gameObject.tag))
         {
             collidedShipObject = other.gameObject;
         }
@@ -41,7 +41,7 @@ public class AssembleShipPart : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Methods.isShip(other.gameObject.tag))
+        if (Methods.isShipPart(other.gameObject.tag))
         {
             collidedShipObject = other.gameObject;
         }
@@ -49,7 +49,7 @@ public class AssembleShipPart : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (Methods.isShip(other.gameObject.tag))
+        if (Methods.isShipPart(other.gameObject.tag))
         {
             collidedShipObject = null;
         }
