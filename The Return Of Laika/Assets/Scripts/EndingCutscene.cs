@@ -23,7 +23,7 @@ public class EndingCutscene : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (AssembleShipPart.numberOfPartsAssambled == 5)
+        if (AssembleShipPart.numberOfPartsAssambled == 1)
         {
             if (doOnce == false)
             {

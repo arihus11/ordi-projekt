@@ -28,7 +28,7 @@ public class LaikaHealth : MonoBehaviour
         doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gameOver = false;
-
+        setHealth(5);
         healthSystem = healthSystemCanvas.transform;
     }
 

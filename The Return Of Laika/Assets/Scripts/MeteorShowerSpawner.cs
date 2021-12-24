@@ -45,6 +45,7 @@ public class MeteorShowerSpawner : MonoBehaviour
     void SpawnObject()
     {
         time = 0;
+        GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         if ((randomShowerNumber % 2) == 0)
         {
             meteorShowerActive = true;

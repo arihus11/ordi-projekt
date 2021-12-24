@@ -12,9 +12,11 @@ public class GrabShipPart : MonoBehaviour
 
     private Transform playerTransform;
     private Transform playerParentTransform;
+    public static bool holdingPart;
 
     void Start()
     {
+        holdingPart = false;
         playerTransform = this.gameObject.transform;
         playerParentTransform = playerTransform.parent;
 
@@ -62,6 +64,7 @@ public class GrabShipPart : MonoBehaviour
         shipPartGrabbed = shipPartInRange;
         shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         SoundManagerScript.PlaySound("grab");
+        holdingPart = true;
         shipPartInRange = null;
 
         attachShipPart();
@@ -73,6 +76,7 @@ public class GrabShipPart : MonoBehaviour
         {
             shipPartGrabbed.transform.SetParent(playerParentTransform);
             shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+            holdingPart = false;
             SoundManagerScript.PlaySound("grab");
             shipPartGrabbed = null;
         }

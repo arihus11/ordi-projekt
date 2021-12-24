@@ -61,6 +61,7 @@ public class AssembleShipPart : MonoBehaviour
 
         assembledShipPartListScript.AddPart(Methods.getShipPartID(shipPartIDScript.shipPartGrabbed));
         numberOfPartsAssambled++;
+        GrabShipPart.holdingPart = false;
         Debug.Log("SHIP ASSEMBLY PROGRESS: "
             + (assembledShipPartListScript.HasAssembledFullShip()
             ? "Ship fully assembled."

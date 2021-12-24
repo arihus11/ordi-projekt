@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class EnterTheShip : MonoBehaviour
 {
     public static bool insideEnteringRange;
+    Vector2 placeToFlyDirection;
     public Sprite emptySpite;
-    private Rigidbody2D rb;
+    private Rigidbody2D rb, rbShip;
+    public float placeToFlyForce;
+    float timeStamp;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class EnterTheShip : MonoBehaviour
         {
             if (insideEnteringRange == true)
             {
+                rbShip = GameObject.Find("Ship").gameObject.GetComponent<Rigidbody2D>();
                 GameObject.Find("Main Camera").gameObject.GetComponent<CameraFollowPlayerScript>().player = GameObject.FindGameObjectWithTag("endingShip").gameObject.transform;
                 disablePlayerControllsOnEnter();
                 this.gameObject.transform.position = GameObject.FindGameObjectWithTag("endingShip").gameObject.transform.position;
@@ -77,7 +81,11 @@ public class EnterTheShip : MonoBehaviour
 
     public void shipFlyAway()
     {
-        GameObject.Find("EndSceneContainer").gameObject.GetComponent<Animator>().Play("ShipFlyAway2");
+        //   GameObject.Find("EndSceneContainer").gameObject.GetComponent<Animator>().Play("ShipFlyAway2");
+        timeStamp = Time.time;
+        placeToFlyDirection = -(GameObject.Find("Ship").gameObject.transform.position - (GameObject.Find("PlaceForShipToFly").gameObject.transform.position)).normalized;
+        rbShip.constraints = RigidbodyConstraints2D.None;
+        rbShip.velocity = new Vector2(placeToFlyDirection.x, placeToFlyDirection.y) * placeToFlyForce * (Time.time / timeStamp);
         Invoke("endGamePanel", 3.5f);
     }
 

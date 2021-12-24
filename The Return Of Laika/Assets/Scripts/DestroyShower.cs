@@ -21,6 +21,7 @@ public class DestroyShower : MonoBehaviour
 
     public void destroyThisShower()
     {
+        GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         MeteorShowerSpawner.meteorShowerActive = false;
         Destroy(this.gameObject);
     }

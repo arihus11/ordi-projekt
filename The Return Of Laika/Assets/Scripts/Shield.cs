@@ -16,7 +16,7 @@ public class Shield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("shower1") != null || GameObject.FindGameObjectWithTag("shower2") != null)
+        if ((GameObject.FindGameObjectWithTag("shower1") != null || GameObject.FindGameObjectWithTag("shower2") != null) && GrabShipPart.holdingPart == true)
         {
             if (GameObject.Find("ShieldPlaceLeft") != null || GameObject.Find("ShieldPlaceRight") != null)
             {
@@ -74,7 +74,21 @@ public class Shield : MonoBehaviour
 
 
         }
-        else if (GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null)
+        else if ((GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null) && GrabShipPart.holdingPart == true)
+        {
+            GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
+            GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
+            this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+            this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        }
+        else if ((GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null) && GrabShipPart.holdingPart == false)
+        {
+            GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
+            GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
+            this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+            this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        }
+        else if (!(GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null) && GrabShipPart.holdingPart == false)
         {
             GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
