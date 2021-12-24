@@ -61,6 +61,7 @@ public class GrabShipPart : MonoBehaviour
 
         shipPartGrabbed = shipPartInRange;
         shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        SoundManagerScript.PlaySound("grab");
         shipPartInRange = null;
 
         attachShipPart();
@@ -72,6 +73,7 @@ public class GrabShipPart : MonoBehaviour
         {
             shipPartGrabbed.transform.SetParent(playerParentTransform);
             shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+            SoundManagerScript.PlaySound("grab");
             shipPartGrabbed = null;
         }
     }

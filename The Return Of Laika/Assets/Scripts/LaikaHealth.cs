@@ -13,7 +13,6 @@ public class LaikaHealth : MonoBehaviour
     Vector2 startDirection;
     float timeStamp;
     private bool doOnce, doOnce2;
-    private AudioSource damageSound;
 
     [Header("Health Display")]
     public GameObject healthSystemCanvas;
@@ -29,7 +28,6 @@ public class LaikaHealth : MonoBehaviour
         doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gameOver = false;
-        damageSound = GetComponent<AudioSource>();
 
         healthSystem = healthSystemCanvas.transform;
     }
@@ -55,7 +53,7 @@ public class LaikaHealth : MonoBehaviour
             {
                 if (isWaiting == false)
                 {
-                    damageSound.Play();
+                    SoundManagerScript.PlaySound("damage");
                     setHealth(health - 1);
                     showWhenHurt();
                     Debug.Log("LAIKA HEALTH: " + health.ToString());

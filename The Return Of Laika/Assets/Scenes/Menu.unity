@@ -1532,9 +1532,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1416651060}
-        m_TargetAssemblyTypeName: MenuBTNs, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayButtonSound, Assembly-CSharp
+        m_MethodName: startGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

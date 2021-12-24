@@ -27,6 +27,7 @@ public class AssembleShipPart : MonoBehaviour
             && Methods.getShipPartID(shipPartIDScript.shipPartGrabbed) == Methods.getShipPartID(collidedShipObject)
             && Input.GetKeyDown(KeyCode.X))
         {
+            SoundManagerScript.PlaySound("correct_drop");
             handleAssembly();
         }
     }
