@@ -71,7 +71,7 @@ public class EnterTheShip : MonoBehaviour
         this.gameObject.GetComponent<LaikaMovement>().enabled = false;
         this.gameObject.GetComponent<Animator>().enabled = false;
         GameObject.FindGameObjectWithTag("endingShip").gameObject.GetComponent<Animator>().enabled = false;
-        GameObject.FindGameObjectWithTag("laikaSprite").gameObject.GetComponent<SpriteRenderer>().sprite = emptySpite;
+        GameObject.FindGameObjectWithTag("laikaSprite").gameObject.GetComponent<SpriteRenderer>().enabled = false;
         //rb.enabled = false;
     }
 

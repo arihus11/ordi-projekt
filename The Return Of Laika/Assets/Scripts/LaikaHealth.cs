@@ -37,6 +37,7 @@ public class LaikaHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        updateHealthDisplay();
         if (health == 0)
         {
             gameOver = true;
@@ -154,7 +155,6 @@ public class LaikaHealth : MonoBehaviour
     {
         health = newHealth;
 
-        updateHealthDisplay();
     }
 
     public void updateHealthDisplay()

@@ -21,6 +21,7 @@ public class DestroyShower : MonoBehaviour
 
     public void destroyThisShower()
     {
+        MeteorShowerSpawner.meteorShowerActive = false;
         Destroy(this.gameObject);
     }
 }
