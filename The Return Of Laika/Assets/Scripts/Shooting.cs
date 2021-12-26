@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     private bool doOnce;
+    public GameObject bulletPrefab;
     public static bool firstShooting;
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,9 @@ public class Shooting : MonoBehaviour
                         firstShooting = true;
                     }
                     Debug.Log("SHOT!");
+                    Instantiate(bulletPrefab, this.gameObject.transform.position, bulletPrefab.transform.rotation);
                     doOnce = true;
-                    Invoke("enableSwitch", 0.5f);
+                    Invoke("enableSwitch", 0.1f);
                 }
             }
         }

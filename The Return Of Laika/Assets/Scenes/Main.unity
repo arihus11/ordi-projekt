@@ -5986,7 +5986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptySpite: {fileID: 21300000, guid: 5db1a3d4333223d44a92f6bd8fc22681, type: 3}
-  placeToFlyForce: 2.5
+  placeToFlyForce: 2.2
 --- !u!114 &797192446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6066,6 +6066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb95d7b57026c54db7f113df473bcd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1956319399844938344, guid: 0fb74e5fde17e5c49bac74f66bfadaac, type: 3}
 --- !u!114 &797192453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7677,7 +7678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1053665891
 Transform:
   m_ObjectHideFlags: 0
@@ -8704,7 +8705,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213947052}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6887ec3729b0c8f459cf8dd7f623a55c, type: 3}
