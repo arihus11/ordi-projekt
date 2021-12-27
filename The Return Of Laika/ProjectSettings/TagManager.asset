@@ -35,6 +35,13 @@ TagManager:
   - shower1
   - shower2
   - machine
+  - basicplanet1
+  - basicplanet2
+  - basicplanet3
+  - basicplanet4
+  - basicplanet5
+  - basicplanet6
+  - blackHoleTriggers
   layers:
   - Default
   - TransparentFX
@@ -46,7 +53,7 @@ TagManager:
   - LaikaLayer
   - PowerUpLayer
   - BasicPlanetLayer
-  - 
+  - BlackHoleLayer
   - 
   - 
   - 

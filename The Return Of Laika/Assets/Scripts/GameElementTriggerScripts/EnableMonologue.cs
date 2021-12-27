@@ -6,10 +6,12 @@ public class EnableMonologue : MonoBehaviour
 {
     public int numberOfChildToEnable;
     public float enableWalkingTime;
+    public GameObject[] otherHoles;
+    public static bool destroyHoleTriggers;
     // Start is called before the first frame update
     void Start()
     {
-
+        destroyHoleTriggers = false;
     }
 
     // Update is called once per frame
@@ -37,5 +39,11 @@ public class EnableMonologue : MonoBehaviour
     public void enableMovementAfterTalking()
     {
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
+        Invoke("destoryThisBox", 0.5f);
+    }
+
+    public void destoryThisBox()
+    {
+        Destroy(this.gameObject);
     }
 }

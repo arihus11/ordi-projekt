@@ -18,7 +18,7 @@ public class BasicPlanetPush3 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if (BasicPlanetRange.insidePlanetRange == true)
+            if (BasicPlanetRange.insidePlanetRange3 == true)
             {
                 if (BasicPlanetDirection.possiblePush == "up")
                 {
@@ -66,12 +66,13 @@ public class BasicPlanetPush3 : MonoBehaviour
 
     public void freezeConstraints()
     {
-        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
     }
 
     public void unfreezeConstraints()
     {
         rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
 
