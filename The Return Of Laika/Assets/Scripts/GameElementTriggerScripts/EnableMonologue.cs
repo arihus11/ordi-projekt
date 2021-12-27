@@ -6,12 +6,13 @@ public class EnableMonologue : MonoBehaviour
 {
     public int numberOfChildToEnable;
     public float enableWalkingTime;
-    public GameObject[] otherHoles;
-    public static bool destroyHoleTriggers;
+    public static bool destroyHoleTriggers, destroyFireballTriggers, destroyBasicPlanetTriggers;
     // Start is called before the first frame update
     void Start()
     {
         destroyHoleTriggers = false;
+        destroyFireballTriggers = false;
+        destroyBasicPlanetTriggers = false;
     }
 
     // Update is called once per frame
