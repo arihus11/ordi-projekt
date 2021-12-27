@@ -13,7 +13,7 @@ public class EnableBeginnerPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invoke("disableBeginnerPanel", 2f);
+        Invoke("disableBeginnerPanel", 3.5f);
     }
 
     public void disableBeginnerPanel()
