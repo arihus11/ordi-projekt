@@ -36,6 +36,7 @@ public class LaikaMovement : MonoBehaviour
         setSprite();
         if (!(Input.GetKey(KeyCode.Space)))
         {
+            JetpackSoundManagerScript.StopJetpackSound();
             if (LaikaHealth.gameOver == false)
             {
                 anim.SetBool("isGoing", false);
@@ -115,6 +116,7 @@ public class LaikaMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
+            JetpackSoundManagerScript.PlayJetpackSound();
             GameObject.Find("ThrustMessageContainer").gameObject.GetComponent<Animator>().Play("ThrustBase");
             anim.SetBool("isGoing", true);
             return moving;

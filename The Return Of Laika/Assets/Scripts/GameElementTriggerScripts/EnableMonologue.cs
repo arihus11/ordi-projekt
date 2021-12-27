@@ -7,6 +7,7 @@ public class EnableMonologue : MonoBehaviour
     public int numberOfChildToEnable;
     public float enableWalkingTime;
     public static bool destroyHoleTriggers, destroyFireballTriggers, destroyBasicPlanetTriggers;
+    public Sprite emptySprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,9 @@ public class EnableMonologue : MonoBehaviour
     public void disableMovementWhileTalking()
     {
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = false;
+        GameObject.FindGameObjectWithTag("laikaSprite").GetComponent<SpriteRenderer>().sprite = emptySprite;
+        JetpackSoundManagerScript.StopJetpackSound();
+
     }
 
     public void enableMovementAfterTalking()

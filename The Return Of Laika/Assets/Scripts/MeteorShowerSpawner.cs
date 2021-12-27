@@ -44,6 +44,7 @@ public class MeteorShowerSpawner : MonoBehaviour
     //Spawns the object and resets the time
     void SpawnObject()
     {
+        SoundManagerScript.PlaySound("alert_meteor_shower");
         time = 0;
         GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         if ((randomShowerNumber % 2) == 0)

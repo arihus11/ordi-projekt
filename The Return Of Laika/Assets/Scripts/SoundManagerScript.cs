@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip button_switch, button_press, gameover, start, damage, jetpack, grab, correct_drop, alert_meteor_shower, life_up;
+    public static AudioClip button_switch, button_press, gameover, start, damage, jetpack, grab, correct_drop, alert_meteor_shower, life_up, shoot;
 	static AudioSource audioSrc;
 
 	// Use this for initialization
@@ -20,6 +20,7 @@ public class SoundManagerScript : MonoBehaviour
         correct_drop = Resources.Load<AudioClip> ("correct_drop");
         alert_meteor_shower = Resources.Load<AudioClip> ("alert_meteor_shower");
         life_up = Resources.Load<AudioClip> ("life_up");
+		shoot = Resources.Load<AudioClip> ("shoot");
 
 		audioSrc = GetComponent<AudioSource> ();
 
@@ -65,7 +66,14 @@ public class SoundManagerScript : MonoBehaviour
 		case "life_up":
 			audioSrc.PlayOneShot (life_up);
 			break;
+		case "shoot":
+			audioSrc.PlayOneShot (shoot);
+			break;
 		}
 	}
-    
+
+	public static void StopSound()
+    {
+		audioSrc.Stop();
+    }	
 }

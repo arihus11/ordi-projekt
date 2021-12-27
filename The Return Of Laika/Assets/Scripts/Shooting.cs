@@ -30,6 +30,7 @@ public class Shooting : MonoBehaviour
                         firstShooting = true;
                     }
                     Debug.Log("SHOT!");
+                    SoundManagerScript.PlaySound("shoot");
                     Instantiate(bulletPrefab, this.gameObject.transform.position, bulletPrefab.transform.rotation);
                     doOnce = true;
                     Invoke("enableSwitch", 0.1f);
