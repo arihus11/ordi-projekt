@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 39062002}
   - component: {fileID: 39062004}
   - component: {fileID: 39062003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1951,7 @@ GameObject:
   - component: {fileID: 246048517}
   - component: {fileID: 246048519}
   - component: {fileID: 246048518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3863,8 +3863,8 @@ GameObject:
   m_Component:
   - component: {fileID: 397480403}
   - component: {fileID: 397480406}
-  - component: {fileID: 397480405}
   - component: {fileID: 397480404}
+  - component: {fileID: 397480405}
   m_Layer: 0
   m_Name: BasicPlanet5
   m_TagString: basicPlanet
@@ -3921,7 +3921,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 397480402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c99195563925a4eab92c32ad9fd111, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ebf8a5792bf5b542b87bcd22e2f2bc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -5015,7 +5015,7 @@ GameObject:
   - component: {fileID: 506528821}
   - component: {fileID: 506528823}
   - component: {fileID: 506528822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6530,7 +6530,7 @@ GameObject:
   - component: {fileID: 664560245}
   - component: {fileID: 664560247}
   - component: {fileID: 664560246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PowerUp4
   m_TagString: powerUp
   m_Icon: {fileID: 0}
@@ -7960,7 +7960,7 @@ GameObject:
   - component: {fileID: 789298451}
   - component: {fileID: 789298453}
   - component: {fileID: 789298452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9689,7 +9689,7 @@ GameObject:
   - component: {fileID: 981664900}
   - component: {fileID: 981664902}
   - component: {fileID: 981664901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10113,7 +10113,7 @@ GameObject:
   - component: {fileID: 1006714902}
   - component: {fileID: 1006714904}
   - component: {fileID: 1006714903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PowerUp3
   m_TagString: powerUp
   m_Icon: {fileID: 0}
@@ -11100,9 +11100,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1109707307}
+  - component: {fileID: 1109707308}
   m_Layer: 0
   m_Name: ThrustPower
-  m_TagString: Untagged
+  m_TagString: machine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11122,6 +11123,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1109707308
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109707306}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03, y: -0.06}
+  serializedVersion: 2
+  m_Radius: 0.96
 --- !u!1 &1125513841
 GameObject:
   m_ObjectHideFlags: 0
@@ -12073,8 +12090,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1257277470}
   - component: {fileID: 1257277473}
-  - component: {fileID: 1257277472}
   - component: {fileID: 1257277471}
+  - component: {fileID: 1257277472}
   m_Layer: 0
   m_Name: BasicPlanet4
   m_TagString: basicPlanet
@@ -12131,7 +12148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1257277469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c99195563925a4eab92c32ad9fd111, type: 3}
+  m_Script: {fileID: 11500000, guid: 720e76d63a5137c48828c5031c0516f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -13988,7 +14005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437447910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9043331, y: -2.92, z: 30.461962}
+  m_LocalPosition: {x: -1.9043331, y: -1.29, z: 30.461962}
   m_LocalScale: {x: 110.62501, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 87248885}
@@ -14753,8 +14770,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1510081428}
   - component: {fileID: 1510081431}
-  - component: {fileID: 1510081430}
   - component: {fileID: 1510081429}
+  - component: {fileID: 1510081430}
   m_Layer: 0
   m_Name: BasicPlanet6
   m_TagString: basicPlanet
@@ -14811,7 +14828,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1510081427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c99195563925a4eab92c32ad9fd111, type: 3}
+  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -15230,8 +15247,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1560145780}
   - component: {fileID: 1560145778}
-  - component: {fileID: 1560145779}
   - component: {fileID: 1560145781}
+  - component: {fileID: 1560145779}
   m_Layer: 0
   m_Name: BasicPlanet
   m_TagString: basicPlanet
@@ -15264,7 +15281,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1560145777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c99195563925a4eab92c32ad9fd111, type: 3}
+  m_Script: {fileID: 11500000, guid: ab1a7cd07c703654cbf08dcce36402fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -15859,8 +15876,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1589866064}
   - component: {fileID: 1589866067}
-  - component: {fileID: 1589866066}
   - component: {fileID: 1589866065}
+  - component: {fileID: 1589866066}
   m_Layer: 0
   m_Name: BasicPlanet2
   m_TagString: basicPlanet
@@ -15917,7 +15934,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589866063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c99195563925a4eab92c32ad9fd111, type: 3}
+  m_Script: {fileID: 11500000, guid: 227130b107630cc4cb0d61173e91c8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -16083,7 +16100,7 @@ GameObject:
   - component: {fileID: 1634810546}
   - component: {fileID: 1634810548}
   - component: {fileID: 1634810547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16968,7 +16985,7 @@ GameObject:
   - component: {fileID: 1707300948}
   - component: {fileID: 1707300947}
   - component: {fileID: 1707300946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PowerUp
   m_TagString: powerUp
   m_Icon: {fileID: 0}
@@ -17717,7 +17734,7 @@ GameObject:
   - component: {fileID: 1780025025}
   - component: {fileID: 1780025027}
   - component: {fileID: 1780025026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PowerUp5
   m_TagString: powerUp
   m_Icon: {fileID: 0}
@@ -18364,8 +18381,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1866864511}
   - component: {fileID: 1866864514}
-  - component: {fileID: 1866864513}
   - component: {fileID: 1866864512}
+  - component: {fileID: 1866864513}
   m_Layer: 0
   m_Name: BasicPlanet3
   m_TagString: basicPlanet
@@ -18422,7 +18439,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866864510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c99195563925a4eab92c32ad9fd111, type: 3}
+  m_Script: {fileID: 11500000, guid: d211bb31685c5eb4ea074783cb2e0678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -19270,7 +19287,7 @@ GameObject:
   - component: {fileID: 1992630038}
   - component: {fileID: 1992630040}
   - component: {fileID: 1992630039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PowerUp6
   m_TagString: powerUp
   m_Icon: {fileID: 0}
@@ -20025,6 +20042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072948203}
   - component: {fileID: 2072948204}
+  - component: {fileID: 2072948205}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -20097,6 +20115,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &2072948205
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072948202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7, y: -0.17999999}
+      - {x: 0.65999997, y: -0.12}
+      - {x: 0.31, y: 0.22}
+      - {x: 0.13, y: 0.35999998}
+      - {x: 0.03, y: 0.44}
+      - {x: -0.03, y: 0.44}
+      - {x: -0.38, y: 0.14}
+      - {x: -0.59999996, y: -0.07}
+      - {x: -0.68, y: -0.19999999}
+      - {x: -0.68, y: -0.31}
+      - {x: -0.57, y: -0.42999998}
+      - {x: -0.39999998, y: -0.51}
+      - {x: -0.25, y: -0.57}
+      - {x: 0.21, y: -0.57}
+      - {x: 0.26999998, y: -0.56}
+      - {x: 0.57, y: -0.47}
+      - {x: 0.7, y: -0.32}
 --- !u!1 &2074467736
 GameObject:
   m_ObjectHideFlags: 0
@@ -20577,7 +20637,7 @@ GameObject:
   - component: {fileID: 2114744878}
   - component: {fileID: 2114744880}
   - component: {fileID: 2114744879}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PowerUp2
   m_TagString: powerUp
   m_Icon: {fileID: 0}

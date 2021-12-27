@@ -34,6 +34,7 @@ TagManager:
   - leftShield
   - shower1
   - shower2
+  - machine
   layers:
   - Default
   - TransparentFX
@@ -43,8 +44,8 @@ TagManager:
   - UI
   - ShipLayer
   - LaikaLayer
-  - 
-  - 
+  - PowerUpLayer
+  - BasicPlanetLayer
   - 
   - 
   - 

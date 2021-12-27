@@ -115,6 +115,7 @@ public class LaikaMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
+            GameObject.Find("ThrustMessageContainer").gameObject.GetComponent<Animator>().Play("ThrustBase");
             anim.SetBool("isGoing", true);
             return moving;
         }
