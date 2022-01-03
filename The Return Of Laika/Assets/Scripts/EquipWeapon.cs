@@ -20,6 +20,7 @@ public class EquipWeapon : MonoBehaviour
         {
             if (weaponInRange == true)
             {
+                SoundManagerScript.PlaySound("grab");
                 Destroy(GameObject.FindGameObjectWithTag("weapon").gameObject);
                 weaponEquiped = true;
                 GameObject.Find("ShootMessageContainer").gameObject.GetComponent<Animator>().Play("ShootMessageDisplay");

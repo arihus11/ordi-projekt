@@ -21,6 +21,7 @@ public class PickupThrustPower : MonoBehaviour
         {
             if (machineInRange == true)
             {
+                SoundManagerScript.PlaySound("grab");
                 Destroy(GameObject.FindGameObjectWithTag("machine").gameObject);
                 machineEquiped = true;
                 GameObject.Find("ThrustMessageContainer").gameObject.GetComponent<Animator>().Play("ThrustDisplayMessage");
