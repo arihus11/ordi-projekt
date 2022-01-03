@@ -43,6 +43,7 @@ TagManager:
   - basicplanet6
   - blackHoleTriggers
   - pressKeyToSkip
+  - grabTrigger
   layers:
   - Default
   - TransparentFX
