@@ -42,6 +42,7 @@ TagManager:
   - basicplanet5
   - basicplanet6
   - blackHoleTriggers
+  - pressKeyToSkip
   layers:
   - Default
   - TransparentFX

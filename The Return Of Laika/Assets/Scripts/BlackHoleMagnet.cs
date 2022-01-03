@@ -35,6 +35,7 @@ public class BlackHoleMagnet : MonoBehaviour
     {
         if (col.gameObject.tag == "blackHole")
         {
+            SoundManagerScript.PlaySound("suck");
             hole = col.gameObject.transform.position;
             timeStamp = Time.time;
             flyToHole = true;
@@ -42,6 +43,8 @@ public class BlackHoleMagnet : MonoBehaviour
         }
         if (col.gameObject.tag == "middleOfBlackHole")
         {
+            SoundManagerScript.PlaySound("blackhole_death");
+            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
             this.gameObject.GetComponent<Animator>().Play("LaikaShrink");
             this.gameObject.GetComponent<LaikaMovement>().enabled = false;
             Invoke("gameOverPanel", 1.5f);

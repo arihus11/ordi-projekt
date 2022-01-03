@@ -38,6 +38,7 @@ public class LaikaHealth : MonoBehaviour
         updateHealthDisplay();
         if (health == 0)
         {
+            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
             gameOver = true;
             this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1");
@@ -75,6 +76,7 @@ public class LaikaHealth : MonoBehaviour
                 }
                 else if (health < 5)
                 {
+                    SoundManagerScript.PlaySound("eat");
                     GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpSick", -1, 0f);
                     setHealth(health + 1);
                     Debug.Log("LAIKA HEALTH: " + health.ToString());
@@ -140,6 +142,7 @@ public class LaikaHealth : MonoBehaviour
         gameOver = false;
         this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         Invoke("changeSwitches", 4f);
     }
 

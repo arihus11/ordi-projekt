@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class TypeWriterMain : MonoBehaviour
 {
-
+    private bool oneType;
     [TextArea(3, 10)]
     [SerializeField] string textToWrite = "";
     Text txt;
@@ -15,6 +15,7 @@ public class TypeWriterMain : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        oneType = false;
         txt = GetComponent<Text>();
         txt.text = "";
         StartCoroutine(WriteText());
@@ -25,6 +26,12 @@ public class TypeWriterMain : MonoBehaviour
         while (index <= textToWrite.Length)
         {
             txt.text = textToWrite.Substring(0, index) + colorTag + textToWrite.Substring(index) + "</color>";
+            if (oneType == false)
+            {
+                SoundManagerScript.PlaySound("typing");
+                oneType = true;
+                Invoke("enableType", 0.15f);
+            }
             index++;
             yield return new WaitForSeconds(0.035f);
         }
@@ -34,5 +41,10 @@ public class TypeWriterMain : MonoBehaviour
     public void laterDelete()
     {
         this.gameObject.SetActive(false);
+    }
+
+    public void enableType()
+    {
+        oneType = false;
     }
 }

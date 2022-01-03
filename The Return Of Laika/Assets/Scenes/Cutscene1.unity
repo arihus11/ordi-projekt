@@ -3516,7 +3516,7 @@ GameObject:
   - component: {fileID: 1002275853}
   m_Layer: 0
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: pressKeyToSkip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3537,7 +3537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68.94, y: 506.88}
+  m_AnchoredPosition: {x: -30.6, y: 506.88}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002275851
@@ -3573,7 +3573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: PRESS ANY KEY TO SKIP
+  m_Text: PRESS ESC TO SKIP
 --- !u!222 &1002275852
 CanvasRenderer:
   m_ObjectHideFlags: 0

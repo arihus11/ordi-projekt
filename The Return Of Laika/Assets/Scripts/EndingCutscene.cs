@@ -11,10 +11,11 @@ public class EndingCutscene : MonoBehaviour
     public float placeToStandForce;
     public GameObject standingPlace;
     float timeStamp;
-    public static bool doOnce, flying;
+    public static bool doOnce, flying, oneFlash;
     // Start is called before the first frame update
     void Start()
     {
+        oneFlash = false;
         flying = false;
         rb = GameObject.Find("Player").gameObject.GetComponent<Rigidbody2D>();
         doOnce = false;
@@ -38,6 +39,7 @@ public class EndingCutscene : MonoBehaviour
 
     public void disablePlayerControllls()
     {
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<LaikaHealth>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<DisplayHint>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = false;
@@ -85,6 +87,12 @@ public class EndingCutscene : MonoBehaviour
     {
         if (GameObject.Find("Olupina").gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         {
+            if (oneFlash == false)
+            {
+                SoundManagerScript.PlaySound("flash");
+                oneFlash = true;
+            }
+
             this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
             Invoke("displayShip", 0.15f);
         }

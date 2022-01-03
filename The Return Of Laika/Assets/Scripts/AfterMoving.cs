@@ -25,8 +25,9 @@ public class AfterMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.GetKey(KeyCode.Escape))
         {
+            GameObject.FindGameObjectWithTag("pressKeyToSkip").gameObject.SetActive(false);
             closeCutscene();
         }
     }

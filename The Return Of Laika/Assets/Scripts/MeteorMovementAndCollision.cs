@@ -38,6 +38,7 @@ public class MeteorMovementAndCollision : MonoBehaviour
             {
                 if (col.contacts[0].collider.tag == "Laika")
                 {
+                    SoundManagerScript.PlaySound("damage");
                     Destroy(this.gameObject);
                     showWhenHurt();
                     GameObject.Find("MeteorExplosion").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);

@@ -23,7 +23,7 @@ public class BasicPlanetPush6 : MonoBehaviour
                 if (BasicPlanetDirection.possiblePush == "up")
                 {
                     unfreezeConstraints();
-
+                    SoundManagerScript.PlaySound("push_planet");
                     Vector2 pos = transform.position;
                     rb.AddForce(transform.up * force, ForceMode2D.Impulse);
                     transform.position = pos;
@@ -33,7 +33,7 @@ public class BasicPlanetPush6 : MonoBehaviour
                 else if (BasicPlanetDirection.possiblePush == "down")
                 {
                     unfreezeConstraints();
-
+                    SoundManagerScript.PlaySound("push_planet");
                     Vector2 pos = transform.position;
                     rb.AddForce(transform.up * (-force), ForceMode2D.Impulse);
                     transform.position = pos;
@@ -43,7 +43,7 @@ public class BasicPlanetPush6 : MonoBehaviour
                 else if (BasicPlanetDirection.possiblePush == "left")
                 {
                     unfreezeConstraints();
-
+                    SoundManagerScript.PlaySound("push_planet");
                     Vector2 pos = transform.position;
                     rb.AddForce(transform.right * (-force), ForceMode2D.Impulse);
                     transform.position = pos;
@@ -53,7 +53,7 @@ public class BasicPlanetPush6 : MonoBehaviour
                 else if (BasicPlanetDirection.possiblePush == "right")
                 {
                     unfreezeConstraints();
-
+                    SoundManagerScript.PlaySound("push_planet");
                     Vector2 pos = transform.position;
                     rb.AddForce(transform.right * force, ForceMode2D.Impulse);
                     transform.position = pos;

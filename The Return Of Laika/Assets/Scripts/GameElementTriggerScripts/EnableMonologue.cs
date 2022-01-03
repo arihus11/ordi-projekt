@@ -35,14 +35,15 @@ public class EnableMonologue : MonoBehaviour
 
     public void disableMovementWhileTalking()
     {
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = false;
         GameObject.FindGameObjectWithTag("laikaSprite").GetComponent<SpriteRenderer>().sprite = emptySprite;
-        JetpackSoundManagerScript.StopJetpackSound();
 
     }
 
     public void enableMovementAfterTalking()
     {
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
         Invoke("destoryThisBox", 0.5f);
     }

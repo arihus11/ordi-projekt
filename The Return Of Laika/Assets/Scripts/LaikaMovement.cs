@@ -36,7 +36,7 @@ public class LaikaMovement : MonoBehaviour
         setSprite();
         if (!(Input.GetKey(KeyCode.Space)))
         {
-            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
+            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
             if (LaikaHealth.gameOver == false)
             {
                 anim.SetBool("isGoing", false);
@@ -53,27 +53,35 @@ public class LaikaMovement : MonoBehaviour
             switch (currentMovementState)
             {
                 case MovementState.UpwardIdle:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
                     pos.y += speed * Time.deltaTime;
                     break;
                 case MovementState.LeftIdle:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
                     pos.x += -speed * Time.deltaTime;
                     break;
                 case MovementState.RightIdle:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
                     pos.x += speed * Time.deltaTime;
                     break;
                 case MovementState.DownwardIdle:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
                     pos.y += -speed * Time.deltaTime;
                     break;
                 case MovementState.UpwardMoving:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
                     rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
                     break;
                 case MovementState.LeftMoving:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
                     rb.AddForce(transform.right * (-thrust), ForceMode2D.Impulse);
                     break;
                 case MovementState.RightMoving:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
                     rb.AddForce(transform.right * thrust, ForceMode2D.Impulse);
                     break;
                 case MovementState.DownwardMoving:
+                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
                     rb.AddForce(transform.up * (-thrust), ForceMode2D.Impulse);
                     break;
             }
@@ -104,11 +112,13 @@ public class LaikaMovement : MonoBehaviour
             else
             {
                 currentMovementState = MovementState.Steady;
+                GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
             }
         }
         else
         {
             currentMovementState = MovementState.Steady;
+            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
         }
     }
 
@@ -116,7 +126,7 @@ public class LaikaMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
+            //  GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
             GameObject.Find("ThrustMessageContainer").gameObject.GetComponent<Animator>().Play("ThrustBase");
             anim.SetBool("isGoing", true);
             return moving;

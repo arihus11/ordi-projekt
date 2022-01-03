@@ -12,7 +12,8 @@ public class MenuBTNs2 : MonoBehaviour, ISelectHandler
     public void PlayGame()
     {
         SoundManagerScript.PlaySound("start");
-        SceneManager.LoadScene("Main");
+        GameObject.Find("ClosingPanelParent").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        Invoke("changeScene", 1.85f);
     }
 
     public void QuitGame()
@@ -22,11 +23,19 @@ public class MenuBTNs2 : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
-        if (counter == 0) {
+        if (counter == 0)
+        {
             counter = 1;
-        } else {
+        }
+        else
+        {
             SoundManagerScript.PlaySound("button_switch");
-        }    
+        }
+    }
+
+    public void changeScene()
+    {
+        SceneManager.LoadScene("Cutscene1");
     }
 
 }

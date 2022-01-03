@@ -23,6 +23,7 @@ public class ShieldCollide : MonoBehaviour
         {
             if (LaikaHealth.gameOver == false)
             {
+                SoundManagerScript.PlaySound("meteor_shield");
                 //   collidedOnChild = true;
                 if (col.contacts[0].otherCollider.tag == "rightShield")
                 {
