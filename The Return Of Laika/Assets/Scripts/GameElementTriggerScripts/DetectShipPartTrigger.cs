@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectBasicPlanetTrigger : MonoBehaviour
+public class DetectShipPartTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class DetectBasicPlanetTrigger : MonoBehaviour
     {
         if (col.gameObject.tag == "Laika" && EnableMonologue.insideMonologue == false && BlackHoleMagnet.takenByHole == false)
         {
-            EnableMonologue.destroyBasicPlanetTriggers = true;
+            EnableMonologue.destroyShipPartTriggers = true;
 
         }
     }

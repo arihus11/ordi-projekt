@@ -7,7 +7,7 @@ public class EnableMonologue : MonoBehaviour
 
     public int numberOfChildToEnable;
     public float enableWalkingTime;
-    public static bool destroyHoleTriggers, destroyFireballTriggers, destroyBasicPlanetTriggers;
+    public static bool destroyHoleTriggers, destroyFireballTriggers, destroyBasicPlanetTriggers, destroyShipPartTriggers;
     public Sprite emptySprite;
     public static bool insideMonologue;
     // Start is called before the first frame update
@@ -17,6 +17,7 @@ public class EnableMonologue : MonoBehaviour
         destroyHoleTriggers = false;
         destroyFireballTriggers = false;
         destroyBasicPlanetTriggers = false;
+        destroyShipPartTriggers = false;
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class EnableMonologue : MonoBehaviour
     {
         if (col.gameObject.tag == "Laika")
         {
-            if (insideMonologue == false)
+            if (insideMonologue == false && BlackHoleMagnet.takenByHole == false)
             {
                 disableMovementWhileTalking();
                 GameObject.Find("CanvasGameElementTriggers").gameObject.transform.GetChild(numberOfChildToEnable).gameObject.SetActive(true);

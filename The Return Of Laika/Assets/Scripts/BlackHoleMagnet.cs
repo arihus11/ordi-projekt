@@ -9,12 +9,13 @@ public class BlackHoleMagnet : MonoBehaviour
     Vector2 holeDirection;
     float timeStamp;
     bool flyToHole;
+    public static bool takenByHole;
     private Vector2 hole;
     public float holeForce;
     // Start is called before the first frame update
     void Start()
     {
-
+        takenByHole = false;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -38,6 +39,7 @@ public class BlackHoleMagnet : MonoBehaviour
             SoundManagerScript.PlaySound("suck");
             hole = col.gameObject.transform.position;
             timeStamp = Time.time;
+            takenByHole = true;
             flyToHole = true;
 
         }
@@ -58,6 +60,7 @@ public class BlackHoleMagnet : MonoBehaviour
         if (col.gameObject.tag == "blackHole")
         {
             flyToHole = false;
+            takenByHole = false;
         }
     }
 
