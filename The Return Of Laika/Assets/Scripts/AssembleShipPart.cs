@@ -12,6 +12,9 @@ public class AssembleShipPart : MonoBehaviour
     public static int numberOfPartsAssambled;
     private GameObject collidedShipObject = null;
 
+    private static Color colorToMaxOpacity = new Color(0f, 0f, 0f, 1f);
+    private static Color colorToOriginalOpacity = new Color(0f, 0f, 0f, 0.8f);
+
     void Start()
     {
         numberOfPartsAssambled = 0;
@@ -67,8 +70,27 @@ public class AssembleShipPart : MonoBehaviour
             ? "Ship fully assembled."
             : $"{assembledShipPartListScript.remainingPartCount()}/5 parts collected."));
 
-        collidedShipObject.transform.Find("Sprite").GetComponent<SpriteRenderer>().color += new Color(0f, 0f, 0f, 1f);
+        collidedShipObject.transform.Find("Sprite").GetComponent<SpriteRenderer>().color += AssembleShipPart.colorToMaxOpacity;
 
-        GameObject.Destroy(shipPartIDScript.shipPartGrabbed);
+        shipPartIDScript.shipPartGrabbed.SetActive(false);
+        shipPartIDScript.handleRelease(false);
+    }
+
+    public static void handleDeath()
+    {
+        foreach (Transform grabbablePart in GameObject.Find("GrabbableParts").transform)
+        {
+            grabbablePart.GetComponent<InitialTransform>().resetToInitialTransform();
+            grabbablePart.gameObject.SetActive(true);
+        }
+
+        foreach (Transform assemblyPart in GameObject.Find("Olupina").transform.Find("ShipParts"))
+        {
+            var sprite = assemblyPart.Find("Sprite").GetComponent<SpriteRenderer>();
+            if (sprite.color.a > 0.5)
+            {
+                sprite.color -= AssembleShipPart.colorToOriginalOpacity;
+            }
+        }
     }
 }

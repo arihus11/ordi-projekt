@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 57193783}
   - component: {fileID: 57193785}
   - component: {fileID: 57193784}
+  - component: {fileID: 57193786}
   m_Layer: 0
   m_Name: Part4
   m_TagString: grabbableShip
@@ -528,7 +529,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57193782}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -550,6 +551,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 4
+--- !u!114 &57193786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57193782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &61503595
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +635,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 01d16f91cb1a26e42904dd7288577939, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2220,7 +2233,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e1c6c0e78ad7134448c8c83ebdba150b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2815,6 +2828,7 @@ GameObject:
   - component: {fileID: 246577413}
   - component: {fileID: 246577415}
   - component: {fileID: 246577414}
+  - component: {fileID: 246577416}
   m_Layer: 0
   m_Name: Part1POMOCNI
   m_TagString: grabbableShip
@@ -2866,6 +2880,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 1
+--- !u!114 &246577416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246577412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &247855340
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,6 +5934,7 @@ GameObject:
   - component: {fileID: 467615887}
   - component: {fileID: 467615889}
   - component: {fileID: 467615888}
+  - component: {fileID: 467615890}
   m_Layer: 0
   m_Name: Part2POMOCNI
   m_TagString: grabbableShip
@@ -5959,6 +5986,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 2
+--- !u!114 &467615890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467615886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &485136431
 GameObject:
   m_ObjectHideFlags: 0
@@ -9269,7 +9308,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 031f620bfb8a5bc4e853b58d83899393, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9777,6 +9816,7 @@ GameObject:
   - component: {fileID: 772729015}
   - component: {fileID: 772729017}
   - component: {fileID: 772729016}
+  - component: {fileID: 772729018}
   m_Layer: 0
   m_Name: Part2
   m_TagString: grabbableShip
@@ -9806,7 +9846,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772729014}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -9828,6 +9868,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 2
+--- !u!114 &772729018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772729014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &774653964
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,6 +11780,7 @@ GameObject:
   - component: {fileID: 897143497}
   - component: {fileID: 897143499}
   - component: {fileID: 897143498}
+  - component: {fileID: 897143500}
   m_Layer: 0
   m_Name: Part5
   m_TagString: grabbableShip
@@ -11779,6 +11832,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 5
+--- !u!114 &897143500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897143496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914222852
 GameObject:
   m_ObjectHideFlags: 0
@@ -14531,7 +14596,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 1b9d8ba0b36a0e949a7fde77937bd261, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16301,7 +16366,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e5cc3876187eed6448e2be02fa74351e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.2}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17877,6 +17942,7 @@ GameObject:
   - component: {fileID: 1456914427}
   - component: {fileID: 1456914429}
   - component: {fileID: 1456914428}
+  - component: {fileID: 1456914430}
   m_Layer: 0
   m_Name: Part1
   m_TagString: grabbableShip
@@ -17928,6 +17994,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 1
+--- !u!114 &1456914430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456914426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1459947974
 GameObject:
   m_ObjectHideFlags: 0
@@ -20944,6 +21022,7 @@ GameObject:
   - component: {fileID: 1700728947}
   - component: {fileID: 1700728949}
   - component: {fileID: 1700728948}
+  - component: {fileID: 1700728950}
   m_Layer: 0
   m_Name: Part4POMOCNI
   m_TagString: grabbableShip
@@ -20995,6 +21074,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 4
+--- !u!114 &1700728950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700728946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1707300945
 GameObject:
   m_ObjectHideFlags: 0
@@ -21342,6 +21433,7 @@ GameObject:
   - component: {fileID: 1734021955}
   - component: {fileID: 1734021957}
   - component: {fileID: 1734021956}
+  - component: {fileID: 1734021958}
   m_Layer: 0
   m_Name: Part5POMOCNI
   m_TagString: grabbableShip
@@ -21393,6 +21485,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 5
+--- !u!114 &1734021958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734021954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741580257
 GameObject:
   m_ObjectHideFlags: 0
@@ -23201,6 +23305,7 @@ GameObject:
   - component: {fileID: 1889007353}
   - component: {fileID: 1889007355}
   - component: {fileID: 1889007354}
+  - component: {fileID: 1889007356}
   m_Layer: 0
   m_Name: Part3POMOCNI
   m_TagString: grabbableShip
@@ -23252,6 +23357,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 3
+--- !u!114 &1889007356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889007352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1892032111
 GameObject:
   m_ObjectHideFlags: 0
@@ -25518,6 +25635,7 @@ GameObject:
   - component: {fileID: 2124959995}
   - component: {fileID: 2124959997}
   - component: {fileID: 2124959996}
+  - component: {fileID: 2124959998}
   m_Layer: 0
   m_Name: Part3
   m_TagString: grabbableShip
@@ -25569,6 +25687,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPartID: 3
+--- !u!114 &2124959998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124959994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f0c2f553d1aeb48967e92a10aba0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125891545
 GameObject:
   m_ObjectHideFlags: 0

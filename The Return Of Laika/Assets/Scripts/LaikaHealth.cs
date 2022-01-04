@@ -43,6 +43,8 @@ public class LaikaHealth : MonoBehaviour
             this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1");
             Invoke("reverseDisplayGameOver", 4.5f);
+
+            AssembleShipPart.handleDeath();
         }
     }
 
@@ -115,7 +117,6 @@ public class LaikaHealth : MonoBehaviour
         setHealth(5);
         Invoke("laikaDisapear", 1.3f);
         Invoke("moveLaikaBackInTime", 2f);
-
     }
 
     public void moveLaikaBackInTime()
@@ -155,7 +156,6 @@ public class LaikaHealth : MonoBehaviour
     private void setHealth(int newHealth)
     {
         health = newHealth;
-
     }
 
     public void updateHealthDisplay()
