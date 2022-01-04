@@ -7,7 +7,8 @@ public class DisplayHintShipPart : DisplayHint
 {
     protected override void onEvent(GameObject other, AnimationType type)
     {
-        if (!isCollisionTag(other.tag)
+        if (MeteorShowerSpawner.meteorShowerActive ||
+            !isCollisionTag(other.tag)
             || this.gameObject.GetComponent<GrabShipPart>().shipPartGrabbed == null
             || Methods.getShipPartID(other) != Methods.getShipPartID(this.gameObject.GetComponent<GrabShipPart>().shipPartGrabbed))
         {

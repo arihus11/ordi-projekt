@@ -26,7 +26,8 @@ public class AssembleShipPart : MonoBehaviour
 
     void Update()
     {
-        if (shipPartIDScript.shipPartGrabbed != null && collidedShipObject != null
+        if (!MeteorShowerSpawner.meteorShowerActive &&
+            shipPartIDScript.shipPartGrabbed != null && collidedShipObject != null
             && Methods.getShipPartID(shipPartIDScript.shipPartGrabbed) == Methods.getShipPartID(collidedShipObject)
             && Input.GetKeyDown(KeyCode.X))
         {
