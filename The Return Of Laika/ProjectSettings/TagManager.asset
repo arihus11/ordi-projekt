@@ -44,6 +44,12 @@ TagManager:
   - blackHoleTriggers
   - pressKeyToSkip
   - grabTrigger
+  - bp1
+  - bp2
+  - bp3
+  - bp4
+  - bp5
+  - bp6
   layers:
   - Default
   - TransparentFX
