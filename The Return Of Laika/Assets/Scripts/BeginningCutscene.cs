@@ -9,6 +9,7 @@ public class BeginningCutscene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
         canvasChildren = GameObject.Find("CanvasBeginningScene").gameObject;
         playerObject = GameObject.Find("Player").gameObject;
         GameObject.Find("Main Camera").gameObject.GetComponent<Animator>().enabled = true;
@@ -46,5 +47,6 @@ public class BeginningCutscene : MonoBehaviour
         playerObject.GetComponent<LaikaMovement>().enabled = true;
         GameObject.Find("Main Camera").gameObject.GetComponent<CameraFollowPlayerScript>().enabled = true;
         GameObject.Find("Main Camera").gameObject.GetComponent<Animator>().enabled = false;
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
     }
 }
