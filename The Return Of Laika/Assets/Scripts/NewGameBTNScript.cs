@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class MenuBTNs2 : MonoBehaviour, ISelectHandler
+public class NewGameBTNScript : MonoBehaviour, ISelectHandler
 {
     private int counter = 0;
+    public Sprite NotSelected;
+    public Sprite Selected;
 
     public void PlayGame()
     {
@@ -23,6 +25,7 @@ public class MenuBTNs2 : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
+        GameObject.Find("Sprite").gameObject.GetComponent<SpriteRenderer>().sprite = Selected;
         if (counter == 0)
         {
             counter = 1;
