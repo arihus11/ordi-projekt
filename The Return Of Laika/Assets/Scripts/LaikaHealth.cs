@@ -134,6 +134,7 @@ public class LaikaHealth : MonoBehaviour
     {
         if (doOnce == false)
         {
+            SoundManagerScript.PlaySound("teleport");
             this.gameObject.GetComponent<Animator>().Play("LaikaDisapear");
             doOnce = true;
         }

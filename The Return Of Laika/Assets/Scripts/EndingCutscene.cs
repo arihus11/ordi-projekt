@@ -10,11 +10,13 @@ public class EndingCutscene : MonoBehaviour
     Vector2 placeToStandDirection;
     public float placeToStandForce;
     public GameObject standingPlace;
+    private bool oneRumble;
     float timeStamp;
     public static bool doOnce, flying, oneFlash;
     // Start is called before the first frame update
     void Start()
     {
+        oneRumble = false;
         oneFlash = false;
         flying = false;
         rb = GameObject.Find("Player").gameObject.GetComponent<Rigidbody2D>();
@@ -48,6 +50,11 @@ public class EndingCutscene : MonoBehaviour
     public void executeShipPartsRotation()
     {
         GameObject.Find("Olupina").gameObject.GetComponent<Animator>().Play("ShipPartsRotation");
+        if (oneRumble == false)
+        {
+            SoundManagerScript.PlaySound("rumble1");
+            oneRumble = true;
+        }
         Invoke("executeSmoke", 1f);
     }
 

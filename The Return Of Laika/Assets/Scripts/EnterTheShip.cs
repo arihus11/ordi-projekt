@@ -10,10 +10,12 @@ public class EnterTheShip : MonoBehaviour
     public Sprite emptySpite;
     private Rigidbody2D rb, rbShip;
     public float placeToFlyForce;
+    private bool playOneEnter;
     float timeStamp;
     // Start is called before the first frame update
     void Start()
     {
+        playOneEnter = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         insideEnteringRange = false;
     }
@@ -25,6 +27,11 @@ public class EnterTheShip : MonoBehaviour
         {
             if (insideEnteringRange == true)
             {
+                if (!playOneEnter)
+                {
+                    SoundManagerScript.PlaySound("enter_ship");
+                    playOneEnter = true;
+                }
                 rbShip = GameObject.Find("Ship").gameObject.GetComponent<Rigidbody2D>();
                 GameObject.Find("Main Camera").gameObject.GetComponent<CameraFollowPlayerScript>().player = GameObject.FindGameObjectWithTag("endingShip").gameObject.transform;
                 disablePlayerControllsOnEnter();

@@ -10,6 +10,7 @@ public class MeteorShowerSpawner : MonoBehaviour
     public float maxTime = 70;
     public float minTime = 50;
 
+
     //current time
     private float time;
 
