@@ -19,6 +19,7 @@ public class LaikaHealth : MonoBehaviour
     public Sprite fullHealthPointSprite;
     public Sprite emptyHealthPointSprite;
     private Transform healthSystem;
+    private AssembleShipPart assembleShipPartScript;
 
 
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class LaikaHealth : MonoBehaviour
         gameOver = false;
         setHealth(5);
         healthSystem = healthSystemCanvas.transform;
+        assembleShipPartScript = this.gameObject.GetComponent<AssembleShipPart>();
     }
 
     // Update is called once per frame
@@ -44,8 +46,9 @@ public class LaikaHealth : MonoBehaviour
             this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1");
             Invoke("reverseDisplayGameOver", 4.5f);
+            // Invoke("assembleShipPartScript.handleDeath", 4.5f);
 
-            AssembleShipPart.handleDeath();
+            assembleShipPartScript.handleDeath();
         }
     }
 
