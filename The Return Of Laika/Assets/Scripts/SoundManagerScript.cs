@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip button_switch, button_press, gameover, start, damage, jetpack, grab, correct_drop, alert_meteor_shower, life_up, shoot, eat, push_planet, meteor_shield, draw_shield, blackhole_death, suck, flash, typing, rumble1, enter_ship, teleport;
+    public static AudioClip button_switch, button_press, gameover, start, damage, jetpack, grab, correct_drop, alert_meteor_shower, life_up, shoot, eat, push_planet, meteor_shield, draw_shield, blackhole_death, suck, flash, typing, rumble1, enter_ship, teleport, ship_sounds, flyout;
     static AudioSource audioSrc;
 
     // Use this for initialization
@@ -33,6 +33,8 @@ public class SoundManagerScript : MonoBehaviour
         rumble1 = Resources.Load<AudioClip>("rumble1");
         enter_ship = Resources.Load<AudioClip>("enter_ship");
         teleport = Resources.Load<AudioClip>("teleport");
+        ship_sounds = Resources.Load<AudioClip>("ship_sounds");
+        flyout = Resources.Load<AudioClip>("flyout");
 
         audioSrc = GetComponent<AudioSource>();
 
@@ -114,6 +116,12 @@ public class SoundManagerScript : MonoBehaviour
                 break;
             case "teleport":
                 audioSrc.PlayOneShot(teleport);
+                break;
+            case "ship_sounds":
+                audioSrc.PlayOneShot(ship_sounds);
+                break;
+            case "flyout":
+                audioSrc.PlayOneShot(flyout);
                 break;
         }
     }

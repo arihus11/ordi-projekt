@@ -11,10 +11,12 @@ public class EnterTheShip : MonoBehaviour
     private Rigidbody2D rb, rbShip;
     public float placeToFlyForce;
     private bool playOneEnter;
+    private bool playOneShipSounds;
     float timeStamp;
     // Start is called before the first frame update
     void Start()
     {
+        playOneShipSounds = false;
         playOneEnter = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         insideEnteringRange = false;
@@ -89,6 +91,12 @@ public class EnterTheShip : MonoBehaviour
     public void shipFlyAway()
     {
         //   GameObject.Find("EndSceneContainer").gameObject.GetComponent<Animator>().Play("ShipFlyAway2");
+        if (!playOneShipSounds)
+        {
+            SoundManagerScript.PlaySound("ship_sounds");
+            playOneShipSounds = true;
+        }
+
         timeStamp = Time.time;
         placeToFlyDirection = -(GameObject.Find("Ship").gameObject.transform.position - (GameObject.Find("PlaceForShipToFly").gameObject.transform.position)).normalized;
         rbShip.constraints = RigidbodyConstraints2D.None;
@@ -99,7 +107,7 @@ public class EnterTheShip : MonoBehaviour
     public void endGamePanel()
     {
         GameObject.Find("EndGamePanel").gameObject.GetComponent<Animator>().Play("EndGamePanel");
-        Invoke("changeToCredits", 3f);
+        Invoke("changeToCredits", 5f);
     }
 
     public void changeToCredits()

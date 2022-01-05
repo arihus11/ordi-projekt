@@ -12,10 +12,12 @@ public class EndingCutscene : MonoBehaviour
     public GameObject standingPlace;
     private bool oneRumble;
     float timeStamp;
+    private bool oneFlyout;
     public static bool doOnce, flying, oneFlash;
     // Start is called before the first frame update
     void Start()
     {
+        oneFlyout = false;
         oneRumble = false;
         oneFlash = false;
         flying = false;
@@ -122,6 +124,11 @@ public class EndingCutscene : MonoBehaviour
 
     public void revealWeapon()
     {
+        if (!oneFlyout)
+        {
+            SoundManagerScript.PlaySound("flyout");
+            oneFlyout = true;
+        }
         this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
         Invoke("displayTextBox2", 2.6f);
         Invoke("enablePlayerControllls", 8.4f);
