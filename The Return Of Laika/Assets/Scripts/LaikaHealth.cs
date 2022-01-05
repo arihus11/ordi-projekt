@@ -46,9 +46,7 @@ public class LaikaHealth : MonoBehaviour
             this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1");
             Invoke("reverseDisplayGameOver", 4.5f);
-            // Invoke("assembleShipPartScript.handleDeath", 4.5f);
-
-            assembleShipPartScript.handleDeath();
+            assembleShipPartScript.Invoke("handleDeath", 8f);
         }
     }
 
