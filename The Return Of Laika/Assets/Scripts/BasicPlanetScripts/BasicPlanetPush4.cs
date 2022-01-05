@@ -18,7 +18,7 @@ public class BasicPlanetPush4 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if (BasicPlanetRange.insidePlanetRange4 == true)
+            if (BasicPlanetRange.insidePlanetRange4 == true && GrabShipPart.holdingPart == false)
             {
                 if (BasicPlanetDirection.possiblePush == "up")
                 {

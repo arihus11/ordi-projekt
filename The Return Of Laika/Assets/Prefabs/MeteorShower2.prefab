@@ -18094,6 +18094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2715478702939077786}
   - component: {fileID: -2364807679840991700}
+  - component: {fileID: -3667910925512222622}
   m_Layer: 0
   m_Name: MeteorShower2
   m_TagString: shower2
@@ -18127,6 +18128,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 084795bff00cf5245ac5ad330ada4180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3667910925512222622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715478702939077787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b8cb6771c96944b9165a66cb7585b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2715478702948891294

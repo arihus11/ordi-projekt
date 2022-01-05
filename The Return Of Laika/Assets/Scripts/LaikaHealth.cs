@@ -38,6 +38,7 @@ public class LaikaHealth : MonoBehaviour
         updateHealthDisplay();
         if (health == 0)
         {
+            GrabShipPart.firstGrabEver = false;
             GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
             gameOver = true;
             this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
@@ -141,6 +142,7 @@ public class LaikaHealth : MonoBehaviour
     public void makeEverythingNormal()
     {
         gameOver = false;
+        MeteorShowerSpawner.destroyMeteorsGameOver = false;
         this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;

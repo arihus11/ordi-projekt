@@ -24,32 +24,32 @@ public class BasicPlanetRange : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "basicplanet1")
+        if (col.gameObject.tag == "basicplanet1" && GrabShipPart.holdingPart == false)
         {
             insidePlanetRange1 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
         }
-        else if (col.gameObject.tag == "basicplanet2")
+        else if (col.gameObject.tag == "basicplanet2" && GrabShipPart.holdingPart == false)
         {
             insidePlanetRange2 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
         }
-        else if (col.gameObject.tag == "basicplanet3")
+        else if (col.gameObject.tag == "basicplanet3" && GrabShipPart.holdingPart == false)
         {
             insidePlanetRange3 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
         }
-        else if (col.gameObject.tag == "basicplanet4")
+        else if (col.gameObject.tag == "basicplanet4" && GrabShipPart.holdingPart == false)
         {
             insidePlanetRange4 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
         }
-        else if (col.gameObject.tag == "basicplanet5")
+        else if (col.gameObject.tag == "basicplanet5" && GrabShipPart.holdingPart == false)
         {
             insidePlanetRange5 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
         }
-        else if (col.gameObject.tag == "basicplanet6")
+        else if (col.gameObject.tag == "basicplanet6" && GrabShipPart.holdingPart == false)
         {
             insidePlanetRange6 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);

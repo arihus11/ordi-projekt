@@ -6,6 +6,7 @@ public class MeteorShowerSpawner : MonoBehaviour
 {
     public GameObject shower1, shower2;
     public static bool meteorShowerActive;
+    public static bool destroyMeteorsGameOver;
     public float maxTime = 70;
     public float minTime = 50;
 
@@ -18,6 +19,7 @@ public class MeteorShowerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        destroyMeteorsGameOver = false;
         meteorShowerActive = false;
         SetRandomTime();
         time = minTime;
@@ -25,7 +27,6 @@ public class MeteorShowerSpawner : MonoBehaviour
 
     void FixedUpdate()
     {
-
         //Counts up
         time += Time.deltaTime;
 
@@ -38,6 +39,11 @@ public class MeteorShowerSpawner : MonoBehaviour
                 SetRandomTime();
             }
         }
+        if (LaikaHealth.gameOver == true)
+        {
+            GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            destroyMeteorsGameOver = true;
+        }
 
     }
 
@@ -46,7 +52,10 @@ public class MeteorShowerSpawner : MonoBehaviour
     {
         SoundManagerScript.PlaySound("alert_meteor_shower");
         time = 0;
-        GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        if (LaikaHealth.gameOver == false)
+        {
+            GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        }
         if ((randomShowerNumber % 2) == 0)
         {
             meteorShowerActive = true;
