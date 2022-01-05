@@ -21,6 +21,7 @@ public class DestroyBasicPlanetTriggers : MonoBehaviour
 
     public void destroyAfterText3()
     {
+        PlayerPrefs.SetInt("InfrontOfBasicPlanetTriggerPref", 1);
         Destroy(this.gameObject);
     }
 }

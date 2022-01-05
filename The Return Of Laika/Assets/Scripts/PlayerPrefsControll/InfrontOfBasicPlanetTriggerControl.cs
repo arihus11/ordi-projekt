@@ -7,16 +7,20 @@ public class InfrontOfBasicPlanetTriggerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("InfrontOfBasicPlanetTriggerPref") == 1)
-        {
-            this.gameObject.SetActive(false);
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+    void Awake()
+    {
+        if (PlayerPrefs.GetInt("InfrontOfBasicPlanetTriggerPref") == 1)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
 }

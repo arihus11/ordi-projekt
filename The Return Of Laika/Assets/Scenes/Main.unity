@@ -5340,9 +5340,9 @@ GameObject:
   m_Component:
   - component: {fileID: 405191148}
   - component: {fileID: 405191151}
-  - component: {fileID: 405191149}
   - component: {fileID: 405191150}
   - component: {fileID: 405191152}
+  - component: {fileID: 405191149}
   m_Layer: 0
   m_Name: InfrontOfMachineTrigger
   m_TagString: Untagged
@@ -5373,7 +5373,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 405191147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b261c942dc8184bae66968c905c906, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ec8de0883998014d92eb333fc7ee97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 1
@@ -8327,7 +8327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608247780}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 766adfcd9bd0c8a47ae4efa31dbb5c7e, type: 3}
   m_Name: 
@@ -8340,6 +8340,8 @@ MonoBehaviour:
   InfrontOfFireballTrigger: 1
   InfrontOfBasicPlanetTrigger: 1
   BeginningCutscene: 1
+  ThrustMachinePickup: 1
+  FirstMeteorShower: 0
 --- !u!1 &636723915
 GameObject:
   m_ObjectHideFlags: 0
@@ -15182,6 +15184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1109707307}
   - component: {fileID: 1109707308}
+  - component: {fileID: 1109707309}
   m_Layer: 0
   m_Name: ThrustPower
   m_TagString: machine
@@ -15220,6 +15223,18 @@ CircleCollider2D:
   m_Offset: {x: 0.03, y: -0.06}
   serializedVersion: 2
   m_Radius: 0.96
+--- !u!114 &1109707309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109707306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441a5ecb30e847e41a2c99a03ebb9b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110003692
 GameObject:
   m_ObjectHideFlags: 0
@@ -18913,9 +18928,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1437447911}
   - component: {fileID: 1437447914}
-  - component: {fileID: 1437447912}
   - component: {fileID: 1437447913}
   - component: {fileID: 1437447915}
+  - component: {fileID: 1437447912}
   m_Layer: 0
   m_Name: InfrontOfWreckTrigger
   m_TagString: Untagged
@@ -18946,7 +18961,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1437447910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b261c942dc8184bae66968c905c906, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ff53ea2e66266a4089050242b5cf276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 2
@@ -27463,8 +27478,8 @@ GameObject:
   - component: {fileID: 2302339061142447327}
   - component: {fileID: 599446382457780545}
   - component: {fileID: 2298899379444304797}
-  - component: {fileID: 4569894202007101443}
   - component: {fileID: 4569894202007101444}
+  - component: {fileID: 4569894202007101443}
   m_Layer: 0
   m_Name: BeforeMachinePickupTrigger
   m_TagString: Untagged
@@ -27481,7 +27496,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4569894202007101442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b261c942dc8184bae66968c905c906, type: 3}
+  m_Script: {fileID: 11500000, guid: f6f7c64e53bcf7741837911e2c21e11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 0

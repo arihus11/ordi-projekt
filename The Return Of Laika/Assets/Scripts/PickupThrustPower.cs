@@ -21,6 +21,7 @@ public class PickupThrustPower : MonoBehaviour
         {
             if (machineInRange == true)
             {
+                PlayerPrefs.SetInt("ThrustMachinePickupPref", 1);
                 SoundManagerScript.PlaySound("grab");
                 Destroy(GameObject.FindGameObjectWithTag("machine").gameObject);
                 machineEquiped = true;

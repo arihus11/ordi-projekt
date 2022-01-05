@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InfrontOfBlackHoleTriggerControl : MonoBehaviour
+public class ThrustMachinePickupController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,11 +17,9 @@ public class InfrontOfBlackHoleTriggerControl : MonoBehaviour
     }
     void Awake()
     {
-        if (PlayerPrefs.GetInt("InfrontOfBlackHoleTriggerPref") == 1)
+        if (PlayerPrefs.GetInt("ThrustMachinePickupPref") == 1)
         {
             this.gameObject.SetActive(false);
         }
     }
-
-
 }

@@ -34,7 +34,7 @@ public class MeteorShowerSpawner : MonoBehaviour
         //Check if its the right time to spawn the object
         if (time >= spawnTime)
         {
-            if (LaikaHealth.gameOver == false)
+            if (LaikaHealth.gameOver == false && PlayerPrefs.GetInt("FirstMeteorShowerPref") == 1)
             {
                 SpawnObject();
                 SetRandomTime();

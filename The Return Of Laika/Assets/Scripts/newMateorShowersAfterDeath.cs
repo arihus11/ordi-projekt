@@ -15,7 +15,7 @@ public class newMateorShowersAfterDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.gameObject.transform.childCount == 0 && AssembleShipPart.numberOfPartsAssambled < 5)
+        if (this.gameObject.transform.childCount == 0 && AssembleShipPart.numberOfPartsAssambled < 5 && PlayerPrefs.GetInt("FirstMeteorShowerPref") == 1)
         {
             if (oneSpawn == false)
             {

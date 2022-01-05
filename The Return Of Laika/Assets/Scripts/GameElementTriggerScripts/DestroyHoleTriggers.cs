@@ -21,6 +21,7 @@ public class DestroyHoleTriggers : MonoBehaviour
 
     public void destroyAfterText()
     {
+        PlayerPrefs.SetInt("InfrontOfBlackHoleTriggerPref", 1);
         Destroy(this.gameObject);
     }
 }

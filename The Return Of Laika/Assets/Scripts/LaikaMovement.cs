@@ -124,7 +124,7 @@ public class LaikaMovement : MonoBehaviour
 
     private MovementState getMovingOrIdle(MovementState moving, MovementState idle)
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && PlayerPrefs.GetInt("ThrustMachinePickupPref") == 1)
         {
             //  GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
             GameObject.Find("ThrustMessageContainer").gameObject.GetComponent<Animator>().Play("ThrustBase");

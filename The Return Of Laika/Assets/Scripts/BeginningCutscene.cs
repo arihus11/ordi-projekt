@@ -48,5 +48,6 @@ public class BeginningCutscene : MonoBehaviour
         GameObject.Find("Main Camera").gameObject.GetComponent<CameraFollowPlayerScript>().enabled = true;
         GameObject.Find("Main Camera").gameObject.GetComponent<Animator>().enabled = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
+        PlayerPrefs.SetInt("BeginningCutscenePref", 1);
     }
 }

@@ -63,6 +63,7 @@ public class GrabShipPart : MonoBehaviour
     {
         handleRelease();
         firstGrabEver = true;
+        PlayerPrefs.SetInt("FirstMeteorShowerPref", 1);
         shipPartGrabbed = shipPartInRange;
         shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         shipPartGrabbed.gameObject.GetComponent<Animator>().enabled = false;

@@ -13,6 +13,8 @@ public class PlayerPrefsController : MonoBehaviour
     public int InfrontOfFireballTrigger;
     public int InfrontOfBasicPlanetTrigger;
     public int BeginningCutscene;
+    public int ThrustMachinePickup;
+    public int FirstMeteorShower;
 
     void Start()
     {
@@ -85,6 +87,22 @@ public class PlayerPrefsController : MonoBehaviour
         else if (BeginningCutscene == 1)
         {
             PlayerPrefs.SetInt("BeginningCutscenePref", 1);
+        }
+        if (ThrustMachinePickup == 0)
+        {
+            PlayerPrefs.SetInt("ThrustMachinePickupPref", 0);
+        }
+        else if (ThrustMachinePickup == 1)
+        {
+            PlayerPrefs.SetInt("ThrustMachinePickupPref", 1);
+        }
+        if (FirstMeteorShower == 0)
+        {
+            PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
+        }
+        else if (FirstMeteorShower == 1)
+        {
+            PlayerPrefs.SetInt("FirstMeteorShowerPref", 1);
         }
     }
 

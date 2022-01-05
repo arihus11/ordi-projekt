@@ -7,10 +7,7 @@ public class BeforeMachineTriggerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("BeforeMachinePickupTriggerPref") == 1)
-        {
-            this.gameObject.SetActive(false);
-        }
+
     }
 
 
@@ -18,5 +15,12 @@ public class BeforeMachineTriggerControl : MonoBehaviour
     void Update()
     {
 
+    }
+    void Awake()
+    {
+        if (PlayerPrefs.GetInt("BeforeMachinePickupTriggerPref") == 1)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }

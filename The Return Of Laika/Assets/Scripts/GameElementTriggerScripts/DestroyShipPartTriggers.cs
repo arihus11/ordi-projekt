@@ -21,6 +21,7 @@ public class DestroyShipPartTriggers : MonoBehaviour
 
     public void destroyAfterText9()
     {
+        PlayerPrefs.SetInt("InfrontOfShipPartTriggerPref", 1);
         Destroy(this.gameObject);
     }
 }

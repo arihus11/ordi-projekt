@@ -13,11 +13,11 @@ public class activateMeteorShowers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GrabShipPart.firstGrabEver == false)
+        if (PlayerPrefs.GetInt("FirstMeteorShowerPref") == 0)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
-        else if (GrabShipPart.firstGrabEver == true)
+        else if (PlayerPrefs.GetInt("FirstMeteorShowerPref") == 1)
         {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }

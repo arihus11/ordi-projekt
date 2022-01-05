@@ -21,6 +21,7 @@ public class DestroyFireballTrigger : MonoBehaviour
 
     public void destroyAfterText2()
     {
+        PlayerPrefs.SetInt("InfrontOfFireballTriggerPref", 1);
         Destroy(this.gameObject);
     }
 }
