@@ -31,11 +31,28 @@ public class DialogueBoxScript : MonoBehaviour
                 }
                 else
                 {
-                    if (!(texts[i - 1].activeInHierarchy))
+                    try
                     {
-                        texts[i].SetActive(true);
-                        i++;
+                        if (!(texts[i - 1].activeInHierarchy))
+                        {
+                            try
+                            {
+                                texts[i].SetActive(true);
+                            }
+                            catch (System.IndexOutOfRangeException)
+                            {
+                                Debug.Log("Ignore index out of range");
+                            }
+                            i++;
+
+
+                        }
                     }
+                    catch (System.IndexOutOfRangeException)
+                    {
+                        Debug.Log("Ignore index out of range");
+                    }
+
                 }
             }
         }

@@ -10,10 +10,15 @@ public class AfterMoving : MonoBehaviour
     public GameObject explosion;
 
     public GameObject spaceship;
+    public Sprite brokenShip;
+    private bool oneFlyOut;
+    private bool oneRumble;
 
     // Start is called before the first frame update
     void Start()
     {
+        oneRumble = false;
+        oneFlyOut = false;
         textBox2.SetActive(false);
         dialogueBox2.SetActive(false);
         explosion.SetActive(false);
@@ -34,6 +39,10 @@ public class AfterMoving : MonoBehaviour
 
     public void rumbleActions()
     {
+        if (!oneRumble)
+        {
+            SoundManagerScript.PlaySound("cutscene_rumble");
+        }
         dialogueBox2.SetActive(true);
         dialogueBox.SetActive(false);
         this.gameObject.GetComponent<CameraFollowPlayerScript>().enabled = false;
@@ -52,14 +61,29 @@ public class AfterMoving : MonoBehaviour
     public void explode()
     {
         explosion.SetActive(true);
-        laikaFlyOut();
+        GameObject.FindGameObjectWithTag("shipRawSprite").gameObject.GetComponent<SpriteRenderer>().sprite = brokenShip;
+        GameObject.FindGameObjectWithTag("realShip").gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        blowUpSound();
+        Invoke("laikaFlyOut", 0.35f);
         Invoke("beginTypingAgain", 3f);
     }
 
     public void laikaFlyOut()
     {
         spaceship.GetComponent<Animator>().Play("LaikaBlownUp");
+        GameObject.FindGameObjectWithTag("shipRawSprite").gameObject.GetComponent<Animator>().Play("ShipFlyAway");
+
     }
+
+    public void blowUpSound()
+    {
+        if (!oneFlyOut)
+        {
+            SoundManagerScript.PlaySound("ship_explosion");
+            oneFlyOut = true;
+        }
+    }
+
 
     public void beginTypingAgain()
     {

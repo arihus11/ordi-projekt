@@ -50,6 +50,8 @@ TagManager:
   - bp4
   - bp5
   - bp6
+  - realShip
+  - shipRawSprite
   layers:
   - Default
   - TransparentFX
