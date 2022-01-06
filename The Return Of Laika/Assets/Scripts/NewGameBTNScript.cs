@@ -8,8 +8,6 @@ using UnityEngine.EventSystems;
 public class NewGameBTNScript : MonoBehaviour, ISelectHandler
 {
     private int counter = 0;
-    public Sprite NotSelected;
-    public Sprite Selected;
 
     public void PlayGame()
     {
@@ -36,7 +34,6 @@ public class NewGameBTNScript : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
-        //    GameObject.Find("Sprite").gameObject.GetComponent<SpriteRenderer>().sprite = Selected;
         if (counter == 0)
         {
             counter = 1;
