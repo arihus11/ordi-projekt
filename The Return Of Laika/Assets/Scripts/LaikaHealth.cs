@@ -25,6 +25,7 @@ public class LaikaHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
         doOnce = false;
         doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -40,6 +41,7 @@ public class LaikaHealth : MonoBehaviour
         updateHealthDisplay();
         if (health == 0)
         {
+            PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
             GrabShipPart.firstGrabEver = false;
             GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
             gameOver = true;

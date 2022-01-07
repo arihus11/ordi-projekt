@@ -7,8 +7,8 @@ public class MeteorShowerSpawner : MonoBehaviour
     public GameObject shower1, shower2;
     public static bool meteorShowerActive;
     public static bool destroyMeteorsGameOver;
-    public float maxTime = 70;
-    public float minTime = 50;
+    public float maxTime = 70f;
+    public float minTime = 50f;
 
 
     //current time
@@ -16,20 +16,27 @@ public class MeteorShowerSpawner : MonoBehaviour
 
     //The time to spawn the object
     private float spawnTime;
+    private bool setOneTime;
     private int randomShowerNumber;
     // Start is called before the first frame update
     void Start()
     {
+        setOneTime = false;
         destroyMeteorsGameOver = false;
         meteorShowerActive = false;
-        SetRandomTime();
         time = minTime;
     }
 
     void FixedUpdate()
     {
-        //Counts up
         time += Time.deltaTime;
+        if (GrabShipPart.firstGrabEver == true)
+        {
+            if (!setOneTime)
+            {
+                SetRandomTime();
+            }
+        }
 
         //Check if its the right time to spawn the object
         if (time >= spawnTime)
@@ -37,7 +44,6 @@ public class MeteorShowerSpawner : MonoBehaviour
             if (LaikaHealth.gameOver == false && PlayerPrefs.GetInt("FirstMeteorShowerPref") == 1)
             {
                 SpawnObject();
-                SetRandomTime();
             }
         }
         if (LaikaHealth.gameOver == true)
@@ -67,6 +73,7 @@ public class MeteorShowerSpawner : MonoBehaviour
             meteorShowerActive = true;
             Instantiate(shower2, transform.position, shower2.transform.rotation);
         }
+        SetRandomTime();
     }
 
     //Sets the random time between minTime and maxTime
