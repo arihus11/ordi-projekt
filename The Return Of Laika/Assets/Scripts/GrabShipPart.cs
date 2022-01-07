@@ -39,6 +39,22 @@ public class GrabShipPart : MonoBehaviour
                 handleRelease();
             }
         }
+
+        if (shipPartGrabbed != null)
+        {
+            if (Shield.shieldActive == true)
+            {
+                Color tmp = shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color;
+                tmp.a = 0f;
+                shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color = tmp;
+            }
+            else if (Shield.shieldActive == false)
+            {
+                Color tmp1 = shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color;
+                tmp1.a = 1f;
+                shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color = tmp1;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

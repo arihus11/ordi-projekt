@@ -13,9 +13,9 @@ public class DestroyBasicPlanetTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EnableMonologue.destroyBasicPlanetTriggers == true)
+        if (DestroyTriggers.destroyBasicPlanetTriggers == true)
         {
-            Invoke("destroyAfterText3", 7.7f);
+            Invoke("destroyAfterText3", 7.9f);
         }
     }
 

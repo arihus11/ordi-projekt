@@ -13,9 +13,9 @@ public class DestroyFireballTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EnableMonologue.destroyFireballTriggers == true)
+        if (DestroyTriggers.destroyFireballTriggers == true)
         {
-            Invoke("destroyAfterText2", 7.7f);
+            Invoke("destroyAfterText2", 7.9f);
         }
     }
 

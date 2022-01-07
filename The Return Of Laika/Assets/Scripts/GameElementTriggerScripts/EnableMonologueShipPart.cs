@@ -2,22 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnableMonologue : MonoBehaviour
+public class EnableMonologueShipPart : MonoBehaviour
 {
 
     public int numberOfChildToEnable;
     public float enableWalkingTime;
-    public static bool destroyHoleTriggers, destroyFireballTriggers, destroyBasicPlanetTriggers, destroyShipPartTriggers;
     public Sprite emptySprite;
-    public static bool insideMonologue;
+
     // Start is called before the first frame update
     void Start()
     {
-        insideMonologue = false;
-        destroyHoleTriggers = false;
-        destroyFireballTriggers = false;
-        destroyBasicPlanetTriggers = false;
-        destroyShipPartTriggers = false;
+
     }
 
     // Update is called once per frame
@@ -30,8 +25,10 @@ public class EnableMonologue : MonoBehaviour
     {
         if (col.gameObject.tag == "Laika")
         {
-            if (insideMonologue == false && BlackHoleMagnet.takenByHole == false)
+            if (InsideMonologue.insideMonologue == false && BlackHoleMagnet.takenByHole == false)
             {
+                DestroyTriggers.destroyShipPartTriggers = true;
+                this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                 disableMovementWhileTalking();
                 GameObject.Find("CanvasGameElementTriggers").gameObject.transform.GetChild(numberOfChildToEnable).gameObject.SetActive(true);
                 Invoke("enableMovementAfterTalking", enableWalkingTime);
@@ -42,7 +39,7 @@ public class EnableMonologue : MonoBehaviour
 
     public void disableMovementWhileTalking()
     {
-        insideMonologue = true;
+        InsideMonologue.insideMonologue = true;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = false;
         GameObject.FindGameObjectWithTag("laikaSprite").GetComponent<SpriteRenderer>().sprite = emptySprite;
@@ -51,7 +48,7 @@ public class EnableMonologue : MonoBehaviour
 
     public void enableMovementAfterTalking()
     {
-        insideMonologue = false;
+        InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
         Invoke("destoryThisBox", 0.5f);

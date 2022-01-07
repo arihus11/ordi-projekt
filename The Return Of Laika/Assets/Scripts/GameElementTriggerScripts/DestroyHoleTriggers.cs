@@ -13,9 +13,9 @@ public class DestroyHoleTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EnableMonologue.destroyHoleTriggers == true)
+        if (DestroyTriggers.destroyHoleTriggers == true)
         {
-            Invoke("destroyAfterText", 7.7f);
+            Invoke("destroyAfterText", 7.9f);
         }
     }
 

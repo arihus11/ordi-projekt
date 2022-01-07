@@ -18,9 +18,9 @@ public class DetectShipPartTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Laika" && EnableMonologue.insideMonologue == false && BlackHoleMagnet.takenByHole == false)
+        if (col.gameObject.tag == "Laika" && InsideMonologue.insideMonologue == false && BlackHoleMagnet.takenByHole == false)
         {
-            EnableMonologue.destroyShipPartTriggers = true;
+            DestroyTriggers.destroyShipPartTriggers = true;
 
         }
     }

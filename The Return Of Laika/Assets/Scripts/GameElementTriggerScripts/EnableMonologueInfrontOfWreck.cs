@@ -11,7 +11,6 @@ public class EnableMonologueInfrontOfWreck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EnableMonologue.insideMonologue = false;
     }
 
     // Update is called once per frame
@@ -24,8 +23,9 @@ public class EnableMonologueInfrontOfWreck : MonoBehaviour
     {
         if (col.gameObject.tag == "Laika")
         {
-            if (EnableMonologue.insideMonologue == false && BlackHoleMagnet.takenByHole == false)
+            if (InsideMonologue.insideMonologue == false && BlackHoleMagnet.takenByHole == false)
             {
+                this.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
                 disableMovementWhileTalking();
                 GameObject.Find("CanvasGameElementTriggers").gameObject.transform.GetChild(numberOfChildToEnable).gameObject.SetActive(true);
                 Invoke("enableMovementAfterTalking", enableWalkingTime);
@@ -36,7 +36,7 @@ public class EnableMonologueInfrontOfWreck : MonoBehaviour
 
     public void disableMovementWhileTalking()
     {
-        EnableMonologue.insideMonologue = true;
+        InsideMonologue.insideMonologue = true;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = false;
         GameObject.FindGameObjectWithTag("laikaSprite").GetComponent<SpriteRenderer>().sprite = emptySprite;
@@ -45,7 +45,7 @@ public class EnableMonologueInfrontOfWreck : MonoBehaviour
 
     public void enableMovementAfterTalking()
     {
-        EnableMonologue.insideMonologue = false;
+        InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
         Invoke("destoryThisBox", 0.5f);

@@ -6,9 +6,11 @@ public class Shield : MonoBehaviour
 {
 
     private bool doOnce;
+    public static bool shieldActive;
     // Start is called before the first frame update
     void Start()
     {
+        shieldActive = false;
         doOnce = false;
 
     }
@@ -48,6 +50,7 @@ public class Shield : MonoBehaviour
                 {
                     if (!doOnce)
                     {
+                        shieldActive = false;
                         SoundManagerScript.PlaySound("draw_shield");
                         this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
                         this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
@@ -64,6 +67,7 @@ public class Shield : MonoBehaviour
                 {
                     if (!doOnce)
                     {
+                        shieldActive = true;
                         SoundManagerScript.PlaySound("draw_shield");
                         this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
                         this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
@@ -78,6 +82,7 @@ public class Shield : MonoBehaviour
         }
         else if ((GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null) && GrabShipPart.holdingPart == true)
         {
+            shieldActive = false;
             GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
@@ -85,6 +90,7 @@ public class Shield : MonoBehaviour
         }
         else if ((GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null) && GrabShipPart.holdingPart == false)
         {
+            shieldActive = false;
             GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
@@ -92,6 +98,7 @@ public class Shield : MonoBehaviour
         }
         else if (!(GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null) && GrabShipPart.holdingPart == false)
         {
+            shieldActive = false;
             GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
             this.gameObject.transform.GetChild(2).gameObject.SetActive(false);

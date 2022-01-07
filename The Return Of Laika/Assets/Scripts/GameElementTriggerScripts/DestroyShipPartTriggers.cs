@@ -13,9 +13,9 @@ public class DestroyShipPartTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EnableMonologue.destroyShipPartTriggers == true)
+        if (DestroyTriggers.destroyShipPartTriggers == true)
         {
-            Invoke("destroyAfterText9", 9.8f);
+            Invoke("destroyAfterText9", 10f);
         }
     }
 
