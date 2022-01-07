@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class ExitToMenu : MonoBehaviour, ISelectHandler
 {
+    public GameObject yesText2, noText2;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,8 @@ public class ExitToMenu : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
+        yesText2.gameObject.GetComponent<Text>().color = Color.white;
+        noText2.gameObject.GetComponent<Text>().color = Color.black;
         SoundManagerScript.PlaySound("button_switch");
     }
 }

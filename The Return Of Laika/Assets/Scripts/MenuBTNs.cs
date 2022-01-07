@@ -30,4 +30,9 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
         SceneManager.LoadScene("Main");
     }
 
+    public void optionsButton()
+    {
+        SoundManagerScript.PlaySound("button_switch");
+    }
+
 }
