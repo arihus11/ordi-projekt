@@ -50,7 +50,7 @@ public class MeteorShowerSpawner : MonoBehaviour
         {
             GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(false);
             destroyMeteorsGameOver = true;
-            GameObject.Find("MeteorMusicParent").gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
             GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
         }
 
@@ -60,7 +60,7 @@ public class MeteorShowerSpawner : MonoBehaviour
     void SpawnObject()
     {
         GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Pause();
-        GameObject.Find("MeteorMusicParent").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Play();
         time = 0;
         if (LaikaHealth.gameOver == false)
         {

@@ -18,8 +18,17 @@ public class PauseMenu : MonoBehaviour
         {
             if (!oneSwitchSound)
             {
-                SoundManagerScript.PlaySound("button_switch");
                 oneSwitchSound = true;
+                SoundManagerScript.PlaySound("button_switch");
+                GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Pause();
+                try
+                {
+                    GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Pause();
+                }
+                catch (System.NullReferenceException)
+                {
+                    Debug.Log("Meteor sound not active");
+                }
             }
             Time.timeScale = 0;
             GameObject.Find("PauseMenu").gameObject.transform.GetChild(0).gameObject.SetActive(true);

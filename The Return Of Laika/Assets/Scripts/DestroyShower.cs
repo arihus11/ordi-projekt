@@ -23,7 +23,7 @@ public class DestroyShower : MonoBehaviour
     {
 
         GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(false);
-        GameObject.Find("MeteorMusicParent").gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
         GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
         MeteorShowerSpawner.meteorShowerActive = false;
         Destroy(this.gameObject);

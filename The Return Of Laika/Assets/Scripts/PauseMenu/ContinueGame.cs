@@ -24,6 +24,15 @@ public class ContinueGame : MonoBehaviour, ISelectHandler
     public void ContinueGameButton()
     {
         Time.timeScale = 1;
+        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
+        try
+        {
+            GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Play();
+        }
+        catch (System.NullReferenceException)
+        {
+            Debug.Log("Meteor sound not active");
+        }
         PauseMenu.oneSwitchSound = false;
         GameObject.Find("PauseMenu").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         GameObject.Find("PauseMenu").gameObject.transform.GetChild(1).gameObject.SetActive(false);

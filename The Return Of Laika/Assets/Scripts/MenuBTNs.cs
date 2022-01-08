@@ -20,6 +20,7 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void CointinueGame()
     {
+        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
         SoundManagerScript.PlaySound("start");
         GameObject.Find("ClosingPanelParent").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         Invoke("changeSceneContinue", 1.85f);

@@ -19,12 +19,15 @@ public class LaikaHealth : MonoBehaviour
     public Sprite fullHealthPointSprite;
     public Sprite emptyHealthPointSprite;
     private Transform healthSystem;
+    private bool oneMusic;
     private AssembleShipPart assembleShipPartScript;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
+        oneMusic = false;
         PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
         doOnce = false;
         doOnce2 = false;
@@ -41,6 +44,15 @@ public class LaikaHealth : MonoBehaviour
         updateHealthDisplay();
         if (health == 0)
         {
+            if (!oneMusic)
+            {
+                oneMusic = true;
+
+                GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
+                GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
+
+            }
+
             PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
             GrabShipPart.firstGrabEver = false;
             GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
@@ -146,6 +158,7 @@ public class LaikaHealth : MonoBehaviour
     public void makeEverythingNormal()
     {
         gameOver = false;
+        oneMusic = false;
         MeteorShowerSpawner.destroyMeteorsGameOver = false;
         this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;

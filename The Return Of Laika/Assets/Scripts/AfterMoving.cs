@@ -39,6 +39,9 @@ public class AfterMoving : MonoBehaviour
 
     public void rumbleActions()
     {
+
+        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Pause();
+
         if (!oneRumble)
         {
             SoundManagerScript.PlaySound("cutscene_rumble");

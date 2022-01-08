@@ -11,6 +11,7 @@ public class NewGameBTNScript : MonoBehaviour, ISelectHandler
 
     public void PlayGame()
     {
+        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
         SoundManagerScript.PlaySound("start");
         PlayerPrefs.SetInt("BeforeMachinePickupTriggerPref", 0);
         PlayerPrefs.SetInt("InfrontOfMachineTriggerPref", 0);
