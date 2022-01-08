@@ -8,7 +8,7 @@ public class AssignFollowPlayer : MonoBehaviour
     void Start()
     {
         this.gameObject.GetComponent<CameraFollowPlayerScript>().enabled = false;
-        Invoke("AssignPlayer", 14.85f);
+        Invoke("AssignPlayer", 14.87f);
     }
 
     // Update is called once per frame

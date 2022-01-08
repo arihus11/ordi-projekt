@@ -66,6 +66,18 @@ public class MeteorShowerSpawner : MonoBehaviour
         {
             GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
+        Invoke("actualSpawn", 2f);
+    }
+
+    //Sets the random time between minTime and maxTime
+    void SetRandomTime()
+    {
+        spawnTime = Random.Range(minTime, maxTime);
+        randomShowerNumber = Random.Range(0, 101);
+    }
+
+    public void actualSpawn()
+    {
         if ((randomShowerNumber % 2) == 0)
         {
             meteorShowerActive = true;
@@ -77,13 +89,6 @@ public class MeteorShowerSpawner : MonoBehaviour
             Instantiate(shower2, transform.position, shower2.transform.rotation);
         }
         SetRandomTime();
-    }
-
-    //Sets the random time between minTime and maxTime
-    void SetRandomTime()
-    {
-        spawnTime = Random.Range(minTime, maxTime);
-        randomShowerNumber = Random.Range(0, 101);
     }
 
 }

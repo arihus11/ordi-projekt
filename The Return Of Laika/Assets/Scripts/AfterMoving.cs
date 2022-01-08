@@ -32,9 +32,17 @@ public class AfterMoving : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
+            Invoke("stopTheMusic", 3f);
             GameObject.FindGameObjectWithTag("pressKeyToSkip").gameObject.SetActive(false);
             closeCutscene();
         }
+    }
+
+    public void stopTheMusic()
+    {
+        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
+        GameObject.Find("SoundManager").gameObject.GetComponent<AudioSource>().Stop();
+        GameObject.Find("ShipSoundManager").gameObject.GetComponent<AudioSource>().Stop();
     }
 
     public void rumbleActions()
@@ -67,7 +75,7 @@ public class AfterMoving : MonoBehaviour
         GameObject.FindGameObjectWithTag("shipRawSprite").gameObject.GetComponent<SpriteRenderer>().sprite = brokenShip;
         GameObject.FindGameObjectWithTag("realShip").gameObject.transform.GetChild(1).gameObject.SetActive(true);
         blowUpSound();
-        Invoke("laikaFlyOut", 0.35f);
+        Invoke("laikaFlyOut", 0.1f);
         Invoke("beginTypingAgain", 3f);
     }
 
@@ -97,6 +105,7 @@ public class AfterMoving : MonoBehaviour
     public void closeCutscene()
     {
         GameObject.FindGameObjectWithTag("cosingPanel").gameObject.GetComponent<Animator>().Play("closeCutscene1");
+        Invoke("stopTheMusic", 3f);
         Invoke("changeToMain", 4.0f);
     }
 

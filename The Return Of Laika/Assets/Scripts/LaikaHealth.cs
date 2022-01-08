@@ -47,12 +47,10 @@ public class LaikaHealth : MonoBehaviour
             if (!oneMusic)
             {
                 oneMusic = true;
-
                 GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
                 GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
 
             }
-
             PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
             GrabShipPart.firstGrabEver = false;
             GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;

@@ -4852,6 +4852,7 @@ GameObject:
   - component: {fileID: 369839778}
   - component: {fileID: 369839777}
   - component: {fileID: 369839776}
+  - component: {fileID: 369839779}
   m_Layer: 0
   m_Name: BasicPlanet5
   m_TagString: basicplanet5
@@ -4928,6 +4929,18 @@ CircleCollider2D:
   m_Offset: {x: 0.015, y: 0.02}
   serializedVersion: 2
   m_Radius: 0.55
+--- !u!114 &369839779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369839774}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbaa21d0af8b08408460e69aefe1ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &376265209
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,6 +5682,7 @@ GameObject:
   - component: {fileID: 419632021}
   - component: {fileID: 419632020}
   - component: {fileID: 419632019}
+  - component: {fileID: 419632022}
   m_Layer: 0
   m_Name: BasicPlanet6
   m_TagString: basicplanet6
@@ -5745,6 +5759,18 @@ CircleCollider2D:
   m_Offset: {x: 0.015, y: 0.02}
   serializedVersion: 2
   m_Radius: 0.55
+--- !u!114 &419632022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419632017}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbaa21d0af8b08408460e69aefe1ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &425745644
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,6 +7292,7 @@ GameObject:
   - component: {fileID: 539318642}
   - component: {fileID: 539318641}
   - component: {fileID: 539318640}
+  - component: {fileID: 539318643}
   m_Layer: 0
   m_Name: BasicPlanet3
   m_TagString: basicplanet3
@@ -7342,6 +7369,18 @@ CircleCollider2D:
   m_Offset: {x: 0.015, y: 0.02}
   serializedVersion: 2
   m_Radius: 0.55
+--- !u!114 &539318643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539318638}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbaa21d0af8b08408460e69aefe1ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547343645
 GameObject:
   m_ObjectHideFlags: 0
@@ -15008,6 +15047,7 @@ GameObject:
   - component: {fileID: 1071558791}
   - component: {fileID: 1071558790}
   - component: {fileID: 1071558789}
+  - component: {fileID: 1071558792}
   m_Layer: 0
   m_Name: BasicPlanet2
   m_TagString: basicplanet2
@@ -15084,6 +15124,18 @@ CircleCollider2D:
   m_Offset: {x: 0.015, y: 0.02}
   serializedVersion: 2
   m_Radius: 0.55
+--- !u!114 &1071558792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071558787}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbaa21d0af8b08408460e69aefe1ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1079915685 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6790022729178508891, guid: 1602db7f53f99b54b82744784670f105, type: 3}
@@ -20870,6 +20922,7 @@ GameObject:
   - component: {fileID: 1560145778}
   - component: {fileID: 1560145781}
   - component: {fileID: 1560145779}
+  - component: {fileID: 1560145782}
   m_Layer: 0
   m_Name: BasicPlanet
   m_TagString: basicplanet1
@@ -20946,6 +20999,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1560145782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560145777}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbaa21d0af8b08408460e69aefe1ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564608227
 GameObject:
   m_ObjectHideFlags: 0
@@ -21771,6 +21836,7 @@ GameObject:
   - component: {fileID: 1664037086}
   - component: {fileID: 1664037085}
   - component: {fileID: 1664037084}
+  - component: {fileID: 1664037087}
   m_Layer: 0
   m_Name: BasicPlanet4
   m_TagString: basicplanet4
@@ -21847,6 +21913,18 @@ CircleCollider2D:
   m_Offset: {x: 0.015, y: 0.02}
   serializedVersion: 2
   m_Radius: 0.55
+--- !u!114 &1664037087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664037082}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbaa21d0af8b08408460e69aefe1ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1678754643
 GameObject:
   m_ObjectHideFlags: 0
