@@ -15,18 +15,12 @@ public class PositionBasicPlanet : MonoBehaviour
     void Update()
     {
 
-        if (LaikaHealth.gameOver == true)
+        if (LaikaHealth.movePlanets == true)
         {
 
-            Invoke("returnPlanetToPosition", 7f);
+            this.gameObject.transform.position = planetPosition;
 
         }
     }
 
-
-    public void returnPlanetToPosition()
-    {
-        this.gameObject.transform.position = planetPosition;
-
-    }
 }

@@ -13,6 +13,7 @@ public class LaikaHealth : MonoBehaviour
     Vector2 startDirection;
     float timeStamp;
     private bool doOnce, doOnce2;
+    public static bool movePlanets;
 
     [Header("Health Display")]
     public GameObject healthSystemCanvas;
@@ -26,6 +27,7 @@ public class LaikaHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        movePlanets = false;
         GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
         oneMusic = false;
         PlayerPrefs.SetInt("FirstMeteorShowerPref", 0);
@@ -138,6 +140,7 @@ public class LaikaHealth : MonoBehaviour
         if (doOnce2 == false)
         {
             this.gameObject.transform.position = GameObject.FindGameObjectWithTag("startPosition").gameObject.transform.position;
+            movePlanets = true;
             Invoke("makeEverythingNormal", 2f);
             doOnce2 = true;
         }
@@ -161,6 +164,7 @@ public class LaikaHealth : MonoBehaviour
         this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
+        movePlanets = false;
         Invoke("changeSwitches", 4f);
     }
 
