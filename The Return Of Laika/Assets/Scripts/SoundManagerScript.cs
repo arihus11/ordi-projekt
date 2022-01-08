@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip button_switch, button_press, gameover, start, damage, jetpack, grab, correct_drop, alert_meteor_shower, life_up, shoot, eat, push_planet, meteor_shield, draw_shield, blackhole_death, suck, flash,
+    public static AudioClip button_switch, button_press, gameover, start, damage, jetpack, grab, correct_drop, life_up, shoot, eat, push_planet, meteor_shield, draw_shield, blackhole_death, suck, flash,
     typing, rumble1, enter_ship, teleport, ship_sounds, flyout, cutscene_rumble, ship_explosion;
     static AudioSource audioSrc;
 
@@ -20,7 +20,6 @@ public class SoundManagerScript : MonoBehaviour
         jetpack = Resources.Load<AudioClip>("jetpack");
         grab = Resources.Load<AudioClip>("grab");
         correct_drop = Resources.Load<AudioClip>("correct_drop");
-        alert_meteor_shower = Resources.Load<AudioClip>("alert_meteor_shower");
         life_up = Resources.Load<AudioClip>("life_up");
         shoot = Resources.Load<AudioClip>("shoot");
         eat = Resources.Load<AudioClip>("eat");
@@ -77,9 +76,6 @@ public class SoundManagerScript : MonoBehaviour
                 break;
             case "correct_drop":
                 audioSrc.PlayOneShot(correct_drop);
-                break;
-            case "alert_meteor_shower":
-                audioSrc.PlayOneShot(alert_meteor_shower);
                 break;
             case "life_up":
                 audioSrc.PlayOneShot(life_up);
