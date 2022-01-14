@@ -894,7 +894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309.3, y: -441.1}
+  m_AnchoredPosition: {x: -259.67, y: -441.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &77099441
@@ -922,7 +922,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: "If I bring the parts here, I could try to \nrebuild the ship."
+  textToWrite: 'If I retrieve the parts, I could try
+
+    rebuilding the rocket.'
   deleteLineTime: 0.9
 --- !u!114 &77099443
 MonoBehaviour:
@@ -957,7 +959,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "If I bring the parts here, I could try to \nrebuild the ship."
+  m_Text: 'If I retrieve the parts, I could try
+
+    rebuilding the rocket.'
 --- !u!222 &77099444
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1587,7 +1591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -314.4, y: -462.8}
+  m_AnchoredPosition: {x: -335.1, y: -442.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &120495319
@@ -1602,7 +1606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: 'This bluish thingy is called a black hole. '
+  textToWrite: "Woah, those must be the black holes that the \nteam talked about."
   deleteLineTime: 0.9
 --- !u!114 &120495320
 MonoBehaviour:
@@ -1637,7 +1641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'This bluish thingy is called a black hole. '
+  m_Text: "Woah, those must be the black holes that the \nteam talked about."
 --- !u!222 &120495321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1821,7 +1825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315.3, y: -440.7}
+  m_AnchoredPosition: {x: -326.8, y: -440.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151414869
@@ -1849,8 +1853,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: "If I hold part of the ship during a meteor \nshower, I could use
-    it as a shield."
+  textToWrite: "If I hold up a part of the spaceship during \na meteor shower, I
+    can use it as a shield."
   deleteLineTime: 0.9
 --- !u!114 &151414871
 MonoBehaviour:
@@ -1885,8 +1889,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "If I hold part of the ship during a meteor \nshower, I could use it as
-    a shield."
+  m_Text: "If I hold up a part of the spaceship during \na meteor shower, I can use
+    it as a shield."
 --- !u!222 &151414872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1942,7 +1946,7 @@ MonoBehaviour:
   texts:
   - {fileID: 1516596345}
   - {fileID: 575621618}
-  enableSecondTextTime: 3.9
+  enableSecondTextTime: 4.2
 --- !u!1 &179713240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a23690dbb12d0449f15b0de84a45a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 7.3
+  destroyTime: 7.6
 --- !u!114 &206283198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,7 +2386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e669876296e6f47bb59222d86f4549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeTime: 6.3
+  closeTime: 6.6
 --- !u!95 &206283199
 Animator:
   serializedVersion: 3
@@ -2964,7 +2968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1001 &256920435
 PrefabInstance:
@@ -3405,7 +3409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: My movement is way to slow.
+  textToWrite: My movement is way too slow.
   deleteLineTime: 0.9
 --- !u!114 &261015787
 MonoBehaviour:
@@ -3440,7 +3444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: My movement is way to slow.
+  m_Text: My movement is way too slow.
 --- !u!222 &261015788
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4528,7 +4532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -644.73, y: 48.57}
+  m_AnchoredPosition: {x: -590.5, y: 41.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338988005
@@ -4564,8 +4568,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Laika almost died.  Fortunately, a space-time anomaly occurred that took
-    \nLaika back in time.  Unfortunately, all the progress made is lost."
+  m_Text: "Yikes! A space-time anomaly occurred that took Laika back in time. \nUnfortunately,
+    all the progress made is now lost."
 --- !u!222 &338988006
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5383,7 +5387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7aad87cfa0277d42bc775cca8856b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableTime: 8.9
+  disableTime: 9.2
 --- !u!114 &401414444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5396,7 +5400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e669876296e6f47bb59222d86f4549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeTime: 8.3
+  closeTime: 8.6
 --- !u!95 &401414445
 Animator:
   serializedVersion: 3
@@ -5589,7 +5593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 1
-  enableWalkingTime: 9.1
+  enableWalkingTime: 9.2
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!70 &405191150
 CapsuleCollider2D:
@@ -7962,7 +7966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7350342265361a54e99007bca92e9d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeTextTime: 3.5
+  closeTextTime: 3.8
 --- !u!114 &575621621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7975,8 +7979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: "If I take it, I might be able to move much \nfaster! "
-  deleteLineTime: 0.9
+  textToWrite: "If I take it, I will be able to move much \nfaster! "
+  deleteLineTime: 5
 --- !u!114 &575621622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8010,7 +8014,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "If I take it, I might be able to move much \nfaster! "
+  m_Text: "If I take it, I will be able to move much \nfaster! "
 --- !u!222 &575621623
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10149,7 +10153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &727464034
 GameObject:
@@ -10986,7 +10990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.4, y: -441.9}
+  m_AnchoredPosition: {x: -316.7, y: -441.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &774653966
@@ -11014,9 +11018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: 'If I get inside the burning belt, it will
-
-    hurt me for sure.'
+  textToWrite: "If I get in range of their radiating belt, \nI will be hurt."
   deleteLineTime: 0.9
 --- !u!114 &774653968
 MonoBehaviour:
@@ -11051,9 +11053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'If I get inside the burning belt, it will
-
-    hurt me for sure.'
+  m_Text: "If I get in range of their radiating belt, \nI will be hurt."
 --- !u!222 &774653969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11123,7 +11123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &787891557
 GameObject:
@@ -11743,7 +11743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -288, y: -459.8}
+  m_AnchoredPosition: {x: -314.7, y: -459.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814817651
@@ -11758,7 +11758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: So this is all that is left of my ship.
+  textToWrite: So this is all that is left of my Sputnik.
   deleteLineTime: 0.9
 --- !u!114 &814817652
 MonoBehaviour:
@@ -11793,7 +11793,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: So this is all that is left of my ship.
+  m_Text: So this is all that is left of my Sputnik.
 --- !u!222 &814817653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11921,7 +11921,7 @@ MonoBehaviour:
   texts:
   - {fileID: 120495317}
   - {fileID: 1329542287}
-  enableSecondTextTime: 2.9
+  enableSecondTextTime: 3.7
 --- !u!1 &837088610
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,7 +13327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -299.7, y: -461.7}
+  m_AnchoredPosition: {x: -262.9, y: -461.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951364025
@@ -13342,7 +13342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: This reddish thing seems to be very hot.
+  textToWrite: The red planets seem to be very hot.
   deleteLineTime: 0.9
 --- !u!114 &951364026
 MonoBehaviour:
@@ -13377,7 +13377,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: This reddish thing seems to be very hot.
+  m_Text: The red planets seem to be very hot.
 --- !u!222 &951364027
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14018,7 +14018,7 @@ MonoBehaviour:
   texts:
   - {fileID: 1186481916}
   - {fileID: 1083440695}
-  enableSecondTextTime: 2.7
+  enableSecondTextTime: 3
 --- !u!1 &983736645
 GameObject:
   m_ObjectHideFlags: 0
@@ -14838,7 +14838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1044219462
 GameObject:
@@ -15271,7 +15271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7350342265361a54e99007bca92e9d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeTextTime: 2.7
+  closeTextTime: 3
 --- !u!114 &1083440698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15285,7 +15285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToWrite: I hope I won't be forced to use it.
-  deleteLineTime: 1.2
+  deleteLineTime: 1.5
 --- !u!114 &1083440699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16578,7 +16578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190.3, y: -460.41}
+  m_AnchoredPosition: {x: -293.93, y: -460.41}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1186481918
@@ -16593,7 +16593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: Woah! is that a space gun?!
+  textToWrite: 'Uh oh! I better get my Super Bark 3000! '
   deleteLineTime: 1.2
 --- !u!114 &1186481919
 MonoBehaviour:
@@ -16628,7 +16628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Woah! is that a space gun?!
+  m_Text: 'Uh oh! I better get my Super Bark 3000! '
 --- !u!222 &1186481920
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17737,7 +17737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1270121806
 GameObject:
@@ -18237,7 +18237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1329542287
 GameObject:
@@ -18275,7 +18275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -346.2, y: -441.9}
+  m_AnchoredPosition: {x: -302.3, y: -441.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1329542289
@@ -18290,7 +18290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7350342265361a54e99007bca92e9d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeTextTime: 5.3
+  closeTextTime: 3.5
 --- !u!114 &1329542290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18303,7 +18303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: "I must be careful. If I get to close it could \nsuck me in."
+  textToWrite: "I must be careful. If I get too close it \ncould suck me in."
   deleteLineTime: 0.9
 --- !u!114 &1329542291
 MonoBehaviour:
@@ -18338,7 +18338,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "I must be careful. If I get to close it could \nsuck me in."
+  m_Text: "I must be careful. If I get too close it \ncould suck me in."
 --- !u!222 &1329542292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19325,7 +19325,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'I better step back and close my eyes now that
 
-    all the parts are assembled.'
+    all the parts are retrieved.'
 --- !u!222 &1410135601
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19349,7 +19349,7 @@ MonoBehaviour:
   textToWrite: 'I better step back and close my eyes now that
 
     all the parts
-    are assembled.'
+    are retrieved.'
   deleteLineTime: 0.9
 --- !u!1 &1412235315
 GameObject:
@@ -20543,9 +20543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: 'WAIT! Is that a thrust power that we kept
-
-    inside of the ship?!'
+  textToWrite: "Wait! There is residue of jet thrust power \nthat fuels the rocket
+    engine!"
   deleteLineTime: 0.9
 --- !u!114 &1516596348
 MonoBehaviour:
@@ -20580,9 +20579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'WAIT! Is that a thrust power that we kept
-
-    inside of the ship?!'
+  m_Text: "Wait! There is residue of jet thrust power \nthat fuels the rocket engine!"
 --- !u!222 &1516596349
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22205,7 +22202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1683324906
 GameObject:
@@ -23175,7 +23172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1726831515
 GameObject:
@@ -23923,7 +23920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7aad87cfa0277d42bc775cca8856b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableTime: 7.7
+  disableTime: 8.5
 --- !u!114 &1768874875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23936,7 +23933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e669876296e6f47bb59222d86f4549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeTime: 7.1
+  closeTime: 7.9
 --- !u!95 &1768874876
 Animator:
   serializedVersion: 3
@@ -24782,7 +24779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -347.1, y: -439.9}
+  m_AnchoredPosition: {x: -301.7, y: -439.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855450199
@@ -24797,7 +24794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd707efd0cb0dc741bc4c6ead8367f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToWrite: "Meteor showers are common occurrance in space \nso I better stay
+  textToWrite: "Meteor showers are a common occurrence in \nspace so I better stay
     alert."
   deleteLineTime: 0.9
 --- !u!114 &1855450200
@@ -24833,7 +24830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Meteor showers are common occurrance in space \nso I better stay alert."
+  m_Text: "Meteor showers are a common occurrence in \nspace so I better stay alert."
 --- !u!222 &1855450201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25087,7 +25084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 7.9
+  enableWalkingTime: 8.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1881973717
 GameObject:
