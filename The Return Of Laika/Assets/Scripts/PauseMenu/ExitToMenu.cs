@@ -22,6 +22,7 @@ public class ExitToMenu : MonoBehaviour, ISelectHandler
 
     public void ExitToMainMenu()
     {
+        this.gameObject.GetComponent<Button>().interactable = false;
         SoundManagerScript.PlaySound("start");
         Time.timeScale = 1;
         GameObject.Find("ClosingPanelParent").gameObject.transform.GetChild(0).gameObject.SetActive(true);

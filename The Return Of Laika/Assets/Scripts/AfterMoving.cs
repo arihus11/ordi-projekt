@@ -124,7 +124,7 @@ public class AfterMoving : MonoBehaviour
 
     public void changeToMain()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Chapter1Text");
     }
 
     public void closeLastBox()

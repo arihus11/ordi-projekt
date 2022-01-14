@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CreditsController : MonoBehaviour
+public class Chapter1TextControler : MonoBehaviour
 {
     public GameObject endPanel;
     public float finishAtTime;
@@ -21,7 +21,7 @@ public class CreditsController : MonoBehaviour
 
     public void changeScenes()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Main");
     }
 
     public void closePanel()
