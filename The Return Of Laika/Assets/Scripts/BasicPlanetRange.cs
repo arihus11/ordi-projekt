@@ -63,6 +63,41 @@ public class BasicPlanetRange : MonoBehaviour
             insidePlanetRange6 = true;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
         }
+        else if (col.gameObject.tag == "basicplanet7" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange7 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet8" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange8 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet9" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange9 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet10" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange10 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet11" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange11 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet12" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange12 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet13" && GrabShipPart.holdingPart == false)
+        {
+            insidePlanetRange13 = true;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("PushHintDisplay", -1, 0f);
+        }
     }
 
     void OnTriggerExit2D(Collider2D col)
