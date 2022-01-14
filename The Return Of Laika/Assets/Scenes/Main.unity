@@ -9702,8 +9702,8 @@ GameObject:
   - component: {fileID: 542705172}
   - component: {fileID: 542705176}
   - component: {fileID: 542705175}
-  - component: {fileID: 542705174}
   - component: {fileID: 542705173}
+  - component: {fileID: 542705174}
   m_Layer: 0
   m_Name: BasicPlanet9
   m_TagString: basicplanet9
@@ -9751,7 +9751,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 542705171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
+  m_Script: {fileID: 11500000, guid: b2d7788e6c4011d499a20842173958bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -11682,7 +11682,7 @@ GameObject:
   - component: {fileID: 648921754}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp11
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13555,8 +13555,8 @@ GameObject:
   - component: {fileID: 740675842}
   - component: {fileID: 740675846}
   - component: {fileID: 740675845}
-  - component: {fileID: 740675844}
   - component: {fileID: 740675843}
+  - component: {fileID: 740675844}
   m_Layer: 0
   m_Name: BasicPlanet10
   m_TagString: Player
@@ -13604,7 +13604,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 740675841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
+  m_Script: {fileID: 11500000, guid: aabdef20444d1b44bb13bdb50c2e16c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -15583,7 +15583,7 @@ GameObject:
   - component: {fileID: 852458740}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18002,8 +18002,8 @@ GameObject:
   - component: {fileID: 979625084}
   - component: {fileID: 979625088}
   - component: {fileID: 979625087}
-  - component: {fileID: 979625086}
   - component: {fileID: 979625085}
+  - component: {fileID: 979625086}
   m_Layer: 0
   m_Name: BasicPlanet13
   m_TagString: basicplanet13
@@ -18051,7 +18051,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 979625083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
+  m_Script: {fileID: 11500000, guid: e20631e74c6f00b439fca92a5770ef76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -20967,7 +20967,7 @@ GameObject:
   - component: {fileID: 1176888471}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp13
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22013,7 +22013,7 @@ GameObject:
   - component: {fileID: 1222926132}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27647,7 +27647,7 @@ GameObject:
   - component: {fileID: 1632179325}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29838,8 +29838,8 @@ GameObject:
   - component: {fileID: 1752998703}
   - component: {fileID: 1752998707}
   - component: {fileID: 1752998706}
-  - component: {fileID: 1752998705}
   - component: {fileID: 1752998704}
+  - component: {fileID: 1752998705}
   m_Layer: 0
   m_Name: BasicPlanet12
   m_TagString: basicplanet12
@@ -29887,7 +29887,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1752998702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
+  m_Script: {fileID: 11500000, guid: d9e172b3bfa719e4eaaddc542ee7f9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -30670,7 +30670,7 @@ GameObject:
   - component: {fileID: 1786754631}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32028,8 +32028,8 @@ GameObject:
   - component: {fileID: 1877622813}
   - component: {fileID: 1877622817}
   - component: {fileID: 1877622816}
-  - component: {fileID: 1877622815}
   - component: {fileID: 1877622814}
+  - component: {fileID: 1877622815}
   m_Layer: 0
   m_Name: BasicPlanet8
   m_TagString: basicplanet8
@@ -32077,7 +32077,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1877622812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d4c6e9ba47bab943839c157bf3241a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -34256,8 +34256,8 @@ GameObject:
   - component: {fileID: 2069481780}
   - component: {fileID: 2069481784}
   - component: {fileID: 2069481783}
-  - component: {fileID: 2069481782}
   - component: {fileID: 2069481781}
+  - component: {fileID: 2069481782}
   m_Layer: 0
   m_Name: BasicPlanet11
   m_TagString: basicplanet11
@@ -34305,7 +34305,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069481779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964dbc5a4ca89724fb9ec5ce42200aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 61ad997008a853a43926a7295b0517fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2.5
@@ -35507,7 +35507,7 @@ GameObject:
   - component: {fileID: 2127440264}
   m_Layer: 9
   m_Name: Planet
-  m_TagString: bp6
+  m_TagString: bp12
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

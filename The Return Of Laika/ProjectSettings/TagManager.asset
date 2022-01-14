@@ -59,6 +59,13 @@ TagManager:
   - basicplanet11
   - basicplanet12
   - basicplanet13
+  - bp7
+  - bp8
+  - bp9
+  - bp10
+  - bp11
+  - bp12
+  - bp13
   layers:
   - Default
   - TransparentFX
