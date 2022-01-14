@@ -52,6 +52,13 @@ TagManager:
   - bp6
   - realShip
   - shipRawSprite
+  - basicplanet7
+  - basicplanet8
+  - basicplanet9
+  - basicplanet10
+  - basicplanet11
+  - basicplanet12
+  - basicplanet13
   layers:
   - Default
   - TransparentFX

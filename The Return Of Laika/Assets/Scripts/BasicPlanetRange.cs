@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BasicPlanetRange : MonoBehaviour
 {
-    public static bool insidePlanetRange1, insidePlanetRange2, insidePlanetRange3, insidePlanetRange4, insidePlanetRange5, insidePlanetRange6;
+    public static bool insidePlanetRange1, insidePlanetRange2, insidePlanetRange3, insidePlanetRange4,
+    insidePlanetRange5, insidePlanetRange6, insidePlanetRange7, insidePlanetRange8, insidePlanetRange9, insidePlanetRange10,
+    insidePlanetRange11, insidePlanetRange12, insidePlanetRange13;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,13 @@ public class BasicPlanetRange : MonoBehaviour
         insidePlanetRange4 = false;
         insidePlanetRange5 = false;
         insidePlanetRange6 = false;
+        insidePlanetRange7 = false;
+        insidePlanetRange8 = false;
+        insidePlanetRange9 = false;
+        insidePlanetRange10 = false;
+        insidePlanetRange11 = false;
+        insidePlanetRange12 = false;
+        insidePlanetRange13 = false;
     }
 
     // Update is called once per frame
@@ -86,6 +95,41 @@ public class BasicPlanetRange : MonoBehaviour
         else if (col.gameObject.tag == "basicplanet6")
         {
             insidePlanetRange6 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet7")
+        {
+            insidePlanetRange7 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet8")
+        {
+            insidePlanetRange8 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet9")
+        {
+            insidePlanetRange9 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet10")
+        {
+            insidePlanetRange10 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet11")
+        {
+            insidePlanetRange11 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet12")
+        {
+            insidePlanetRange12 = false;
+            GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
+        }
+        else if (col.gameObject.tag == "basicplanet13")
+        {
+            insidePlanetRange13 = false;
             GameObject.Find("PushHintContainer").gameObject.GetComponent<Animator>().Play("Base", -1, 0f);
         }
     }

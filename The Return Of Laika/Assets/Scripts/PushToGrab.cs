@@ -18,7 +18,7 @@ public class PushToGrab : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "bp1" || col.gameObject.tag == "bp2" || col.gameObject.tag == "bp3" || col.gameObject.tag == "bp4" || col.gameObject.tag == "bp5" || col.gameObject.tag == "bp6")
+        if (col.gameObject.tag == "bp1" || col.gameObject.tag == "bp2" || col.gameObject.tag == "bp3" || col.gameObject.tag == "bp4" || col.gameObject.tag == "bp5" || col.gameObject.tag == "bp6" || col.gameObject.tag == "bp7" || col.gameObject.tag == "bp8" || col.gameObject.tag == "bp9" || col.gameObject.tag == "bp10" || col.gameObject.tag == "bp11" || col.gameObject.tag == "bp12" || col.gameObject.tag == "bp13")
         {
             if (this.gameObject.transform.parent.gameObject.GetComponent<CircleCollider2D>() != null)
             {
@@ -36,7 +36,7 @@ public class PushToGrab : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "bp1" || col.gameObject.tag == "bp2" || col.gameObject.tag == "bp3" || col.gameObject.tag == "bp4" || col.gameObject.tag == "bp5" || col.gameObject.tag == "bp6")
+        if (col.gameObject.tag == "bp1" || col.gameObject.tag == "bp2" || col.gameObject.tag == "bp3" || col.gameObject.tag == "bp4" || col.gameObject.tag == "bp5" || col.gameObject.tag == "bp6" || col.gameObject.tag == "bp7" || col.gameObject.tag == "bp8" || col.gameObject.tag == "bp9" || col.gameObject.tag == "bp10" || col.gameObject.tag == "bp11" || col.gameObject.tag == "bp12" || col.gameObject.tag == "bp13")
         {
             this.gameObject.transform.parent.gameObject.GetComponent<CircleCollider2D>().enabled = true;
         }
