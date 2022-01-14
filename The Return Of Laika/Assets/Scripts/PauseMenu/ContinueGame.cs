@@ -24,15 +24,15 @@ public class ContinueGame : MonoBehaviour, ISelectHandler
     public void ContinueGameButton()
     {
         Time.timeScale = 1;
-        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
-        try
+        if (MeteorShowerSpawner.meteorMusicPlaying == true)
         {
             GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Play();
         }
-        catch (System.NullReferenceException)
+        else if (MeteorShowerSpawner.meteorMusicPlaying == false)
         {
-            Debug.Log("Meteor sound not active");
+            GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
         }
+
         PauseMenu.oneSwitchSound = false;
         GameObject.Find("PauseMenu").gameObject.transform.GetChild(0).gameObject.SetActive(false);
         GameObject.Find("PauseMenu").gameObject.transform.GetChild(1).gameObject.SetActive(false);
@@ -41,8 +41,8 @@ public class ContinueGame : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
-        noText.gameObject.GetComponent<Text>().color = Color.white;
-        yesText.gameObject.GetComponent<Text>().color = Color.black;
+        noText.gameObject.GetComponent<Text>().color = Color.black;
+        yesText.gameObject.GetComponent<Text>().color = Color.white;
         if (counter == 0)
         {
             counter = 1;

@@ -7,13 +7,13 @@ public class MeteorShowerSpawner : MonoBehaviour
     public GameObject shower1, shower2;
     public static bool meteorShowerActive;
     public static bool destroyMeteorsGameOver;
+    public static bool meteorMusicPlaying;
     public float maxTime = 70f;
     public float minTime = 50f;
 
 
     //current time
     private float time;
-
     //The time to spawn the object
     private float spawnTime;
     private bool setOneTime;
@@ -24,6 +24,7 @@ public class MeteorShowerSpawner : MonoBehaviour
         setOneTime = false;
         destroyMeteorsGameOver = false;
         meteorShowerActive = false;
+        meteorMusicPlaying = false;
         time = minTime;
     }
 
@@ -52,6 +53,7 @@ public class MeteorShowerSpawner : MonoBehaviour
             destroyMeteorsGameOver = true;
             GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
             GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
+            meteorMusicPlaying = false;
         }
 
     }
@@ -61,6 +63,7 @@ public class MeteorShowerSpawner : MonoBehaviour
     {
         GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Pause();
         GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Play();
+        meteorMusicPlaying = true;
         time = 0;
         if (LaikaHealth.gameOver == false)
         {

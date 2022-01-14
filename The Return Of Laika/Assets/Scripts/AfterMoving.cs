@@ -23,8 +23,7 @@ public class AfterMoving : MonoBehaviour
         dialogueBox2.SetActive(false);
         explosion.SetActive(false);
         this.gameObject.GetComponent<Animator>().enabled = false;
-        Invoke("rumbleActions", 61f);
-        Invoke("deactivateShaking", 70f);
+        Invoke("preRumbleActions", 62.3f);
     }
 
     // Update is called once per frame
@@ -33,7 +32,14 @@ public class AfterMoving : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape))
         {
             Invoke("stopTheMusic", 3f);
-            GameObject.FindGameObjectWithTag("pressKeyToSkip").gameObject.SetActive(false);
+            try
+            {
+                GameObject.FindGameObjectWithTag("pressKeyToSkip").gameObject.SetActive(false);
+            }
+            catch (System.NullReferenceException)
+            {
+                Debug.Log("Avoid null reference");
+            }
             closeCutscene();
         }
     }
@@ -43,6 +49,12 @@ public class AfterMoving : MonoBehaviour
         GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
         GameObject.Find("SoundManager").gameObject.GetComponent<AudioSource>().Stop();
         GameObject.Find("ShipSoundManager").gameObject.GetComponent<AudioSource>().Stop();
+    }
+
+    public void preRumbleActions()
+    {
+        this.gameObject.GetComponent<CameraFollowPlayerScript>().enabled = false;
+        Invoke("rumbleActions", 0.2f);
     }
 
     public void rumbleActions()
@@ -56,10 +68,10 @@ public class AfterMoving : MonoBehaviour
         }
         dialogueBox2.SetActive(true);
         dialogueBox.SetActive(false);
-        this.gameObject.GetComponent<CameraFollowPlayerScript>().enabled = false;
         // this.gameObject.GetComponent<Animator>().enabled = true;
         // this.gameObject.GetComponent<Animator>().Play("ShipShaking");
         spaceship.GetComponent<Animator>().Play("ShipShake");
+        Invoke("deactivateShaking", 7f);
 
     }
 
@@ -99,6 +111,7 @@ public class AfterMoving : MonoBehaviour
     public void beginTypingAgain()
     {
         textBox2.SetActive(true);
+        Invoke("closeLastBox", 11f);
         Invoke("closeCutscene", 11f);
     }
 
@@ -112,5 +125,10 @@ public class AfterMoving : MonoBehaviour
     public void changeToMain()
     {
         SceneManager.LoadScene("Main");
+    }
+
+    public void closeLastBox()
+    {
+        GameObject.Find("DialogueBox2").gameObject.GetComponent<Animator>().Play("closeLastDialogueBox");
     }
 }

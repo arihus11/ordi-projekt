@@ -7,10 +7,16 @@ using UnityEngine.EventSystems;
 
 public class MenuBTNs : MonoBehaviour, ISelectHandler
 {
+    private bool pressed;
 
     public void QuitGame()
     {
-        Application.Quit();
+        if (!pressed)
+        {
+            pressed = true;
+            this.gameObject.GetComponent<Button>().interactable = false;
+            Application.Quit();
+        }
     }
 
     public void OnSelect(BaseEventData selected)
@@ -20,10 +26,16 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void CointinueGame()
     {
-        GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
-        SoundManagerScript.PlaySound("start");
-        GameObject.Find("ClosingPanelParent").gameObject.transform.GetChild(0).gameObject.SetActive(true);
-        Invoke("changeSceneContinue", 1.85f);
+        if (!pressed)
+        {
+            pressed = true;
+            this.gameObject.GetComponent<Button>().interactable = false;
+            GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
+            SoundManagerScript.PlaySound("start");
+            GameObject.Find("ClosingPanelParent").gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            Invoke("changeSceneContinue", 1.85f);
+        }
+
     }
 
     public void changeSceneContinue()
@@ -34,6 +46,11 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
     public void optionsButton()
     {
         SoundManagerScript.PlaySound("button_switch");
+    }
+
+    void Start()
+    {
+        pressed = false;
     }
 
 }
