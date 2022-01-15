@@ -44,27 +44,39 @@ public class LaikaMovement : MonoBehaviour
                 anim.SetBool("isGoing", false);
             }
         }
-        switch (GrabShipPart.grabbedPartID)
+        if (BlackHoleMagnet.flyToHole == true)
         {
-            case ShipPartEnum.None:
-                additionalForce = 1f;
-                break;
-            case ShipPartEnum.Part1:
-                additionalForce = 1.7f;
-                break;
-            case ShipPartEnum.Part2:
-                additionalForce = 1.65f;
-                break;
-            case ShipPartEnum.Part3:
-                additionalForce = 1.45f;
-                break;
-            case ShipPartEnum.Part4:
-                additionalForce = 1.55f;
-                break;
-            case ShipPartEnum.Part5:
-                additionalForce = 1.35f;
-                break;
+            additionalForce = 1f;
         }
+        else if (BlackHoleMagnet.flyToHole == false)
+        {
+            switch (GrabShipPart.grabbedPartID)
+            {
+                case ShipPartEnum.None:
+                    additionalForce = 1f;
+                    break;
+                case ShipPartEnum.Part1:
+                    additionalForce = 1.9f;
+                    break;
+                case ShipPartEnum.Part2:
+                    additionalForce = 1.9f;
+                    //      additionalForce = 1.65f;
+                    break;
+                case ShipPartEnum.Part3:
+                    additionalForce = 1.9f;
+                    //      additionalForce = 1.45f;
+                    break;
+                case ShipPartEnum.Part4:
+                    additionalForce = 1.9f;
+                    //    additionalForce = 1.55f;
+                    break;
+                case ShipPartEnum.Part5:
+                    additionalForce = 1.9f;
+                    //     additionalForce = 1.35f;
+                    break;
+            }
+        }
+
     }
 
     //Remove this function

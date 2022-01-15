@@ -7,7 +7,7 @@ public class DestroyShower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("destroyThisShower", 19f);
+        Invoke("destroyThisShower", 24f);
     }
 
     // Update is called once per frame

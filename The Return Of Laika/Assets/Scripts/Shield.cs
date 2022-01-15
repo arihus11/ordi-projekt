@@ -32,7 +32,7 @@ public class Shield : MonoBehaviour
                         this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
                         this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
                         doOnce = true;
-                        Invoke("changeSwitch", 0.3f);
+                        Invoke("changeSwitch", 0.15f);
                     }
                 }
                 else if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -43,7 +43,7 @@ public class Shield : MonoBehaviour
                         this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
                         this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
                         doOnce = true;
-                        Invoke("changeSwitch", 0.3f);
+                        Invoke("changeSwitch", 0.15f);
                     }
                 }
                 else if (Input.GetKeyDown(KeyCode.O))
@@ -55,7 +55,7 @@ public class Shield : MonoBehaviour
                         this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
                         this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
                         doOnce = true;
-                        Invoke("changeSwitch", 0.3f);
+                        Invoke("changeSwitch", 0.15f);
                     }
                 }
             }
@@ -73,7 +73,7 @@ public class Shield : MonoBehaviour
                         this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
 
                         doOnce = true;
-                        Invoke("changeSwitch", 0.3f);
+                        Invoke("changeSwitch", 0.15f);
                     }
                 }
             }

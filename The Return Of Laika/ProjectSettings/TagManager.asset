@@ -66,6 +66,7 @@ TagManager:
   - bp11
   - bp12
   - bp13
+  - lastMeteorTrigger
   layers:
   - Default
   - TransparentFX
@@ -78,8 +79,8 @@ TagManager:
   - PowerUpLayer
   - BasicPlanetLayer
   - BlackHoleLayer
-  - 
-  - 
+  - LastPieceLayer
+  - LastTriggerLayer
   - 
   - 
   - 

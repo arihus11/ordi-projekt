@@ -88,7 +88,7 @@ public class AfterMoving : MonoBehaviour
         GameObject.FindGameObjectWithTag("realShip").gameObject.transform.GetChild(1).gameObject.SetActive(true);
         blowUpSound();
         Invoke("laikaFlyOut", 0.1f);
-        Invoke("beginTypingAgain", 3f);
+        Invoke("beginTypingAgain", 4.3f);
     }
 
     public void laikaFlyOut()
@@ -102,6 +102,7 @@ public class AfterMoving : MonoBehaviour
     {
         if (!oneFlyOut)
         {
+            SoundManagerScript.StopSound();
             SoundManagerScript.PlaySound("ship_explosion");
             oneFlyOut = true;
         }

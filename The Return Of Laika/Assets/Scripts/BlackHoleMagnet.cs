@@ -8,7 +8,7 @@ public class BlackHoleMagnet : MonoBehaviour
     Rigidbody2D rb;
     Vector2 holeDirection;
     float timeStamp;
-    bool flyToHole;
+    public static bool flyToHole;
     public static bool takenByHole;
     private Vector2 hole;
     public float holeForce;
