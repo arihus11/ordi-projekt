@@ -32499,7 +32499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1889795518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36215,6 +36215,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1889795519}
     m_Modifications:
+    - target: {fileID: 1108689153387610074, guid: 7a47651e845ac5745b11b8805dd8d326, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108689153387610075, guid: 7a47651e845ac5745b11b8805dd8d326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.12
+      objectReference: {fileID: 0}
     - target: {fileID: 1108689153903541254, guid: 7a47651e845ac5745b11b8805dd8d326, type: 3}
       propertyPath: m_Name
       value: MeteorShowerParent
