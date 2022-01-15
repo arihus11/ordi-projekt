@@ -5,7 +5,8 @@ using Laika.Utils;
 
 public class LaikaMovement : MonoBehaviour
 {
-    public float speed = 1.5f; //Remove this line
+    public float speed; //Remove this line
+    private float additionalForce;
     private Animator anim;
 
     private MovementState currentMovementState = MovementState.Steady;
@@ -19,6 +20,7 @@ public class LaikaMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        additionalForce = 1;
         anim = GetComponent<Animator>();
         spriteRenderer = gameObject.transform.Find("Sprite").gameObject.GetComponent<SpriteRenderer>();
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -42,6 +44,27 @@ public class LaikaMovement : MonoBehaviour
                 anim.SetBool("isGoing", false);
             }
         }
+        switch (GrabShipPart.grabbedPartID)
+        {
+            case ShipPartEnum.None:
+                additionalForce = 1f;
+                break;
+            case ShipPartEnum.Part1:
+                additionalForce = 1.7f;
+                break;
+            case ShipPartEnum.Part2:
+                additionalForce = 1.65f;
+                break;
+            case ShipPartEnum.Part3:
+                additionalForce = 1.45f;
+                break;
+            case ShipPartEnum.Part4:
+                additionalForce = 1.55f;
+                break;
+            case ShipPartEnum.Part5:
+                additionalForce = 1.35f;
+                break;
+        }
     }
 
     //Remove this function
@@ -54,35 +77,35 @@ public class LaikaMovement : MonoBehaviour
             {
                 case MovementState.UpwardIdle:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.y += speed * Time.deltaTime;
+                    pos.y += speed * Time.deltaTime / additionalForce;
                     break;
                 case MovementState.LeftIdle:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.x += -speed * Time.deltaTime;
+                    pos.x += -speed * Time.deltaTime / additionalForce;
                     break;
                 case MovementState.RightIdle:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.x += speed * Time.deltaTime;
+                    pos.x += speed * Time.deltaTime / additionalForce;
                     break;
                 case MovementState.DownwardIdle:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.y += -speed * Time.deltaTime;
+                    pos.y += -speed * Time.deltaTime / additionalForce;
                     break;
                 case MovementState.UpwardMoving:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                    rb.AddForce(transform.up * thrust / additionalForce, ForceMode2D.Impulse);
                     break;
                 case MovementState.LeftMoving:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    rb.AddForce(transform.right * (-thrust), ForceMode2D.Impulse);
+                    rb.AddForce(transform.right * (-thrust) / additionalForce, ForceMode2D.Impulse);
                     break;
                 case MovementState.RightMoving:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    rb.AddForce(transform.right * thrust, ForceMode2D.Impulse);
+                    rb.AddForce(transform.right * thrust / additionalForce, ForceMode2D.Impulse);
                     break;
                 case MovementState.DownwardMoving:
                     GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    rb.AddForce(transform.up * (-thrust), ForceMode2D.Impulse);
+                    rb.AddForce(transform.up * (-thrust) / additionalForce, ForceMode2D.Impulse);
                     break;
             }
             transform.position = pos;

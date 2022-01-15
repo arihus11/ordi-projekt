@@ -14,9 +14,11 @@ public class GrabShipPart : MonoBehaviour
     private Transform grabbableParentTransform;
     public static bool holdingPart;
     public static bool firstGrabEver;
+    public static ShipPartEnum grabbedPartID;
 
     void Start()
     {
+        grabbedPartID = ShipPartEnum.None;
         firstGrabEver = false;
         holdingPart = false;
         playerTransform = this.gameObject.transform;
@@ -83,6 +85,7 @@ public class GrabShipPart : MonoBehaviour
         shipPartGrabbed = shipPartInRange;
         shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         shipPartGrabbed.gameObject.GetComponent<Animator>().enabled = false;
+        grabbedPartID = shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartID();
         SoundManagerScript.PlaySound("grab");
         holdingPart = true;
         shipPartInRange = null;
@@ -95,6 +98,7 @@ public class GrabShipPart : MonoBehaviour
         if (shipPartGrabbed != null && shipPartGrabbed != shipPartInRange)
         {
             shipPartGrabbed.gameObject.GetComponent<Animator>().enabled = true;
+            grabbedPartID = ShipPartEnum.None;
             shipPartGrabbed.transform.SetParent(grabbableParentTransform);
             shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = true;
             holdingPart = false;
