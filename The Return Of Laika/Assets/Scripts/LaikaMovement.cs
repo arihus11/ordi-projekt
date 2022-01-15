@@ -92,19 +92,31 @@ public class LaikaMovement : MonoBehaviour
                     pos.y += -speed * Time.deltaTime / additionalForce;
                     break;
                 case MovementState.UpwardMoving:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    if (PlayerPrefs.GetInt("SFX") != 1)
+                    {
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    }
                     rb.AddForce(transform.up * thrust / additionalForce, ForceMode2D.Impulse);
                     break;
                 case MovementState.LeftMoving:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    if (PlayerPrefs.GetInt("SFX") != 1)
+                    {
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    }
                     rb.AddForce(transform.right * (-thrust) / additionalForce, ForceMode2D.Impulse);
                     break;
                 case MovementState.RightMoving:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    if (PlayerPrefs.GetInt("SFX") != 1)
+                    {
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    }
                     rb.AddForce(transform.right * thrust / additionalForce, ForceMode2D.Impulse);
                     break;
                 case MovementState.DownwardMoving:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    if (PlayerPrefs.GetInt("SFX") != 1)
+                    {
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                    }
                     rb.AddForce(transform.up * (-thrust) / additionalForce, ForceMode2D.Impulse);
                     break;
             }

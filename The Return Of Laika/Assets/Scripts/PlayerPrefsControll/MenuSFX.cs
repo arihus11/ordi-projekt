@@ -14,21 +14,21 @@ public class MenuSFX : MonoBehaviour
 
     void Update()
     {
-        if (PlayerPrefs.GetInt("Sound") == 1)
+        if (PlayerPrefs.GetInt("SFX") == 1)
         {
-            AudioListener.volume = 0;
+            this.gameObject.GetComponent<AudioSource>().mute = true;
         }
         else
         {
-            AudioListener.volume = 1;
+            this.gameObject.GetComponent<AudioSource>().mute = false;
         }
     }
 
     void Awake()
     {
-        if (PlayerPrefs.GetInt("Sound") == 1)
+        if (PlayerPrefs.GetInt("SFX") == 1)
         {
-            AudioListener.volume = 0;
+            this.gameObject.GetComponent<AudioSource>().mute = true;
         }
     }
 }

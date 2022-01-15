@@ -13,21 +13,21 @@ public class MenuMusic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("Sound") == 1)
+        if (PlayerPrefs.GetInt("Music") == 1)
         {
-            AudioListener.volume = 0;
+            this.gameObject.GetComponent<AudioSource>().mute = true;
         }
         else
         {
-            AudioListener.volume = 1;
+            this.gameObject.GetComponent<AudioSource>().mute = false;
         }
     }
 
     void Awake()
     {
-        if (PlayerPrefs.GetInt("Sound") == 1)
+        if (PlayerPrefs.GetInt("Music") == 1)
         {
-            AudioListener.volume = 0;
+            this.gameObject.GetComponent<AudioSource>().mute = true;
         }
     }
 }

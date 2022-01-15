@@ -12,9 +12,13 @@ public class DisableSFX : MonoBehaviour
 
     void Awake()
     {
-        if (PlayerPrefs.GetInt("Sound") == 1)
+        if (PlayerPrefs.GetInt("SFX") == 1)
         {
-            AudioListener.volume = 0;
+            this.gameObject.GetComponent<AudioSource>().mute = true;
+        }
+        else
+        {
+            this.gameObject.GetComponent<AudioSource>().mute = false;
         }
     }
 

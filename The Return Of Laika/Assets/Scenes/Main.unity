@@ -32173,9 +32173,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1881973720}
-  - component: {fileID: 1881973719}
   - component: {fileID: 1881973718}
-  - component: {fileID: 1881973721}
+  - component: {fileID: 1881973719}
   m_Layer: 0
   m_Name: JetpackSoundManager
   m_TagString: Untagged
@@ -32286,9 +32285,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881973717}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00219ed4f3716e14590efda60a235104, type: 3}
+  m_Script: {fileID: 11500000, guid: b6e49f271105daa48a79555b51e6d002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1881973720
@@ -32305,18 +32304,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1881973721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881973717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6e49f271105daa48a79555b51e6d002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1887658680
 GameObject:
   m_ObjectHideFlags: 0
