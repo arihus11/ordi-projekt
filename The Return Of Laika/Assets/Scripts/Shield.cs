@@ -52,36 +52,36 @@ public class Shield : MonoBehaviour
                         }
                     }
                 }
-                else if (Input.GetKeyDown(KeyCode.O))
-                {
-                    if (!doOnce)
-                    {
-                        shieldActive = false;
-                        SoundManagerScript.PlaySound("draw_shield");
-                        this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
-                        this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
-                        doOnce = true;
-                        Invoke("changeSwitch", 0.15f);
-                    }
-                }
+                /*       else if (Input.GetKeyDown(KeyCode.O))
+                       {
+                           if (!doOnce)
+                           {
+                               shieldActive = false;
+                               SoundManagerScript.PlaySound("draw_shield");
+                               this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+                               this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+                               doOnce = true;
+                               Invoke("changeSwitch", 0.15f);
+                           }
+                       } */
             }
             else if (GameObject.Find("ShieldPlaceLeft") == null && GameObject.Find("ShieldPlaceRight") == null)
             {
                 GameObject.Find("ArrowShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
-                GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("UseShieldDisplayMessage");
-                if (Input.GetKeyDown(KeyCode.O))
+                //     GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("UseShieldDisplayMessage");
+                /*  if (Input.GetKeyDown(KeyCode.O))
+                  { */
+                if (!doOnce)
                 {
-                    if (!doOnce)
-                    {
-                        shieldActive = true;
-                        SoundManagerScript.PlaySound("draw_shield");
-                        this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
-                        this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+                    shieldActive = true;
+                    SoundManagerScript.PlaySound("draw_shield");
+                    this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                    this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
 
-                        doOnce = true;
-                        Invoke("changeSwitch", 0.15f);
-                    }
+                    doOnce = true;
+                    Invoke("changeSwitch", 0.15f);
                 }
+                //   }
             }
 
 

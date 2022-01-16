@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Laika.Utils;
 
 public class GrabShipPart : MonoBehaviour
@@ -44,13 +45,13 @@ public class GrabShipPart : MonoBehaviour
 
         if (shipPartGrabbed != null)
         {
-            if (Shield.shieldActive == true)
+            if (Shield.shieldActive == true || (GameObject.FindGameObjectWithTag("shower1") != null && GameObject.FindGameObjectWithTag("shower2") != null))
             {
                 Color tmp = shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color;
                 tmp.a = 0f;
                 shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color = tmp;
             }
-            else if (Shield.shieldActive == false)
+            else if (Shield.shieldActive == false || (GameObject.FindGameObjectWithTag("shower1") == null && GameObject.FindGameObjectWithTag("shower2") == null))
             {
                 Color tmp1 = shipPartGrabbed.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color;
                 tmp1.a = 1f;
@@ -79,23 +80,28 @@ public class GrabShipPart : MonoBehaviour
 
     private void handleGrab()
     {
-        handleRelease();
-        firstGrabEver = true;
-        PlayerPrefs.SetInt("FirstMeteorShowerPref", 1);
-        shipPartGrabbed = shipPartInRange;
-        shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-        shipPartGrabbed.gameObject.GetComponent<Animator>().enabled = false;
-        grabbedPartID = shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartID();
-        SoundManagerScript.PlaySound("grab");
-        holdingPart = true;
-        shipPartInRange = null;
+        if (Shield.shieldActive == false)
+        {
+            handleRelease();
+            firstGrabEver = true;
+            PlayerPrefs.SetInt("FirstMeteorShowerPref", 1);
+            shipPartGrabbed = shipPartInRange;
+            GameObject.Find("ShipPartName").gameObject.GetComponent<Text>().text = shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartName();
+            GameObject.Find("ShipPartNameContainer").gameObject.GetComponent<Animator>().Play("ShipPartMessage", -1, 0f);
+            shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            shipPartGrabbed.gameObject.GetComponent<Animator>().enabled = false;
+            grabbedPartID = shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartID();
+            SoundManagerScript.PlaySound("grab");
+            holdingPart = true;
+            shipPartInRange = null;
 
-        attachShipPart();
+            attachShipPart();
+        }
     }
 
     public void handleRelease(bool playSound = true)
     {
-        if (shipPartGrabbed != null && shipPartGrabbed != shipPartInRange)
+        if (shipPartGrabbed != null && shipPartGrabbed != shipPartInRange && Shield.shieldActive == false)
         {
             shipPartGrabbed.gameObject.GetComponent<Animator>().enabled = true;
             grabbedPartID = ShipPartEnum.None;
