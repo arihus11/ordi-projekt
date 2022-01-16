@@ -77,7 +77,7 @@ public class MeteorShowerSpawner : MonoBehaviour
         {
             GameObject.Find("DangerMessageContainer").gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
-        Invoke("actualSpawn", 2f);
+        Invoke("actualSpawn", 5f);
     }
 
     //Sets the random time between minTime and maxTime

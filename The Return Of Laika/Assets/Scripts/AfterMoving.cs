@@ -96,7 +96,7 @@ public class AfterMoving : MonoBehaviour
         GameObject.FindGameObjectWithTag("realShip").gameObject.transform.GetChild(1).gameObject.SetActive(true);
         blowUpSound();
         Invoke("laikaFlyOut", 0.1f);
-        Invoke("beginTypingAgain", 5f);
+        Invoke("beginTypingAgain", 4.5f);
     }
 
     public void laikaFlyOut()
@@ -120,7 +120,7 @@ public class AfterMoving : MonoBehaviour
     public void beginTypingAgain()
     {
         textBox2.SetActive(true);
-        Invoke("closeLastBox", 12.85f);
+        Invoke("closeLastBox", 13.35f);
         Invoke("closeCutscene", 11f);
     }
 
