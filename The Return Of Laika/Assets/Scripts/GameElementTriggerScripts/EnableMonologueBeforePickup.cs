@@ -48,8 +48,9 @@ public class EnableMonologueBeforePickup : MonoBehaviour
         InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
-        Invoke("destoryThisBox", 0.5f);
         PlayerPrefs.SetInt("BeforeMachinePickupTriggerPref", 1);
+        Invoke("destoryThisBox", 0.5f);
+
     }
 
     public void destoryThisBox()

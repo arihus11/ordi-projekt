@@ -165,6 +165,7 @@ public class LaikaHealth : MonoBehaviour
     {
         gameOver = false;
         oneMusic = false;
+        BlackHoleMagnet.flyToHole = false;
         MeteorShowerSpawner.destroyMeteorsGameOver = false;
         this.gameObject.GetComponent<Animator>().Play("LaikaFloatInSpace");
         this.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;

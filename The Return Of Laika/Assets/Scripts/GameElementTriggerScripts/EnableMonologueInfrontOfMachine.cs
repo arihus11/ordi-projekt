@@ -47,8 +47,9 @@ public class EnableMonologueInfrontOfMachine : MonoBehaviour
         InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
-        Invoke("destoryThisBox", 0.5f);
         PlayerPrefs.SetInt("InfrontOfMachineTriggerPref", 1);
+        Invoke("destoryThisBox", 0.5f);
+
     }
 
     public void destoryThisBox()

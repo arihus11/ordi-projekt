@@ -10,6 +10,7 @@ public class EndingCutscene : MonoBehaviour
     Vector2 placeToStandDirection;
     public float placeToStandForce;
     public GameObject standingPlace;
+    public static bool endingStarted;
     private bool oneRumble;
     float timeStamp;
     private bool oneFlyout;
@@ -23,6 +24,7 @@ public class EndingCutscene : MonoBehaviour
         flying = false;
         rb = GameObject.Find("Player").gameObject.GetComponent<Rigidbody2D>();
         doOnce = false;
+        endingStarted = false;
     }
 
     // Update is called once per frame
@@ -32,6 +34,7 @@ public class EndingCutscene : MonoBehaviour
         {
             if (doOnce == false)
             {
+                endingStarted = true;
                 disablePlayerControllls();
                 Invoke("displayTextBox1", 1.1f);
                 //  Invoke("executeSmoke", 3.8f);

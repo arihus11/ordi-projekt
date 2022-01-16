@@ -28,7 +28,7 @@ public class EnableMonologueBlackHole : MonoBehaviour
                 this.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                 disableMovementWhileTalking();
                 GameObject.Find("CanvasGameElementTriggers").gameObject.transform.GetChild(numberOfChildToEnable).gameObject.SetActive(true);
-                Invoke("enableMovementAfterTalking", enableWalkingTime);
+                Invoke("enableMovementAfterTalking2", enableWalkingTime);
             }
 
         }
@@ -43,12 +43,14 @@ public class EnableMonologueBlackHole : MonoBehaviour
 
     }
 
-    public void enableMovementAfterTalking()
+    public void enableMovementAfterTalking2()
     {
         InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
+        PlayerPrefs.SetInt("InfrontOfBlackHoleTriggerPref", 1);
         Invoke("destoryThisBox", 0.5f);
+
     }
 
     public void destoryThisBox()

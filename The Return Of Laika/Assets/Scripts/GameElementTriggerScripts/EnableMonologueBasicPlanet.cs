@@ -50,6 +50,7 @@ public class EnableMonologueBasicPlanet : MonoBehaviour
         InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
+        PlayerPrefs.SetInt("InfrontOfBasicPlanetTriggerPref", 1);
         Invoke("destoryThisBox", 0.5f);
     }
 
