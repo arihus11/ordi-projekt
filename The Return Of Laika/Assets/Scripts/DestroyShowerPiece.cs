@@ -16,7 +16,7 @@ public class DestroyShowerPiece : MonoBehaviour
 
     }
 
-    public void OnTriggerExit2D(Collider2D col)
+    public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "lastMeteorTrigger")
         {

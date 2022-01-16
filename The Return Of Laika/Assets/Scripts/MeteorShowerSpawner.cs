@@ -8,8 +8,8 @@ public class MeteorShowerSpawner : MonoBehaviour
     public static bool meteorShowerActive;
     public static bool destroyMeteorsGameOver;
     public static bool meteorMusicPlaying;
-    public float maxTime = 70f;
-    public float minTime = 50f;
+    public float maxTime = 75f;
+    public float minTime = 55f;
 
 
     //current time
@@ -89,7 +89,7 @@ public class MeteorShowerSpawner : MonoBehaviour
         else if ((randomShowerNumber % 2) != 0)
         {
             meteorShowerActive = true;
-            Instantiate(shower2, transform.position, shower2.transform.rotation);
+            Instantiate(shower1, transform.position, shower2.transform.rotation);
         }
         SetRandomTime();
     }

@@ -76,8 +76,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shower1: {fileID: 8595898698095935473, guid: fba46c5c540c31b49b0d81e19430a82a, type: 3}
   shower2: {fileID: 2715478702939077787, guid: 6b922ec11a98e7e4fa53fd6284088251, type: 3}
-  maxTime: 60
-  minTime: 40
+  maxTime: 75
+  minTime: 55
 --- !u!1 &1108689153903541254
 GameObject:
   m_ObjectHideFlags: 0
