@@ -50,6 +50,7 @@ public class LaikaHealth : MonoBehaviour
             {
                 oneMusic = true;
                 AssembleShipPart.numberOfPartsAssambled = 0;
+                GrabShipPart.alredyGrabbedParts.Clear();
                 GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Stop();
                 MeteorShowerSpawner.meteorMusicPlaying = false;
                 if (!(GameObject.Find("Music").gameObject.GetComponent<AudioSource>().isPlaying))

@@ -17,8 +17,14 @@ public class GrabShipPart : MonoBehaviour
     public static bool firstGrabEver;
     public static ShipPartEnum grabbedPartID;
 
+    public static bool newPartGrabForShower;
+
+    public static List<string> alredyGrabbedParts;
+
     void Start()
     {
+        alredyGrabbedParts = new List<string>();
+        newPartGrabForShower = false;
         grabbedPartID = ShipPartEnum.None;
         firstGrabEver = false;
         holdingPart = false;
@@ -86,6 +92,11 @@ public class GrabShipPart : MonoBehaviour
             firstGrabEver = true;
             PlayerPrefs.SetInt("FirstMeteorShowerPref", 1);
             shipPartGrabbed = shipPartInRange;
+            if (!(alredyGrabbedParts.Contains((shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartID()).ToString())))
+            {
+                alredyGrabbedParts.Add((shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartID()).ToString());
+                newPartGrabForShower = true;
+            }
             GameObject.Find("ShipPartName").gameObject.GetComponent<Text>().text = shipPartGrabbed.gameObject.GetComponent<ShipPartID>().returnPartName();
             GameObject.Find("ShipPartNameContainer").gameObject.GetComponent<Animator>().Play("ShipPartMessage", -1, 0f);
             shipPartGrabbed.gameObject.GetComponent<CircleCollider2D>().enabled = false;

@@ -40,10 +40,18 @@ public class MeteorShowerSpawner : MonoBehaviour
         }
 
         //Check if its the right time to spawn the object
-        if (time >= spawnTime)
+        /*  if (time >= spawnTime)
+          {
+              if (LaikaHealth.gameOver == false && PlayerPrefs.GetInt("FirstMeteorShowerPref") == 1)
+              {
+                  SpawnObject();
+              }
+          } */
+        if (GrabShipPart.newPartGrabForShower == true)
         {
             if (LaikaHealth.gameOver == false && PlayerPrefs.GetInt("FirstMeteorShowerPref") == 1)
             {
+                GrabShipPart.newPartGrabForShower = false;
                 SpawnObject();
             }
         }
