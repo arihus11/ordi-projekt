@@ -23,6 +23,7 @@ public class PauseMenu : MonoBehaviour
                 GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Pause();
                 GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Pause();
 
+
             }
             Time.timeScale = 0;
             GameObject.Find("PauseMenu").gameObject.transform.GetChild(0).gameObject.SetActive(true);
