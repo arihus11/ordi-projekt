@@ -26,24 +26,30 @@ public class Shield : MonoBehaviour
                 GameObject.Find("UseShieldMessageContainer").gameObject.GetComponent<Animator>().Play("Base");
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
-                    if (!doOnce)
+                    if (!this.gameObject.transform.GetChild(2).gameObject.activeInHierarchy)
                     {
-                        SoundManagerScript.PlaySound("draw_shield");
-                        this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
-                        this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
-                        doOnce = true;
-                        Invoke("changeSwitch", 0.15f);
+                        if (!doOnce)
+                        {
+                            SoundManagerScript.PlaySound("draw_shield");
+                            this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                            this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+                            doOnce = true;
+                            Invoke("changeSwitch", 0.15f);
+                        }
                     }
                 }
                 else if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
-                    if (!doOnce)
+                    if (!this.gameObject.transform.GetChild(3).gameObject.activeInHierarchy)
                     {
-                        SoundManagerScript.PlaySound("draw_shield");
-                        this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
-                        this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
-                        doOnce = true;
-                        Invoke("changeSwitch", 0.15f);
+                        if (!doOnce)
+                        {
+                            SoundManagerScript.PlaySound("draw_shield");
+                            this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+                            this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+                            doOnce = true;
+                            Invoke("changeSwitch", 0.15f);
+                        }
                     }
                 }
                 else if (Input.GetKeyDown(KeyCode.O))
