@@ -27,7 +27,7 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void CointinueGame()
     {
-        if (!pressed)
+        if (!pressed && DisableContinueButton.disabledContinue == false)
         {
             pressed = true;
             this.gameObject.GetComponent<Button>().interactable = false;
@@ -41,14 +41,9 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void changeSceneContinue()
     {
-        if (PlayerPrefs.GetInt("NewGamePressed") == 1)
-        {
-            SceneManager.LoadScene("Main");
-        }
-        else
-        {
-            SceneManager.LoadScene("Cutscene1");
-        }
+
+        SceneManager.LoadScene("Main");
+
     }
 
     public void optionsButton()
