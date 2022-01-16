@@ -137,6 +137,7 @@ public class EndingCutscene : MonoBehaviour
         Invoke("enablePlayerControllls", 8.4f);
     }
 
+
     public void enablePlayerControllls()
     {
         GameObject.Find("Player").gameObject.GetComponent<LaikaHealth>().enabled = true;
