@@ -27,11 +27,13 @@ public class ShieldCollide : MonoBehaviour
                 //   collidedOnChild = true;
                 if (col.contacts[0].otherCollider.tag == "rightShield")
                 {
-                    GameObject.Find("MeteorExplosionShield").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                    //       GameObject.Find("MeteorExplosionShield").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                    this.gameObject.GetComponent<Animator>().Play("ShieldHit", -1, 0f);
                 }
                 else if (col.contacts[0].otherCollider.tag == "leftShield")
                 {
-                    GameObject.Find("MeteorExplosionShield2").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                    //      GameObject.Find("MeteorExplosionShield2").gameObject.GetComponent<Animator>().Play("Explosion1", -1, 0f);
+                    this.gameObject.GetComponent<Animator>().Play("ShieldHit", -1, 0f);
                 }
                 Invoke("changeState", 0.5f);
                 Destroy(col.gameObject);
