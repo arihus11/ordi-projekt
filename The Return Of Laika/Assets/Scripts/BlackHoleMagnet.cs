@@ -23,7 +23,7 @@ public class BlackHoleMagnet : MonoBehaviour
     void FixedUpdate()
     {
         float step = holeForce * Time.deltaTime;
-        if (flyToHole)
+        if (flyToHole && takenByHole)
         {
             holeDirection = -(transform.position - (GameObject.FindGameObjectWithTag("blackHole").gameObject.transform.position)).normalized;
             transform.position = Vector2.MoveTowards(transform.position, hole, step);
