@@ -23,7 +23,7 @@ public class AfterMoving : MonoBehaviour
         dialogueBox2.SetActive(false);
         explosion.SetActive(false);
         this.gameObject.GetComponent<Animator>().enabled = false;
-        Invoke("preRumbleActions", 62.3f);
+        Invoke("preRumbleActions", 61.3f);
     }
 
     // Update is called once per frame
@@ -88,7 +88,7 @@ public class AfterMoving : MonoBehaviour
         GameObject.FindGameObjectWithTag("realShip").gameObject.transform.GetChild(1).gameObject.SetActive(true);
         blowUpSound();
         Invoke("laikaFlyOut", 0.1f);
-        Invoke("beginTypingAgain", 4.3f);
+        Invoke("beginTypingAgain", 3.5f);
     }
 
     public void laikaFlyOut()

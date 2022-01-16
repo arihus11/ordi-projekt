@@ -11,6 +11,7 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void QuitGame()
     {
+        Application.Quit();
         if (!pressed)
         {
             pressed = true;

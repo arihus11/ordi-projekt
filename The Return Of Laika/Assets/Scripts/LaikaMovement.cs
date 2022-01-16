@@ -85,52 +85,55 @@ public class LaikaMovement : MonoBehaviour
         if (LaikaHealth.gameOver == false)
         {
             Vector2 pos = transform.position; //Remove this line
-            switch (currentMovementState)
+            if (InsideMonologue.insideMonologue == false)
             {
-                case MovementState.UpwardIdle:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.y += speed * Time.deltaTime / additionalForce;
-                    break;
-                case MovementState.LeftIdle:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.x += -speed * Time.deltaTime / additionalForce;
-                    break;
-                case MovementState.RightIdle:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.x += speed * Time.deltaTime / additionalForce;
-                    break;
-                case MovementState.DownwardIdle:
-                    GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
-                    pos.y += -speed * Time.deltaTime / additionalForce;
-                    break;
-                case MovementState.UpwardMoving:
-                    if (PlayerPrefs.GetInt("SFX") != 1)
-                    {
-                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    }
-                    rb.AddForce(transform.up * thrust / additionalForce, ForceMode2D.Impulse);
-                    break;
-                case MovementState.LeftMoving:
-                    if (PlayerPrefs.GetInt("SFX") != 1)
-                    {
-                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    }
-                    rb.AddForce(transform.right * (-thrust) / additionalForce, ForceMode2D.Impulse);
-                    break;
-                case MovementState.RightMoving:
-                    if (PlayerPrefs.GetInt("SFX") != 1)
-                    {
-                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    }
-                    rb.AddForce(transform.right * thrust / additionalForce, ForceMode2D.Impulse);
-                    break;
-                case MovementState.DownwardMoving:
-                    if (PlayerPrefs.GetInt("SFX") != 1)
-                    {
-                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
-                    }
-                    rb.AddForce(transform.up * (-thrust) / additionalForce, ForceMode2D.Impulse);
-                    break;
+                switch (currentMovementState)
+                {
+                    case MovementState.UpwardIdle:
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
+                        pos.y += speed * Time.deltaTime / additionalForce;
+                        break;
+                    case MovementState.LeftIdle:
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
+                        pos.x += -speed * Time.deltaTime / additionalForce;
+                        break;
+                    case MovementState.RightIdle:
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
+                        pos.x += speed * Time.deltaTime / additionalForce;
+                        break;
+                    case MovementState.DownwardIdle:
+                        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = true;
+                        pos.y += -speed * Time.deltaTime / additionalForce;
+                        break;
+                    case MovementState.UpwardMoving:
+                        if (PlayerPrefs.GetInt("SFX") != 1)
+                        {
+                            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                        }
+                        rb.AddForce(transform.up * thrust / additionalForce, ForceMode2D.Impulse);
+                        break;
+                    case MovementState.LeftMoving:
+                        if (PlayerPrefs.GetInt("SFX") != 1)
+                        {
+                            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                        }
+                        rb.AddForce(transform.right * (-thrust) / additionalForce, ForceMode2D.Impulse);
+                        break;
+                    case MovementState.RightMoving:
+                        if (PlayerPrefs.GetInt("SFX") != 1)
+                        {
+                            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                        }
+                        rb.AddForce(transform.right * thrust / additionalForce, ForceMode2D.Impulse);
+                        break;
+                    case MovementState.DownwardMoving:
+                        if (PlayerPrefs.GetInt("SFX") != 1)
+                        {
+                            GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().mute = false;
+                        }
+                        rb.AddForce(transform.up * (-thrust) / additionalForce, ForceMode2D.Impulse);
+                        break;
+                }
             }
             transform.position = pos;
         }
@@ -138,7 +141,7 @@ public class LaikaMovement : MonoBehaviour
 
     private void setCurrentMovementState()
     {
-        if (LaikaHealth.gameOver == false)
+        if (LaikaHealth.gameOver == false && InsideMonologue.insideMonologue == false)
         {
             if (Input.GetKey(KeyCode.W))
             {

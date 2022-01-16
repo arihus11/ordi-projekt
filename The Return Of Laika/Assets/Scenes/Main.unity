@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &19891046
 CircleCollider2D:
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &66109915
 CircleCollider2D:
@@ -1676,7 +1676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &108218260
 CircleCollider2D:
@@ -3324,7 +3324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &224386448
 CircleCollider2D:
@@ -4040,7 +4040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1001 &256920435
 PrefabInstance:
@@ -6035,7 +6035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &345768460
 CircleCollider2D:
@@ -7283,7 +7283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 1
-  enableWalkingTime: 9.2
+  enableWalkingTime: 8.2
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!70 &405191150
 CapsuleCollider2D:
@@ -9005,7 +9005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &498675393
 CircleCollider2D:
@@ -10525,7 +10525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &571256950
 CircleCollider2D:
@@ -11703,7 +11703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &637213809
 CircleCollider2D:
@@ -12109,7 +12109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &664560244
 GameObject:
@@ -12500,7 +12500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &677403264
 CircleCollider2D:
@@ -13257,7 +13257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &727464034
 GameObject:
@@ -14455,7 +14455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &787891557
 GameObject:
@@ -16553,7 +16553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 6
-  enableWalkingTime: 10
+  enableWalkingTime: 9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!114 &882413337
 MonoBehaviour:
@@ -16751,7 +16751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &896020643
 CircleCollider2D:
@@ -17034,7 +17034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &916956539
 GameObject:
@@ -19295,7 +19295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1049223234
 GameObject:
@@ -19342,7 +19342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &1049223237
 CircleCollider2D:
@@ -20323,7 +20323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1111158030
 GameObject:
@@ -22955,7 +22955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1270121806
 GameObject:
@@ -23512,7 +23512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1329542287
 GameObject:
@@ -24395,7 +24395,7 @@ Transform:
   m_GameObject: {fileID: 1364079455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.04, y: -0.22, z: 0}
-  m_LocalScale: {x: 0.2992, y: 0.2992, z: 0.2992}
+  m_LocalScale: {x: 0.69207954, y: 0.69207954, z: 0.69207954}
   m_Children: []
   m_Father: {fileID: 787891558}
   m_RootOrder: 3
@@ -24440,7 +24440,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 2301e18997af3764988b027db5c812cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c54a9c09f3143143bce94b1af83e3ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -24487,14 +24487,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3}
+    oldSize: {x: 1.92, y: 1.92}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
 --- !u!1 &1376595131
 GameObject:
@@ -25493,7 +25493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1437447910
 GameObject:
@@ -25542,7 +25542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 2
-  enableWalkingTime: 8.1
+  enableWalkingTime: 7.1
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!70 &1437447913
 CapsuleCollider2D:
@@ -26170,7 +26170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &1499093692
 CircleCollider2D:
@@ -26491,7 +26491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1522705473
 GameObject:
@@ -26900,7 +26900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1548922860
 GameObject:
@@ -28256,7 +28256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 5
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1664037082
 GameObject:
@@ -28520,7 +28520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1679508526
 GameObject:
@@ -29547,7 +29547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1726831515
 GameObject:
@@ -32054,7 +32054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 4
-  enableWalkingTime: 7.9
+  enableWalkingTime: 6.9
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!58 &1866026548
 CircleCollider2D:
@@ -32235,7 +32235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 3
-  enableWalkingTime: 8.5
+  enableWalkingTime: 7.5
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!1 &1877622812
 GameObject:
@@ -32673,7 +32673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1889795518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36602,7 +36602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChildToEnable: 0
-  enableWalkingTime: 8
+  enableWalkingTime: 7
   emptySprite: {fileID: 21300000, guid: b90a942601b22344b941fb670d28dfbc, type: 3}
 --- !u!114 &4569894202007101444
 MonoBehaviour:

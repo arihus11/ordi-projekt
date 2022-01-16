@@ -36,10 +36,12 @@ public class EnableMonologueFireball : MonoBehaviour
 
     public void disableMovementWhileTalking()
     {
+        GameObject.Find("Player").gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         InsideMonologue.insideMonologue = true;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = false;
         GameObject.FindGameObjectWithTag("laikaSprite").GetComponent<SpriteRenderer>().sprite = emptySprite;
+        GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
 
     }
 
@@ -47,6 +49,7 @@ public class EnableMonologueFireball : MonoBehaviour
     {
         InsideMonologue.insideMonologue = false;
         GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
+        GameObject.Find("Player").gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
         PlayerPrefs.SetInt("InfrontOfFireballTriggerPref", 1);
         Invoke("destoryThisBox", 0.5f);
