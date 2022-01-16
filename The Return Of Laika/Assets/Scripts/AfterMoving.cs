@@ -14,16 +14,19 @@ public class AfterMoving : MonoBehaviour
     private bool oneFlyOut;
     private bool oneRumble;
 
+    private bool oneActive;
+
     // Start is called before the first frame update
     void Start()
     {
+        oneActive = false;
         oneRumble = false;
         oneFlyOut = false;
         textBox2.SetActive(false);
         dialogueBox2.SetActive(false);
         explosion.SetActive(false);
         this.gameObject.GetComponent<Animator>().enabled = false;
-        Invoke("preRumbleActions", 61.3f);
+        //    Invoke("preRumbleActions", 61.3f);
     }
 
     // Update is called once per frame
@@ -41,6 +44,11 @@ public class AfterMoving : MonoBehaviour
                 Debug.Log("Avoid null reference");
             }
             closeCutscene();
+        }
+        if (RumbleText.rumbleActive == true && !oneActive)
+        {
+            oneActive = true;
+            preRumbleActions();
         }
     }
 
@@ -78,7 +86,7 @@ public class AfterMoving : MonoBehaviour
     public void deactivateShaking()
     {
         this.gameObject.GetComponent<Animator>().enabled = false;
-        Invoke("explode", 2f);
+        Invoke("explode", 2.7f);
     }
 
     public void explode()
@@ -88,7 +96,7 @@ public class AfterMoving : MonoBehaviour
         GameObject.FindGameObjectWithTag("realShip").gameObject.transform.GetChild(1).gameObject.SetActive(true);
         blowUpSound();
         Invoke("laikaFlyOut", 0.1f);
-        Invoke("beginTypingAgain", 3.8f);
+        Invoke("beginTypingAgain", 5f);
     }
 
     public void laikaFlyOut()
@@ -112,7 +120,7 @@ public class AfterMoving : MonoBehaviour
     public void beginTypingAgain()
     {
         textBox2.SetActive(true);
-        Invoke("closeLastBox", 11f);
+        Invoke("closeLastBox", 12.85f);
         Invoke("closeCutscene", 11f);
     }
 

@@ -63,7 +63,7 @@ public class TypeWriterEffect2 : MonoBehaviour
         }
         else
         {
-            Invoke("laterDelete", 1.5f);
+            Invoke("laterDelete", 1.8f);
         }
     }
 

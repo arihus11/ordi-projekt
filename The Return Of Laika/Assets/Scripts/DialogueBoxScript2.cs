@@ -24,7 +24,7 @@ public class DialogueBoxScript2 : MonoBehaviour
         {
             if (i == 0)
             {
-                Invoke("enableSecondttText", 3f);
+                Invoke("enableSecondttText", 3.8f);
             }
             else
             {
