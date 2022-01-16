@@ -18,6 +18,7 @@ public class NewGameBTNScript : MonoBehaviour, ISelectHandler
             this.gameObject.GetComponent<Button>().interactable = false;
             GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Stop();
             SoundManagerScript.PlaySound("start");
+            PlayerPrefs.SetInt("NewGamePressed", 1);
             PlayerPrefs.SetInt("BeforeMachinePickupTriggerPref", 0);
             PlayerPrefs.SetInt("InfrontOfMachineTriggerPref", 0);
             PlayerPrefs.SetInt("InfrontOfWreckTriggerPref", 0);

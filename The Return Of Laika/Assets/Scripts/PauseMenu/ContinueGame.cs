@@ -27,10 +27,12 @@ public class ContinueGame : MonoBehaviour, ISelectHandler
         if (MeteorShowerSpawner.meteorMusicPlaying == true)
         {
             GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Play();
+            GameObject.Find("SoundManager").gameObject.GetComponent<AudioSource>().Play();
         }
         else if (MeteorShowerSpawner.meteorMusicPlaying == false)
         {
             GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Play();
+            GameObject.Find("SoundManager").gameObject.GetComponent<AudioSource>().Play();
         }
 
         PauseMenu.oneSwitchSound = false;

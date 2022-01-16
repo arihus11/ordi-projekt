@@ -22,6 +22,7 @@ public class PauseMenu : MonoBehaviour
                 SoundManagerScript.PlaySound("button_switch");
                 GameObject.Find("Music").gameObject.GetComponent<AudioSource>().Pause();
                 GameObject.Find("MeteorMusic").gameObject.GetComponent<AudioSource>().Pause();
+                GameObject.Find("SoundManager").gameObject.GetComponent<AudioSource>().Pause();
 
 
             }

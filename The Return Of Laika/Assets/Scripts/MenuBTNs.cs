@@ -41,7 +41,14 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void changeSceneContinue()
     {
-        SceneManager.LoadScene("Main");
+        if (PlayerPrefs.GetInt("NewGamePressed") == 1)
+        {
+            SceneManager.LoadScene("Main");
+        }
+        else
+        {
+            SceneManager.LoadScene("Cutscene1");
+        }
     }
 
     public void optionsButton()
