@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LaikaHealth : MonoBehaviour
 {
-    public static int health = 5;
+    public static int health = 8;
     private bool isWaiting = false;
     public static bool gameOver;
     private Rigidbody2D rb;
@@ -35,7 +35,7 @@ public class LaikaHealth : MonoBehaviour
         doOnce2 = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         gameOver = false;
-        setHealth(5);
+        setHealth(8);
         healthSystem = healthSystemCanvas.transform;
         assembleShipPartScript = this.gameObject.GetComponent<AssembleShipPart>();
     }
@@ -93,11 +93,11 @@ public class LaikaHealth : MonoBehaviour
         {
             if (gameOver == false)
             {
-                if (health == 5)
+                if (health == 8)
                 {
                     GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpNotSick", -1, 0f);
                 }
-                else if (health < 5)
+                else if (health < 8)
                 {
                     SoundManagerScript.PlaySound("eat");
                     GameObject.Find("PowerUpMessageContainer").gameObject.GetComponent<Animator>().Play("PowerUpSick", -1, 0f);
@@ -135,7 +135,7 @@ public class LaikaHealth : MonoBehaviour
     public void reverseDisplayGameOver()
     {
         GameObject.FindGameObjectWithTag("gameOverCanvas").gameObject.GetComponent<Animator>().Play("DisplayGameOverText1Reverse");
-        setHealth(5);
+        setHealth(8);
         Invoke("laikaDisapear", 1.3f);
         Invoke("moveLaikaBackInTime", 2f);
     }
