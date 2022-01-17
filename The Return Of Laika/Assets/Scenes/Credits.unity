@@ -739,7 +739,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: To be continued...
+  m_Text: TO BE CONTINUED...
 --- !u!222 &1371217497
 CanvasRenderer:
   m_ObjectHideFlags: 0
