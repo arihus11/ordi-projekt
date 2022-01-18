@@ -48,6 +48,7 @@ public class AfterMoving : MonoBehaviour
         if (RumbleText.rumbleActive == true && !oneActive)
         {
             oneActive = true;
+            RumbleText.rumbleActive = false;
             preRumbleActions();
         }
     }
