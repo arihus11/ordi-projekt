@@ -6,6 +6,7 @@ public class LockCursor : MonoBehaviour
 {
     void Start()
     {
+        //  PlayerPrefs.DeleteAll();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
