@@ -38,8 +38,12 @@ public class ExitToMenu : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
+        PauseMenu.mainSceneSelected = this.gameObject.GetComponent<Button>();
         yesText2.gameObject.GetComponent<Text>().color = Color.black;
         noText2.gameObject.GetComponent<Text>().color = Color.white;
-        SoundManagerScript.PlaySound("button_switch");
+        if (!(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
+        {
+            SoundManagerScript.PlaySound("button_switch");
+        }
     }
 }

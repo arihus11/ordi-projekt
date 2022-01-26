@@ -34,6 +34,7 @@ public class EnterTheShip : MonoBehaviour
                     SoundManagerScript.PlaySound("enter_ship");
                     playOneEnter = true;
                 }
+                GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = false;
                 rbShip = GameObject.Find("Ship").gameObject.GetComponent<Rigidbody2D>();
                 GameObject.Find("Main Camera").gameObject.GetComponent<CameraFollowPlayerScript>().player = GameObject.FindGameObjectWithTag("endingShip").gameObject.transform;
                 disablePlayerControllsOnEnter();

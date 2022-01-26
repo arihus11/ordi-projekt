@@ -32,6 +32,7 @@ public class Shield : MonoBehaviour
                         {
                             SoundManagerScript.PlaySound("draw_shield");
                             this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                            this.gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("ShieldNormal");
                             this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
                             doOnce = true;
                             Invoke("changeSwitch", 0.15f);
@@ -47,6 +48,7 @@ public class Shield : MonoBehaviour
                             SoundManagerScript.PlaySound("draw_shield");
                             this.gameObject.transform.GetChild(2).gameObject.SetActive(false);
                             this.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+                            this.gameObject.transform.GetChild(3).gameObject.GetComponent<Animator>().Play("ShieldNormal");
                             doOnce = true;
                             Invoke("changeSwitch", 0.15f);
                         }
@@ -76,6 +78,7 @@ public class Shield : MonoBehaviour
                     shieldActive = true;
                     SoundManagerScript.PlaySound("draw_shield");
                     this.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+                    this.gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>().Play("ShieldNormal");
                     this.gameObject.transform.GetChild(3).gameObject.SetActive(false);
 
                     doOnce = true;

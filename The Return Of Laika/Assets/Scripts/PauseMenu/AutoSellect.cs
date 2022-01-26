@@ -12,6 +12,7 @@ public class AutoSellect : MonoBehaviour
     void Start()
     {
         continueButton.Select();
+
     }
 
     // Update is called once per frame

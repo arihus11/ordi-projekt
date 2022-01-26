@@ -8,6 +8,7 @@ public class OptionMenuButtonsControler : MonoBehaviour
     public static string selectedButtonOptions;
     private bool oneChange1;
     public GameObject Text1, Text2;
+    public static Button selectedOneOptions;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,11 @@ public class OptionMenuButtonsControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
+        {
+
+            selectedOneOptions.Select();
+        }
         if (selectedButtonOptions == "Music")
         {
             Text1.gameObject.GetComponent<Text>().color = Color.white;

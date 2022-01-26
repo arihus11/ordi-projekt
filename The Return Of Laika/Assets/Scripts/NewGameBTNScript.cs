@@ -47,13 +47,17 @@ public class NewGameBTNScript : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
-        if (counter == 0)
+        if (!(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
-            counter = 1;
-        }
-        else
-        {
-            SoundManagerScript.PlaySound("button_switch");
+            if (counter == 0)
+            {
+                counter = 1;
+            }
+            else
+            {
+                MenuBTNs.selectedOne = this.gameObject.GetComponent<Button>();
+                SoundManagerScript.PlaySound("button_switch");
+            }
         }
     }
 
@@ -65,6 +69,8 @@ public class NewGameBTNScript : MonoBehaviour, ISelectHandler
     void Start()
     {
         pressed = false;
+        MenuBTNs.selectedOne = this.gameObject.GetComponent<Button>();
+
     }
 
 }

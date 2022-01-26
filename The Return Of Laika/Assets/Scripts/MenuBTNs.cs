@@ -8,6 +8,16 @@ using UnityEngine.EventSystems;
 public class MenuBTNs : MonoBehaviour, ISelectHandler
 {
     private bool pressed;
+    public static Button selectedOne;
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
+        {
+
+            selectedOne.Select();
+        }
+    }
 
     public void QuitGame()
     {
@@ -22,7 +32,11 @@ public class MenuBTNs : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
-        SoundManagerScript.PlaySound("button_switch");
+        if (!(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
+        {
+            selectedOne = this.gameObject.GetComponent<Button>();
+            SoundManagerScript.PlaySound("button_switch");
+        }
     }
 
     public void CointinueGame()

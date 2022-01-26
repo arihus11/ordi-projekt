@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool oneSwitchSound;
+    public static Button mainSceneSelected;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,11 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
+        {
+
+            mainSceneSelected.Select();
+        }
         if (Input.GetKey(KeyCode.Escape) && LaikaHealth.gameOver == false && EndingCutscene.endingStarted == false)
         {
             if (!oneSwitchSound)

@@ -22,14 +22,18 @@ public class MuiscButton : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
+        OptionMenuButtonsControler.selectedOneOptions = this.gameObject.GetComponent<Button>();
         OptionMenuButtonsControler.selectedButtonOptions = "Music";
-        if (counter == 0)
+        if (!(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
-            counter = 1;
-        }
-        else
-        {
-            SoundManagerScript.PlaySound("button_switch");
+            if (counter == 0)
+            {
+                counter = 1;
+            }
+            else
+            {
+                SoundManagerScript.PlaySound("button_switch");
+            }
         }
     }
 }

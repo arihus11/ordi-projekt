@@ -21,8 +21,12 @@ public class ExitOptionsButton : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
-        OptionMenuButtonsControler.selectedButtonOptions = "ExitOptions";
-        SoundManagerScript.PlaySound("button_switch");
+        OptionMenuButtonsControler.selectedOneOptions = this.gameObject.GetComponent<Button>();
+        if (!(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
+        {
+            OptionMenuButtonsControler.selectedButtonOptions = "ExitOptions";
+            SoundManagerScript.PlaySound("button_switch");
+        }
 
     }
 }

@@ -21,12 +21,12 @@ public class CreditsController : MonoBehaviour
 
     public void changeScenes()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("End");
     }
 
     public void closePanel()
     {
         endPanel.gameObject.GetComponent<Animator>().Play("EndGamePanel");
-        Invoke("changeScenes", 2f);
+        Invoke("changeScenes", 3f);
     }
 }

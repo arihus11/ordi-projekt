@@ -142,6 +142,7 @@ public class EndingCutscene : MonoBehaviour
     {
         GameObject.Find("Player").gameObject.GetComponent<LaikaHealth>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<DisplayHint>().enabled = true;
+        GameObject.Find("JetpackSoundManager").gameObject.GetComponent<AudioSource>().enabled = true;
         GameObject.Find("Player").gameObject.GetComponent<LaikaMovement>().enabled = true;
         this.gameObject.GetComponent<EndingCutscene>().enabled = false;
     }

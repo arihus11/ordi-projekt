@@ -12,7 +12,7 @@ public class ContinueGame : MonoBehaviour, ISelectHandler
     // Start is called before the first frame update
     void Start()
     {
-
+        PauseMenu.mainSceneSelected = this.gameObject.GetComponent<Button>();
     }
 
     // Update is called once per frame
@@ -43,15 +43,19 @@ public class ContinueGame : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData selected)
     {
+        PauseMenu.mainSceneSelected = this.gameObject.GetComponent<Button>();
         noText.gameObject.GetComponent<Text>().color = Color.black;
         yesText.gameObject.GetComponent<Text>().color = Color.white;
-        if (counter == 0)
+        if (!(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2)))
         {
-            counter = 1;
-        }
-        else
-        {
-            SoundManagerScript.PlaySound("button_switch");
+            if (counter == 0)
+            {
+                counter = 1;
+            }
+            else
+            {
+                SoundManagerScript.PlaySound("button_switch");
+            }
         }
     }
 }
